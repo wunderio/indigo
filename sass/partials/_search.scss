@@ -262,6 +262,7 @@ $stone: #d6d2c4;
   color: #131313;
   font-weight: 400;
   text-decoration: none;
+  text-transform: none;
   span {
     font-weight: bold;
     position: absolute;
@@ -368,4 +369,12 @@ p cite {
   margin-left: 5px;
   color: #000;
   font-size: 14px;
+}
+
+
+
+// overides MBD code
+
+#main {
+  padding-top: 0;
 }

@@ -2246,7 +2246,8 @@ footer {
 .pillbox__link {
   color: #131313;
   font-weight: 400;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: none; }
   .pillbox__link span {
     font-weight: bold;
     position: absolute;
@@ -2332,3 +2333,6 @@ p cite {
   margin-left: 5px;
   color: #000;
   font-size: 14px; }
+
+#main {
+  padding-top: 0; }
