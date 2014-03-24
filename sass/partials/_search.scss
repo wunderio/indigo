@@ -1,22 +1,8 @@
 
-main {
-  margin: 0 auto;
-  width: 1500px;
-}
-
 $blue: #fff;
 $light-blue: #0097a9;
 $yellow: #f6be00;
 $stone: #d6d2c4;
-
-// $yellow: $light-blue;
-
-h1,h2,h3,h4,h5,h6,p,a,cite {
-  margin: 0;
-}
-input:focus {
-  outline: #4c98e5;
-}
 
 #fb-queryform {
   padding-left: 20px;
@@ -33,11 +19,6 @@ input:focus {
 }
 
 .search-results {
-//  background-color: #f3f3f3;
-  margin: 20px auto;
-  padding: 0;
-  float: left;
-  width: 1105px;
 }
 #fb-matching {
   color: #131313;
@@ -169,38 +150,7 @@ input:focus {
   }
 }
 
-/* house keeping */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
-
-.btn::-moz-focus-inner {
-border:0;
-padding:0
-}
-.btn {
-width:auto;
-border:0 none;
-color: #fff;
-margin:0 0 0 5px;
-position: relative;
-top: -1px;
-padding:4px 10px;
-background: #4c98e5;;
-overflow:visible;
-/* Stupid IE */
-  font-size: 14px;
-  font-weight: bold;
-#vertical-align:middle; /* IE6,IE7 */
-}
 
 
 #sorting {
@@ -232,9 +182,6 @@ overflow:visible;
 
 
 
-main {
-  padding-left: 17px;
-}
 
 .facets {
   background-color: $stone;
@@ -258,13 +205,6 @@ main {
 }
 
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .module--facets {
   background-color: #d6d1c5;
@@ -373,16 +313,6 @@ main {
   height: 0;
   overflow: hidden;
 }
-
-
-.header {
-  display: block;
-  width: 1466px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 50505;
-}
-
 
 
 .did-you-mean {
