@@ -2053,7 +2053,7 @@ footer {
 
 .search-results {
   float: left;
-  width: 70%; }
+  width: 73%; }
 
 #fb-matching {
   color: #131313;
@@ -2136,7 +2136,7 @@ footer {
   border-bottom: 1px solid #d6d2c4;
   float: left;
   padding: 0;
-  width: 70%; }
+  width: 73%; }
   .collections li {
     background-color: #ebe9e2;
     -webkit-border-top-left-radius: 4px;
@@ -2191,8 +2191,10 @@ footer {
 .facets {
   background-color: #d6d2c4;
   border-radius: 4px;
-  float: left;
-  margin-top: 20px; }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left; }
   .facets h2 {
     font-size: 20px;
     padding-bottom: 40px; }
@@ -2201,11 +2203,11 @@ footer {
   float: left; }
 
 .facets {
-  padding: 0 20px; }
+  padding: 0 20px;
+  width: 26.90224796%; }
 
 .module--facets {
   background-color: #d6d1c5;
-  max-width: 320px;
   padding: 20px 1.6%; }
   .module--facets h2 {
     float: left;
@@ -2249,6 +2251,11 @@ footer {
     font-weight: bold;
     position: absolute;
     right: -20px; }
+
+.facet > * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .facet {
   clear: both;
