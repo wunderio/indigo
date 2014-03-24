@@ -19,6 +19,8 @@ $stone: #d6d2c4;
 }
 
 .search-results {
+  float: left;
+  width: 70%;
 }
 #fb-matching {
   color: #131313;
@@ -114,10 +116,9 @@ $stone: #d6d2c4;
 
 .collections {
   border-bottom: 1px solid #d6d2c4;
-  clear: both;
   float: left;
   padding: 0;
-  width: 100%;
+  width: 70%;
   li {
     background-color: lighten(#d6d2c4, 10%);
     display: block;
@@ -186,15 +187,14 @@ $stone: #d6d2c4;
 .facets {
   background-color: $stone;
   float: left;
-  height: 1500px;
   margin-top: 20px;
 
   h2 {
     font-size: 20px;
     padding-bottom: 40px;
   }
-
 }
+
 .results-page {
   float: left;
 }
