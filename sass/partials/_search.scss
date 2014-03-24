@@ -11,10 +11,14 @@ $stone: #d6d2c4;
   input {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
+    height: 30px;
     line-height: 24px;
-    height: 28px;
+    margin-right: 10px;
     padding: 0 0 0 10px;
     width: 70%;
+  }
+  button {
+    padding: .5em 10px;
   }
 }
 
@@ -34,7 +38,7 @@ $stone: #d6d2c4;
   font-weight: bold;
 }
 .fb-best-bet {
-  border: 3px solid darken(#4c98e5, 10%);
+  border: 4px solid darken(#4c98e5, 17%);
   border-left: none;
   border-right: none;
   background-color: #4c98e5;
@@ -42,6 +46,7 @@ $stone: #d6d2c4;
   margin: 0 30px 30px 30px;
   padding: 10px 20px;
   h3 {
+    margin-top: 0; // override
     margin-bottom: 10px;
     font-size: 20px;
     a {
@@ -321,6 +326,7 @@ $stone: #d6d2c4;
   }
   label {
     font-size: 14px;
+    font-weight: normal;
     line-height: 1;
     margin: 0;
     padding: 0;
