@@ -29,7 +29,7 @@ $stone: #d6d2c4;
 #fb-matching {
   color: #131313;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
   margin-right: 30px;
   float: right;
@@ -156,6 +156,8 @@ $stone: #d6d2c4;
     padding: 5px 10px 7px;
     a {
       font-weight: bold;
+      position: relative;
+      top: 2px;
     }
   }
 }
@@ -164,10 +166,11 @@ $stone: #d6d2c4;
 
 
 #sorting {
+  float: left;
+  font-size: 14px;
   margin-left: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
-  float: left;
 }
 
 .fb-page-nav {
@@ -215,7 +218,7 @@ $stone: #d6d2c4;
 
 
 .facets {
-  padding: 0 20px;
+  padding: 20px 20px 0;
   width: 26.90224796%;
 }
 
@@ -223,7 +226,6 @@ $stone: #d6d2c4;
 
 .module--facets {
   background-color: #d6d1c5;
-  padding: 20px 1.6%;
   h2 {
     float: left;
     font-size: 20px;
@@ -259,7 +261,7 @@ $stone: #d6d2c4;
 }
 .pillbox__item {
   font-size: 14px;
-  margin: 10px 30px 7px 10px;
+  margin: 7px 30px 7px 10px;
   padding: 0;
   position: relative;
 }
