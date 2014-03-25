@@ -2041,8 +2041,8 @@ footer {
 /* Search */
 #fb-queryform {
   padding-left: 20px;
-  margin: 0 auto 10px;
-  max-width: 400px; }
+  margin: 0 auto 20px;
+  max-width: 420px; }
   #fb-queryform input {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
