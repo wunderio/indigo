@@ -2056,26 +2056,26 @@ footer {
 
 .search-results {
   float: left;
-  width: 73%; }
+  width: 68.7%; }
 
 #fb-matching {
   color: #131313;
   font-size: 14px;
   margin-top: 15px;
   margin-bottom: 10px;
-  margin-right: 30px;
+  margin-right: 40px;
   float: right; }
 
 #fb-total-matching {
   font-weight: bold; }
 
 .fb-best-bet {
-  border: 4px solid #1c6dbf;
+  border: 4px solid #1667c3;
   border-left: none;
   border-right: none;
-  background-color: #4c98e5;
+  background-color: #4693EA;
   clear: both;
-  margin: 0 30px 30px 30px;
+  margin: 0 40px 30px 40px;
   padding: 10px 20px; }
   .fb-best-bet h3 {
     margin-top: 0;
@@ -2095,7 +2095,7 @@ footer {
 
 #fb-results {
   clear: both;
-  padding: 0 30px; }
+  padding: 0 40px; }
   #fb-results li {
     list-style: none;
     margin: 0 0 20px;
@@ -2140,7 +2140,7 @@ footer {
   border-bottom: 1px solid #d6d2c4;
   float: left;
   padding: 0;
-  width: 73%; }
+  width: 68.7%; }
   .collections li {
     background-color: #ebe9e2;
     -webkit-border-top-left-radius: 4px;
@@ -2152,7 +2152,7 @@ footer {
     margin-left: 10px;
     padding: 6px 10px; }
     .collections li:first-child {
-      margin-left: 30px; }
+      margin-left: 40px; }
     .collections li:hover {
       background-color: #dedbd0; }
     .collections li a {
@@ -2173,7 +2173,7 @@ footer {
 #sorting {
   float: left;
   font-size: 14px;
-  margin-left: 30px;
+  margin-left: 40px;
   margin-top: 10px;
   margin-bottom: 20px; }
 
@@ -2211,15 +2211,16 @@ footer {
 
 .facets {
   padding: 20px 20px 0;
-  width: 26.90224796%; }
+  width: 31.3%; }
 
 .module--facets {
   background-color: #d6d1c5; }
   .module--facets h2 {
     float: left;
     font-size: 20px;
+    font-weight: bold;
     line-height: 1;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
     padding: 0; }
   .module--facets .close {
     color: #131313;
@@ -2233,8 +2234,7 @@ footer {
 
 .pillboxes {
   float: left;
-  margin: 10px 0;
-  padding: 0; }
+  margin-bottom: 10px; }
 
 .pillbox {
   background-color: #ebebeb;
