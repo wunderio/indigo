@@ -2343,3 +2343,8 @@ p cite {
 
 #main {
   padding-top: 0; }
+
+.hide-facet {
+  display: none;
+  height: 0;
+  overflow: hidden; }
