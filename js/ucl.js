@@ -7,29 +7,29 @@ $(document).ready(function(){
 	$('.tabbed ul li:first').addClass('active');
 
 	$('.tabbed ul li a').click(function(){
-	$('.tabbed ul li').removeClass('active');
-	$(this).parent().addClass('active');
-	var currentTab = $(this).attr('href');
-	$('.tabbed div').hide();
-	$(currentTab).show();
-	return false;
+		$('.tabbed ul li').removeClass('active');
+		$(this).parent().addClass('active');
+		var currentTab = $(this).attr('href');
+		$('.tabbed div').hide();
+		$(currentTab).show();
+		return false;
 	});
 
 
 	var allPanels = $('.accordion > dd').hide();
 
-  $('.accordion > dt > a').click(function() {
-    allPanels.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
-  });
+	$('.accordion > dt > a').click(function() {
+		allPanels.slideUp();
+		$(this).parent().next().slideDown();
+		return false;
+	});
 
 
-if (document.documentElement.clientWidth < 767) {
+	if (document.documentElement.clientWidth < 767) {
 
 
 	//Add Inactive Class To All Accordion Headers
-		$('.accordion-header').addClass('inactive-header');
+	$('.accordion-header').addClass('inactive-header');
 
 		//Set The Accordion Content Width
 		//var contentwidth = $('.accordion-header').width();
@@ -44,17 +44,17 @@ if (document.documentElement.clientWidth < 767) {
 			if($(this).is('.inactive-header')) {
 //				$('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
 //				$(this).toggleClass('active-header').toggleClass('inactive-header');
-				$(this).removeClass('inactive-header').addClass('active-header');
-				$(this).next().slideToggle().toggleClass('open-content');
-			}
-
-			else {
-				$(this).removeClass('active-header').addClass('inactive-header');
-				$(this).next().slideToggle().toggleClass('open-content');
-			}
-		});
-
+$(this).removeClass('inactive-header').addClass('active-header');
+$(this).next().slideToggle().toggleClass('open-content');
 }
+
+else {
+	$(this).removeClass('active-header').addClass('inactive-header');
+	$(this).next().slideToggle().toggleClass('open-content');
+}
+});
+
+	}
 
 	// Search things
 
@@ -63,9 +63,10 @@ if (document.documentElement.clientWidth < 767) {
 // removes pillbox > needs to remove from facet
 // # needs improving so only removes one item
 // currently removes all created elements
-$('.pillbox__link').click(function() {
-  $(this).parent().remove();
-  return false;
+$('.pillbox').click(function() {
+	event.preventDefault();
+	$(this).remove();
+	//return false;
 });
 
 // face show/hide
@@ -80,14 +81,68 @@ $('.facet h4').click(function() {
 
 // create pillbox and use the relevant checked checkboxs label as the text
 $('.facet-list__item input').click(function() {
-  if ($(this).attr('checked')) {
-
-  }
-  else {
-    $('.pillboxes').append('<li class="pillbox"><h4 class="pillbox__item"><a class="pillbox__link" href="">A Thing <span>x</span></a></h4></li>');
-  }
+	if ($(this).attr('checked')) {
+		$('.pillboxes').append('<li class="pillbox"><h4 class="pillbox__item"><a class="pillbox__link" href="">A Thing <span>x</span></a></h4></li>');
+	}
+	else {
+		// crude for demo needs fixing properly
+		$('.pillbox:last').remove();
+	//	$('.pillboxes').last('.pillbox').remove();
+	}
 });
 
 
 
+
+$('.off-canvas').click(function() {
+  $('aside').toggleClass('hide-facet');
+  $('.search-results, .search-meta').toggleClass('move');
+  $('.close-me').toggleClass('showit');
+  return false;
 });
+
+$('.close').click(function() {
+  $('aside').removeClass('hide-facet');
+  $('.search-results, .search-meta').removeClass('move');
+  $('.close-me').removeClass('showit');
+  return false;
+});
+
+$('.close-me').click(function() {
+  $('aside').removeClass('hide-facet');
+  $('.search-results, .search-meta').removeClass('move');
+  $('.close-me').removeClass('showit');
+  return false;
+});
+
+
+
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		clearTimeout(timeout);
+		timeout = setTimeout(function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		}, wait);
+		if (immediate && !timeout) func.apply(context, args);
+	};
+};
+
+function debounce(a,b,c){var d;return function(){var e=this,f=arguments;clearTimeout(d),d=setTimeout(function(){d=null,c||a.apply(e,f)},b),c&&!d&&a.apply(e,f)}}
+
+
+
+var myEfficientFn = debounce(function() {
+  $('aside').removeClass('hide-facet');
+  $('.search-results, .search-meta').removeClass('move');
+  $('.close-me').removeClass('showit');
+}, 0);
+
+window.addEventListener('resize', myEfficientFn);
+
+
+});
+
+
