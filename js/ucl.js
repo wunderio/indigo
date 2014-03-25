@@ -91,56 +91,27 @@ $('.facet-list__item input').click(function() {
 	}
 });
 
-
-
-
 $('.off-canvas').click(function() {
-  $('aside').toggleClass('hide-facet');
-  $('.search-results, .search-meta').toggleClass('move');
+  $('.facets').toggleClass('hide-facet');
+  $('.search-meta, .search-results').toggleClass('move');
   $('.close-me').toggleClass('showit');
   return false;
 });
 
 $('.close').click(function() {
-  $('aside').removeClass('hide-facet');
-  $('.search-results, .search-meta').removeClass('move');
+  $('.facets').removeClass('hide-facet');
+  $('.search-meta, .search-results').removeClass('move');
   $('.close-me').removeClass('showit');
   return false;
 });
 
 $('.close-me').click(function() {
-  $('aside').removeClass('hide-facet');
-  $('.search-results, .search-meta').removeClass('move');
+  $('.facets').removeClass('hide-facet');
+  $('.search-meta, .search-results').removeClass('move');
   $('.close-me').removeClass('showit');
   return false;
 });
 
-
-
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		clearTimeout(timeout);
-		timeout = setTimeout(function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		}, wait);
-		if (immediate && !timeout) func.apply(context, args);
-	};
-};
-
-function debounce(a,b,c){var d;return function(){var e=this,f=arguments;clearTimeout(d),d=setTimeout(function(){d=null,c||a.apply(e,f)},b),c&&!d&&a.apply(e,f)}}
-
-
-
-var myEfficientFn = debounce(function() {
-  $('aside').removeClass('hide-facet');
-  $('.search-results, .search-meta').removeClass('move');
-  $('.close-me').removeClass('showit');
-}, 0);
-
-window.addEventListener('resize', myEfficientFn);
 
 
 });
