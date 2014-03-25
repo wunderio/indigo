@@ -2042,7 +2042,7 @@ footer {
 #fb-queryform {
   padding-left: 20px;
   margin: 0 auto 20px;
-  max-width: 420px; }
+  max-width: 386px; }
   #fb-queryform input {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -2055,7 +2055,7 @@ footer {
     padding: .5em 10px; }
 
 .search-results {
-  float: left;
+  float: right;
   width: 68.7%; }
 
 #fb-matching {
@@ -2075,7 +2075,7 @@ footer {
   border-right: none;
   background-color: #4693EA;
   clear: both;
-  margin: 0 40px 30px 40px;
+  margin: 0 36px 30px 36px;
   padding: 10px 20px; }
   .fb-best-bet h3 {
     margin-top: 0;
@@ -2095,7 +2095,7 @@ footer {
 
 #fb-results {
   clear: both;
-  padding: 0 40px; }
+  padding: 0 36px; }
   #fb-results li {
     list-style: none;
     margin: 0 0 20px;
@@ -2138,7 +2138,7 @@ footer {
 
 .collections {
   border-bottom: 1px solid #d6d2c4;
-  float: left;
+  float: right;
   padding: 0;
   width: 68.7%; }
   .collections li {
@@ -2152,7 +2152,7 @@ footer {
     margin-left: 10px;
     padding: 6px 10px; }
     .collections li:first-child {
-      margin-left: 40px; }
+      margin-left: 36px; }
     .collections li:hover {
       background-color: #dedbd0; }
     .collections li a {
@@ -2173,7 +2173,7 @@ footer {
 #sorting {
   float: right;
   font-size: 14px;
-  margin-right: 40px;
+  margin-right: 36px;
   margin-top: 10px;
   margin-bottom: 20px; }
 
@@ -2201,7 +2201,9 @@ footer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  float: left; }
+  float: left;
+  position: relative;
+  top: -33px; }
   .facets h2 {
     font-size: 20px;
     padding-bottom: 40px; }
