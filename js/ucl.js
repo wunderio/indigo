@@ -71,8 +71,10 @@ $('.pillbox__link').click(function() {
 // face show/hide
 // # needs fixing so doesn't hide _all_ facet-list
 $('.facet h4').click(function() {
-  event.preventDefault();
-  $('.facet-list').toggleClass('hide-facet');
+  //event.preventDefault();
+  $(this).next('.facet-list').toggleClass('hide-facet');
+  $(this).toggleClass('rounded');
+  $(this).toggleClass('upside-down');
   return false;
 });
 

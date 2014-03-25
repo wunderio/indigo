@@ -298,6 +298,7 @@ $stone: #d6d2c4;
     margin: 0 0 10px 0;
     padding: 10px;
     position: relative;
+    transition: border-radius .2s ease-in-out;
     width: 100%;
     @media(min-width:768px) {
 //      font-size: 20px;
@@ -309,6 +310,7 @@ $stone: #d6d2c4;
       position: absolute;
       right: 10px;
       top: 15px;
+      transition: all .2s ease-in-out;
       width: 13px;
     }
   }
@@ -316,9 +318,11 @@ $stone: #d6d2c4;
 
 .facet-list {
   background-color: #f3f3f3;
+  height: auto;
   list-style: none;
   margin: 10px 0 0;
   padding: 10px;
+  transition: all 1s ease-in-out;
 }
 .facet-list__item {
   margin-bottom: 10px;
@@ -335,11 +339,6 @@ $stone: #d6d2c4;
   }
 }
 
-.hide-facet {
-  display: none;
-  height: 0;
-  overflow: hidden;
-}
 
 
 .did-you-mean {
@@ -391,6 +390,17 @@ p cite {
 
 .hide-facet {
   display: none;
-  height: 0;
-  overflow: hidden;
+}
+
+.rounded {
+  border-radius: 4px;
+  transition: border-radius .1s ease-in-out;
+}
+
+
+.upside-down {
+  &:after {
+    transform: rotate(180deg);
+    transition: transform .2s ease-in-out;
+  }
 }

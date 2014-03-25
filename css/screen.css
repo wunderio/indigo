@@ -2280,6 +2280,7 @@ footer {
     margin: 0 0 10px 0;
     padding: 10px;
     position: relative;
+    transition: border-radius .2s ease-in-out;
     width: 100%; }
     .facet h4:after {
       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAQAAACyJdw0AAAASUlEQVQYV13JuQ3AIBAF0W2EDhGUQURn0wcBcgMIifuwrdEG+58U2eEIuPtfsGRKO/ujBb2DE8yBiWYQCv+adx4laB4S8VNqm66q2myHistXuwAAAABJRU5ErkJggg==");
@@ -2288,13 +2289,16 @@ footer {
       position: absolute;
       right: 10px;
       top: 15px;
+      transition: all .2s ease-in-out;
       width: 13px; }
 
 .facet-list {
   background-color: #f3f3f3;
+  height: auto;
   list-style: none;
   margin: 10px 0 0;
-  padding: 10px; }
+  padding: 10px;
+  transition: all 1s ease-in-out; }
 
 .facet-list__item {
   margin-bottom: 10px; }
@@ -2307,11 +2311,6 @@ footer {
     line-height: 1;
     margin: 0;
     padding: 0; }
-
-.hide-facet {
-  display: none;
-  height: 0;
-  overflow: hidden; }
 
 .did-you-mean {
   color: #d50032; }
@@ -2345,6 +2344,12 @@ p cite {
   padding-top: 0; }
 
 .hide-facet {
-  display: none;
-  height: 0;
-  overflow: hidden; }
+  display: none; }
+
+.rounded {
+  border-radius: 4px;
+  transition: border-radius .1s ease-in-out; }
+
+.upside-down:after {
+  transform: rotate(180deg);
+  transition: transform .2s ease-in-out; }
