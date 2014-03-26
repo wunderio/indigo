@@ -2135,39 +2135,98 @@ footer {
     #fb-results cita a {
       font-size: 14px; } }
 
+.collections li {
+  background-color: #ebe9e2;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  display: block;
+  float: left;
+  margin-left: 10px;
+  padding: 6px 10px; }
+  .collections li:first-child {
+    margin-left: 40px; }
+  .collections li:hover {
+    background-color: #dedbd0; }
+
 .collections {
-  border-bottom: 1px solid #d6d2c4;
-  float: right;
-  padding: 0; }
-  .collections li {
-    background-color: #ebe9e2;
-    -webkit-border-top-left-radius: 4px;
-    border-top-left-radius: 4px;
-    -webkit-border-top-right-radius: 4px;
-    border-top-right-radius: 4px;
+  border: 1px solid #bbb;
+  height: 30px;
+  margin: 0 auto;
+  max-width: 600px;
+  overflow: hidden;
+  padding: 5px 10px;
+  position: relative; }
+
+.show-list {
+  height: auto;
+  overflow: visible !important;
+  z-index: 5050; }
+
+.collections__item {
+  list-style: none;
+  line-height: 30px; }
+  .collections__item a {
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    color: #131313;
     display: block;
+    font-size: 14px;
+    text-decoration: none; }
+    .collections__item a span {
+      margin-left: 5px; }
+
+.collections__item--btn {
+  left: 5px;
+  height: 30px;
+  top: 5px;
+  position: absolute;
+  z-index: 5050;
+  width: 100%;
+  background-color: transparent !important; }
+  .collections__item--btn a {
+    display: block;
+    height: 30px;
+    z-index: 5050; }
+
+.collections__item--is-selected {
+  position: relative;
+  top: 0; }
+  .collections__item--is-selected:hover {
+    background-color: transparent !important; }
+
+@media (min-width: 768px) {
+  .collections__item--btn {
+    display: none !important; }
+
+  .collections {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    overflow: visible;
+    padding: 0;
+    border-bottom: 1px solid #d6d2c4;
+    float: right; }
+
+  .collections__item {
+    background-color: #ccc;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     float: left;
     margin-left: 10px;
-    padding: 6px 10px; }
-    .collections li:first-child {
-      margin-left: 40px; }
-    .collections li:hover {
-      background-color: #dedbd0; }
-    .collections li a {
-      color: #131313;
-      display: block;
-      font-size: 14px;
-      text-decoration: none; }
-      .collections li a span {
-        margin-left: 5px; }
-  .collections li.active {
+    padding: 5px 10px; }
+
+  .collections__item--is-selected {
     background-color: #d6d2c4;
     padding: 5px 10px 7px; }
-    .collections li.active a {
+    .collections__item--is-selected:hover {
+      background-color: #d6d2c4 !important; }
+    .collections__item--is-selected a {
       font-weight: bold;
       position: relative;
-      top: 2px; }
-
+      top: 2px; } }
 #sorting {
   float: right;
   font-size: 14px;
