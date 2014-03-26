@@ -105,26 +105,37 @@
 
 
 
-  <div class="search-meta">
-    <div id="fb-queryform">
-      <form action="" method="GET">
-        <div>
-          <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="ui-autocomplete-input" name="query" id="query" value="president" accesskey="q" type="text">
-          <button class="btn search" type="submit">Search</button>
-        </div>
-      </form>
+    <div class="search-meta">
+      <div id="fb-queryform">
+        <form action="" method="GET">
+          <div>
+            <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="ui-autocomplete-input" name="query" id="query" value="president" accesskey="q" type="text">
+            <button class="btn search" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+
+      <ul class="collections">
+        <li class="collections__item collections__item--btn">
+          <a href=""></a>
+        </li>
+        <li class="collections__item">
+          <a href="">Web<span>(5000)</span></a>
+        </li>
+        <li class="collections__item">
+          <a href="">People<span>(300)</span></a>
+        </li>
+        <li class="collections__item">
+          <a href="">Research<span>(1224)</span></a>
+        </li>
+        <li class="collections__item collections__item--is-selected">
+          <a href="">Courses<span>(44)</span></a>
+        </li>
+        <li class="collections__item">
+          <a href="">Other<span>(4)</span></a>
+        </li>
+      </ul>
     </div>
-
-
-
-    <ul class="collections">
-      <li class="active"><a href="">Web<span>(5000)</span></a></li>
-      <li><a href="">People<span>(300)</span></a></li>
-      <li><a href="">Research<span>(1224)</span></a></li>
-      <li><a href="">Courses<span>(44)</span></a></li>
-      <li><a href="">Other<span>(4)</span></a></li>
-    </ul>
-  </div>
 
     <div class="search-results">
       <a class="off-canvas btn search" href="#">refine</a>
@@ -268,7 +279,7 @@
       </p>
     </div><!-- end .search-results -->
 
-        <aside class="facets">
+    <aside class="facets">
       <div class="module--facets module">
         <h2>Refine your results</h2>
         <a href="#" class="close">X</a>
