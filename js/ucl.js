@@ -112,7 +112,14 @@ $('.close-me').click(function() {
   return false;
 });
 
+	// collections show/hide for mobile devices
+	$('.collections__item--btn').click(function() {
+		$('ul').toggleClass('show-list');
+		return false;
+	});
 
+	// collections put whatever collection is selected at top of list on mobile
+	$('.collections').find('.collections__item--is-selected').prependTo('.collections');
 
 });
 
