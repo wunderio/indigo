@@ -73,7 +73,7 @@ $('.pillbox').click(function() {
 // # needs fixing so doesn't hide _all_ facet-list
 $('.facet h4').click(function() {
   //event.preventDefault();
-  $(this).next('.facet-list').toggleClass('hide-facet');
+  $(this).next('.facet-list').toggleClass('show-facet');
   $(this).toggleClass('rounded');
   $(this).toggleClass('upside-down');
   return false;
@@ -92,21 +92,22 @@ $('.facet-list__item input').click(function() {
 });
 
 $('.off-canvas').click(function() {
-  $('.facets').toggleClass('hide-facet');
-  $('.search-meta, .search-results').toggleClass('move');
+  $('.facets').toggleClass('show-facet');
+  $('.search-meta').toggleClass('move');
+  $('.search-results').toggleClass('move');
   $('.close-me').toggleClass('showit');
   return false;
 });
 
 $('.close').click(function() {
-  $('.facets').removeClass('hide-facet');
+  $('.facets').removeClass('show-facet');
   $('.search-meta, .search-results').removeClass('move');
   $('.close-me').removeClass('showit');
   return false;
 });
 
 $('.close-me').click(function() {
-  $('.facets').removeClass('hide-facet');
+  $('.facets').removeClass('show-facet');
   $('.search-meta, .search-results').removeClass('move');
   $('.close-me').removeClass('showit');
   return false;
