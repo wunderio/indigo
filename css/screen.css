@@ -2102,7 +2102,6 @@ footer {
   #fb-results .fb-summary {
     color: #131313;
     /* text color */
-    font-family: "Helvetica Neue";
     font-size: 12px;
     line-height: 1.3;
     margin-bottom: 5px; }
@@ -2114,7 +2113,6 @@ footer {
     color: #4c98e5;
     /* text color */
     display: block;
-    font-family: "Helvetica Neue";
     font-size: 12px;
     font-style: normal;
     font-weight: bold; }
@@ -2137,25 +2135,22 @@ footer {
       margin: 10px 40px 20px 0;
       position: relative; } }
 
-.fb-page-nav {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: left; }
-  .fb-page-nav > a {
-    background-color: #4c98e5;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    color: #fff;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 0;
-    padding: 5px 10px;
-    text-decoration: none; }
-    .fb-page-nav > a:hover {
-      box-shadow: 0 0 3px 1px rgba(76, 152, 229, 0.3); }
-  .fb-page-nav .fb-current-result-page {
-    font-weight: bold;
-    padding: 5px 10px; }
+.fb-page-nav > a {
+  background-color: #4c98e5;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 0;
+  padding: 5px 10px;
+  text-decoration: none; }
+  .fb-page-nav > a:hover {
+    box-shadow: 0 0 3px 1px rgba(76, 152, 229, 0.3); }
+.fb-page-nav .fb-current-result-page {
+  font-weight: bold;
+  padding: 5px 10px; }
 
 @media (min-width: 768px) {
   .fb-page-nav {
