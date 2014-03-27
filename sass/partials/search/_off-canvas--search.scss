@@ -1,7 +1,10 @@
 .show-facet {
   display: block;
-  left: 0;
+  left: 20px;
   transition: left .3s ease-in-out;
+  @media (min-width: 768px) {
+    left: 0;
+  }
 }
 
 .move {
@@ -17,7 +20,7 @@
   background-color: transparent;
   left: 280px;
   transition: left .3s ease-in-out;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   height: 100%;
