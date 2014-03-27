@@ -1,0 +1,39 @@
+.show-facet {
+  display: block;
+  left: 0;
+  transition: left .3s ease-in-out;
+}
+
+.move {
+  position: relative;
+  left: 280px;
+  transition: left .3s ease-in-out;
+}
+
+.close-me {
+  left: 0;
+}
+.showit {
+  background-color: transparent;
+  left: 280px;
+  transition: left .3s ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  z-index: 5050505;
+}
+
+
+@media(min-width: 850px) {
+  .move,
+  .showit {
+    left: 320px;
+  }
+}
+@media(min-width: 930px) {
+  .off-canvas,
+  .close {
+    display: none !important;
+  }
+}
