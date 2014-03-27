@@ -113,8 +113,8 @@ $('.close-me').click(function() {
 });
 
 	// collections show/hide for mobile devices
-	$('.collections__item--btn').click(function() {
-		$('ul').toggleClass('show-list');
+	$('.collections__item--button').click(function() {
+		$('.collections').toggleClass('show-list');
 		return false;
 	});
 
