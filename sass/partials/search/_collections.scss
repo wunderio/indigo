@@ -47,7 +47,6 @@
 }
 
 .collections__item {
-//  border-top: 1px solid #ccc;
   list-style: none;
   line-height: 30px;
   &:first-child {
@@ -83,6 +82,10 @@
   }
 }
 
+@media (min-width: 600px) {
+  .collections {}
+}
+
 
 @media (min-width: 768px) {
   .collections__item--button {
@@ -95,7 +98,9 @@
     overflow: visible;
     padding: 0;
     border-bottom: 1px solid #d6d2c4;
-    float: right;
+        float: left;
+    width: 100%;
+
   }
   .collections__item {
     background-color: lighten(#d6d2c4, 10%);
@@ -129,8 +134,10 @@
   }
 }
 
-@media (min-width: 900px) {
-    .collections {
+@media (min-width: 930px) {
+  .collections {
+    float: right;
     width: 68.7%;
   }
 }
+

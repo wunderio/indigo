@@ -10,8 +10,14 @@ $stone: #d6d2c4;
   font-size: 14px;
   margin-top: 15px;
   margin-bottom: 10px;
-  margin-left: 40px;
   float: left;
+  clear: both;
+}
+@media (min-width: 768px) {
+  #fb-matching {
+    clear: none;
+    margin-left: 40px;
+  }
 }
 #fb-total-matching {
   font-weight: bold;
@@ -108,11 +114,15 @@ $stone: #d6d2c4;
 
 
 #sorting {
+  position: absolute;
+  right: 0;
+  margin: 10px 0 0;
+@media (min-width: 768px) {
   float: right;
   font-size: 14px;
-  margin-right: 40px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 10px 40px 20px 0;
+  position: relative;
+  }
 }
 
 .fb-page-nav {
@@ -291,6 +301,16 @@ $stone: #d6d2c4;
   a {
     color: #d50032;
   }
+  @media (max-width: 767px) {
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+}
+.off-canvas {
+  padding: 6px 10px;
+  float: left;
+  margin-top: 15px;
 }
 
 h3 a {
@@ -365,17 +385,7 @@ p cite {
   width: 100%;
 }
 
-.hide-facet {
-  display: none;
-  left: 0;
-  transition: left .3s ease-in-out;
-}
 
-.move {
-  position: relative;
-  left: 280px;
-  transition: left .3s ease-in-out;
-}
 
 h2 {
   margin: 0;
@@ -383,36 +393,21 @@ h2 {
 }
 
 
-.close-me {
-  left: 0;
-}
-.showit {
-  background-color: transparent;
-  left: 280px;
-  transition: left .3s ease-in-out;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  height: 100%;
-  z-index: 5050505;
+@media(min-width: 768px) {
+  .facets {
+    left: -315px;
+    width: 315px;
+  }
 }
 
 
 @media(min-width: 850px) {
-  .move,
-  .showit {
-    left: 320px;
-  }
   .facets {
-    left: -320px;
-    width: 320px;
+    left: -355px;
+    width: 355px;
   }
 }
-@media(min-width: 900px) {
-  .off-canvas,
-  .close {
-    display: none !important;
-  }
+@media(min-width: 930px) {
   .search-results {
     float: right;
     width: 68.7%;
@@ -441,3 +436,4 @@ h2 {
 
 @import "_collections";
 @import "_search-meta";
+@import "_off-canvas--search";
