@@ -2511,10 +2511,11 @@ h2 {
     line-height: 36px;
     margin-right: 10px;
     padding: 0 0 0 10px;
-    width: 74%; }
+    width: 71.5%; }
   #fb-queryform button {
     padding: 9px 10px; }
   #fb-queryform .search {
+    float: right;
     width: 20%; }
 
 @media (min-width: 768px) {
@@ -2532,8 +2533,11 @@ h2 {
     width: 80px; } }
 .show-facet {
   display: block;
-  left: 0;
+  left: 20px;
   transition: left .3s ease-in-out; }
+  @media (min-width: 768px) {
+    .show-facet {
+      left: 0; } }
 
 .move {
   position: relative;
@@ -2547,7 +2551,7 @@ h2 {
   background-color: transparent;
   left: 280px;
   transition: left .3s ease-in-out;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   height: 100%;
