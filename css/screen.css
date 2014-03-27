@@ -2139,12 +2139,14 @@ footer {
 
 .fb-page-nav {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center; }
+  text-align: left; }
   .fb-page-nav > a {
     background-color: #4c98e5;
     -webkit-border-radius: 4px;
     border-radius: 4px;
     color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 0;
     padding: 5px 10px;
@@ -2155,6 +2157,12 @@ footer {
     font-weight: bold;
     padding: 5px 10px; }
 
+@media (min-width: 768px) {
+  .fb-page-nav {
+    text-align: center; }
+    .fb-page-nav > a {
+      display: inline;
+      margin-bottom: 0; } }
 .facets {
   background-color: #d6d2c4;
   -webkit-box-sizing: border-box;
