@@ -66,7 +66,7 @@ else {
 $('.pillbox').click(function() {
 	event.preventDefault();
 	$(this).remove();
-	//return false;
+	return false;
 });
 
 // face show/hide
