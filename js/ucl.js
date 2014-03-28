@@ -73,7 +73,7 @@ $('.pillbox').click(function() {
 // # needs fixing so doesn't hide _all_ facet-list
 $('.facet h4').click(function() {
   //event.preventDefault();
-  $(this).next('.facet-list').toggleClass('show-facet');
+  $(this).next('.facet-list').toggleClass('close-facet');
   $(this).toggleClass('rounded');
   $(this).toggleClass('upside-down');
   return false;

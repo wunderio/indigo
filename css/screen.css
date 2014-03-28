@@ -2174,8 +2174,11 @@ footer {
   float: left; }
 
 .facets {
-  padding: 20px 20px 0;
+  padding: 20px 10px 0;
   width: 31.3%; }
+  @media (min-width: 768px) {
+    .facets {
+      padding: 20px 20px 0; } }
 
 .module--facets {
   background-color: #d6d1c5; }
@@ -2291,6 +2294,9 @@ footer {
   padding: 6px 10px;
   float: left;
   margin-top: 15px; }
+  @media (min-width: 768px) {
+    .off-canvas {
+      margin-left: 40px; } }
 
 h3 a {
   text-decoration: none; }
@@ -2314,22 +2320,6 @@ p cite {
   margin-left: 5px;
   color: #000;
   font-size: 14px; }
-
-#main {
-  padding-top: 0; }
-
-.rounded {
-  border-radius: 4px;
-  transition: border-radius .1s ease-in-out; }
-
-.upside-down:after {
-  transform: rotate(180deg);
-  transition: transform .2s ease-in-out; }
-
-#main {
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative; }
 
 .facets {
   left: -280px;
@@ -2568,3 +2558,13 @@ h2 {
   .off-canvas,
   .close {
     display: none !important; } }
+.close-facet {
+  display: none; }
+
+.rounded {
+  border-radius: 4px;
+  transition: border-radius .1s ease-in-out; }
+
+.upside-down:after {
+  transform: rotate(180deg);
+  transition: transform .2s ease-in-out; }
