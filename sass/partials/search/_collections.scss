@@ -24,19 +24,48 @@
 
  */
 
-.collections {
-  border: 1px solid #bbb;
-  height: 30px;
+ .collections {
+//  border: 1px solid #bbb;
+  border-radius: 4px;
+  height: 46px;
   margin: 0 auto;
   max-width: 600px;
   overflow: hidden;
-  padding: 5px 10px;
   position: relative;
+  @media (max-width: 767px) {
+    &:before {
+      background-image: url('../images/triangle.svg');
+      background-repeat: no-repeat;
+      content: '';
+      height: 17px;
+      padding: 0;
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      transition: transform 110ms ease-in-out;
+      width: 18px;
+    }
+  }
+  & * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.spinner {
+  @media (max-width: 767px) {
+    &:before {
+      transition: transform 110ms ease-in-out;
+      -webkit-transform: rotate(180deg);
+         -moz-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
 }
 
 .show-list {
   height: auto;
-  overflow: visible !important;
   z-index: 5050;
   .collections__item {
     border-top: 1px solid #ccc;
@@ -47,13 +76,17 @@
 }
 
 .collections__item {
+  background-color: lighten(#d6d2c4, 10%);
   list-style: none;
   line-height: 30px;
+  padding: 5px 10px;
   &:first-child {
+    background-color: #d6d2c4;
     border-top: none;
+    font-weight: bold;
   }
   a {
-    line-height: 30px;
+    line-height: 36px;
     margin: 0;
     padding: 0;
     color: #131313;
@@ -63,6 +96,10 @@
     span {
       margin-left: 5px;
     }
+  }
+  &:hover,
+  &:focus {
+    background-color: #d6d2c4;
   }
 }
 
@@ -98,7 +135,7 @@
     overflow: visible;
     padding: 0;
     border-bottom: 1px solid #d6d2c4;
-        float: left;
+    float: left;
     width: 100%;
 
   }
@@ -118,6 +155,9 @@
     &:hover {
       background-color: lighten(#d6d2c4, 4%);
     }
+    a {
+      line-height: 30px;
+    }
   }
   .collections__item--is-selected {
     background-color: #d6d2c4;
@@ -128,13 +168,14 @@
     }
     a {
       font-weight: bold;
+      padding-bottom: 1px;
       position: relative;
       top: 2px;
     }
   }
 }
 
-@media (min-width: 930px) {
+@media (min-width: 960px) {
   .collections {
     float: right;
     width: 68.7%;

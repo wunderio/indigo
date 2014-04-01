@@ -1,0 +1,55 @@
+
+.results__degrees {
+  clear: both;
+  ul {
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+  li {
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    vertical-align: top;
+    div {
+      font-size: 12px;
+      font-weight: normal;
+      margin-top: 5px;
+      vertical-align: baseline;
+    }
+  }
+  a {
+    color:#4C98E5; // TODO: make a variable
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 0 !important;
+    margin-bottom: 10px;
+  }
+}
+.results__degrees--UG {
+  li {
+    width: 23%;
+    padding: 0 10px;
+    margin-left: 1%;
+    &:first-child {
+      margin-left: 0;
+      padding-left: 0;
+      width: 31%;
+    }
+  }
+}
+.results__degrees--PGT,
+.results__degrees--PGD {
+  li {
+  //  width: 33.3%;
+    width: 24%;
+        padding: 0 10px;
+    margin-left: 1%;
+    &:first-child {
+      margin-left: 0;
+      padding-left: 0;
+      width: 31%;
+    }
+  }
+}
+

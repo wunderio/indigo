@@ -40,6 +40,7 @@ $stone: #d6d2c4;
     }
   }
   p {
+    font-size: 16px;
     color: #fff;
     a {
      font-size: 14px;
@@ -123,37 +124,7 @@ $stone: #d6d2c4;
   }
 }
 
-.fb-page-nav {
-  > a {
-    background-color: #4c98e5;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    color: #fff;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 0;
-    padding: 5px 10px;
-    text-decoration: none;
-    &:hover {
-      box-shadow: 0 0 3px 1px rgba(#4c98e5, .3);
-    }
-  }
-  .fb-current-result-page {
-    font-weight: bold;
-    padding: 5px 10px;
-  }
-}
 
-@media (min-width: 768px) {
-  .fb-page-nav {
-    text-align: center;
-  > a {
-      display: inline;
-      margin-bottom: 0;
-    }
-  }
-}
 
 
 .facets {
@@ -223,21 +194,31 @@ $stone: #d6d2c4;
   margin: 0 10px 10px 0;
 }
 .pillbox__item {
-  font-size: 14px;
-  margin: 7px 30px 7px 10px;
+
+  margin: 0px 20px 0px 10px;
   padding: 0;
-  position: relative;
 }
 .pillbox__link {
   color: #131313;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 35px;
+  position: relative;
   text-decoration: none;
   text-transform: none;
   span {
-    color: #bbb;
+    color: #aaa;
     font-weight: bold;
-    position: absolute;
-    right: -20px;
+    position: relative;
+    right: -10px;
+    top: 0px;
+  }
+  &:hover {
+    color: #131313;
+    text-decoration: none;
+    span {
+      color: #131313;
+    }
   }
 }
 .facet > * {
@@ -316,14 +297,7 @@ $stone: #d6d2c4;
     width: 100%;
   }
 }
-.off-canvas {
-  padding: 6px 10px;
-  float: left;
-  margin-top: 15px;
-  @media (min-width: 768px) {
-    margin-left: 40px;
-  }
-}
+
 
 h3 a {
   text-decoration: none;
@@ -393,7 +367,7 @@ h2 {
     width: 355px;
   }
 }
-@media(min-width: 930px) {
+@media(min-width: 960px) {
   .search-results {
     float: right;
     width: 68.7%;
@@ -422,9 +396,10 @@ h2 {
 
 @import "_collections";
 @import "_search-meta";
+@import "_search-pagination";
 @import "_off-canvas--search";
 
-
+@import "_search-courses";
 
 .close-facet {
   display: none;

@@ -116,6 +116,7 @@ $('.close-me').click(function() {
 	// collections show/hide for mobile devices
 	$('.collections__item--button').click(function() {
 		$('.collections').toggleClass('show-list');
+    $('.collections').toggleClass('spinner');
 		return false;
 	});
 

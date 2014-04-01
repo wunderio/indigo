@@ -1,3 +1,15 @@
+.off-canvas {
+  background: none repeat scroll 0% 0% #4693EA;
+  padding: 6px 10px;
+  float: left;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin-top: 15px;
+  @media (min-width: 768px) {
+    margin-left: 40px;
+  }
+}
+
 .show-facet {
   display: block;
   left: 20px;
@@ -34,7 +46,7 @@
     left: 320px;
   }
 }
-@media(min-width: 930px) {
+@media(min-width: 960px) {
   .off-canvas,
   .close {
     display: none !important;
