@@ -2370,7 +2370,7 @@ h2 {
  */
 .collections {
   border-radius: 4px;
-  height: 46px;
+  height: 36px;
   margin: 0 auto;
   max-width: 600px;
   overflow: hidden;
@@ -2384,7 +2384,7 @@ h2 {
       padding: 0;
       position: absolute;
       right: 10px;
-      top: 15px;
+      top: 10px;
       transition: transform 110ms ease-in-out;
       width: 18px; } }
   .collections * {
@@ -2403,7 +2403,7 @@ h2 {
   height: auto;
   z-index: 5050; }
   .show-list .collections__item {
-    border-top: 1px solid #ccc; }
+    border-top: 1px solid #d6d2c4; }
   .show-list .collections__item--button {
     border-top: none; }
 
@@ -2411,7 +2411,7 @@ h2 {
   background-color: #ebe9e2;
   list-style: none;
   line-height: 30px;
-  padding: 5px 10px; }
+  padding: 0 10px; }
   .collections__item:first-child {
     background-color: #d6d2c4;
     border-top: none;
@@ -2513,7 +2513,7 @@ h2 {
     padding: 0 0 0 10px;
     width: 71.5%; }
   #fb-queryform button {
-    padding: 11px 10px;
+    padding: 9px 10px;
     top: 1px; }
   #fb-queryform .search {
     float: right;
@@ -2561,7 +2561,7 @@ h2 {
   float: left;
   font-size: 12px;
   letter-spacing: 0.1em;
-  margin-top: 15px; }
+  margin-top: 20px; }
   @media (min-width: 768px) {
     .off-canvas {
       margin-left: 40px; } }

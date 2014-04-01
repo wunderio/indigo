@@ -25,9 +25,8 @@
  */
 
  .collections {
-//  border: 1px solid #bbb;
   border-radius: 4px;
-  height: 46px;
+  height: 36px;
   margin: 0 auto;
   max-width: 600px;
   overflow: hidden;
@@ -41,7 +40,7 @@
       padding: 0;
       position: absolute;
       right: 10px;
-      top: 15px;
+      top: 10px;
       transition: transform 110ms ease-in-out;
       width: 18px;
     }
@@ -68,7 +67,7 @@
   height: auto;
   z-index: 5050;
   .collections__item {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #d6d2c4;
   }
   .collections__item--button {
     border-top: none;
@@ -79,7 +78,7 @@
   background-color: lighten(#d6d2c4, 10%);
   list-style: none;
   line-height: 30px;
-  padding: 5px 10px;
+  padding: 0 10px;
   &:first-child {
     background-color: #d6d2c4;
     border-top: none;
