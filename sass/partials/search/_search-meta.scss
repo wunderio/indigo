@@ -30,10 +30,14 @@
     width: 75.9%;
   }
   button {
-    padding: 9px 10px;
+    padding: 8px 10px;
+    top: -1px;
   }
   .search {
     width: 20%;
+    &:hover {
+      border-bottom-color: rgba(0, 0, 0, 0.21);
+    }
   }
 }
 
