@@ -2370,6 +2370,9 @@ h2 {
  */
 .collections {
   border-radius: 4px;
+  border-width: 1px 1px 4px;
+  border-style: solid;
+  border-color: #c5c0ac;
   height: 36px;
   margin: 0 auto;
   max-width: 600px;
@@ -2401,7 +2404,8 @@ h2 {
 
 .show-list {
   height: auto;
-  z-index: 5050; }
+  z-index: 5050;
+  box-shadow: 0 2px 3px #d6d2c4; }
   .show-list .collections__item {
     border-top: 1px solid #d6d2c4; }
   .show-list .collections__item--button {
@@ -2559,14 +2563,23 @@ h2 {
       margin-bottom: 0; } }
 .off-canvas {
   background: none repeat scroll 0% 0% #4693EA;
-  padding: 6px 10px;
+  padding: 6px 10px 6px 20px;
+  position: relative;
   float: left;
+  font-family: "Helvetica Neue";
   font-size: 12px;
-  letter-spacing: 0.1em;
   margin-top: 20px; }
   @media (min-width: 768px) {
     .off-canvas {
       margin-left: 40px; } }
+  .off-canvas:before {
+    background: url("../images/carat--refine.svg") no-repeat;
+    content: '';
+    height: 8px;
+    left: 5px;
+    position: absolute;
+    top: 11px;
+    width: 8px; }
 
 .show-facet {
   display: block;

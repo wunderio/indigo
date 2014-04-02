@@ -26,6 +26,9 @@
 
  .collections {
   border-radius: 4px;
+  border-width: 1px 1px 4px;
+  border-style: solid;
+  border-color: darken(#d6d2c4, 8%);
   height: 36px;
   margin: 0 auto;
   max-width: 600px;
@@ -66,6 +69,7 @@
 .show-list {
   height: auto;
   z-index: 5050;
+  box-shadow: 0 2px 3px rgba(#d6d2c4, 1);
   .collections__item {
     border-top: 1px solid #d6d2c4;
   }

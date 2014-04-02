@@ -1,12 +1,22 @@
 .off-canvas {
   background: none repeat scroll 0% 0% #4693EA;
-  padding: 6px 10px;
+  padding: 6px 10px 6px 20px;
+  position: relative;
   float: left;
+  font-family: "Helvetica Neue";
   font-size: 12px;
-  letter-spacing: 0.1em;
   margin-top: 20px;
   @media (min-width: 768px) {
     margin-left: 40px;
+  }
+  &:before {
+    background: url('../images/carat--refine.svg') no-repeat;
+    content: '';
+    height: 8px;
+    left: 5px;
+    position: absolute;
+    top: 11px;
+    width: 8px;
   }
 }
 
