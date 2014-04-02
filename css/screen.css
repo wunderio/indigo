@@ -2515,11 +2515,11 @@ h2 {
     margin: 0;
     margin-right: 2%;
     padding: 0 0 0 10px;
-    width: 81.9%; }
+    width: 75.9%; }
   #fb-queryform button {
     padding: 9px 10px; }
   #fb-queryform .search {
-    width: 15%; }
+    width: 20%; }
 
 @media (min-width: 768px) {
   #fb-queryform {
