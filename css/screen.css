@@ -2521,9 +2521,12 @@ h2 {
     padding: 0 0 0 10px;
     width: 75.9%; }
   #fb-queryform button {
-    padding: 9px 10px; }
+    padding: 8px 10px;
+    top: -1px; }
   #fb-queryform .search {
     width: 20%; }
+    #fb-queryform .search:hover {
+      border-bottom-color: rgba(0, 0, 0, 0.21); }
 
 @media (min-width: 768px) {
   #fb-queryform {
@@ -2550,7 +2553,7 @@ h2 {
     padding: 5px 10px;
     text-decoration: none; }
     .fb-page-nav > a:hover {
-      box-shadow: 0 0 3px 1px rgba(76, 152, 229, 0.3); }
+      background-color: #034DA1; }
   .fb-page-nav .fb-current-result-page {
     font-weight: bold;
     padding: 5px 10px; }
@@ -2580,6 +2583,8 @@ h2 {
     position: absolute;
     top: 11px;
     width: 8px; }
+  .off-canvas:hover {
+    background-color: #034DA1; }
 
 .show-facet {
   display: block;
