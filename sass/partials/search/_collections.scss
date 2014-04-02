@@ -83,6 +83,7 @@
   list-style: none;
   line-height: 30px;
   padding: 0 10px;
+  transition: background-color .16s linear;
   &:first-child {
     background-color: #d6d2c4;
     border-top: none;

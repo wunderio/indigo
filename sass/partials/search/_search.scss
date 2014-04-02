@@ -193,6 +193,7 @@ $stone: #d6d2c4;
   float: left;
   list-style: none;
   margin: 0 10px 10px 0;
+  transition: background-color .16s linear;
   &:hover {
     background-color: darken(#d6d2c4, 10%);
     > .pillbox__link span {
