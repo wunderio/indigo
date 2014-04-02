@@ -2190,6 +2190,8 @@ footer {
   margin: 0 10px 10px 0; }
   .pillbox:hover {
     background-color: #c1bba6; }
+    .pillbox:hover > .pillbox__link span {
+      color: #131313; }
 
 .pillbox__item {
   margin: 0px 20px 0px 10px;
@@ -2586,9 +2588,14 @@ h2 {
     left: 5px;
     position: absolute;
     top: 11px;
+    transition: transform .3s linear;
     width: 8px; }
   .off-canvas:hover {
     background-color: #034DA1; }
+
+.spin:before {
+  transform: rotate(180deg);
+  transition: transform .3s linear; }
 
 .show-facet {
   display: block;

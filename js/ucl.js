@@ -910,6 +910,8 @@ $('.off-canvas').click(function() {
   $('.search-meta').toggleClass('move');
   $('.search-results').toggleClass('move');
   $('.close-me').toggleClass('showit');
+  $('.off-canvas').toggleClass('spin');
+
   return false;
 });
 

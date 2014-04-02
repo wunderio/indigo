@@ -16,10 +16,17 @@
     left: 5px;
     position: absolute;
     top: 11px;
+    transition: transform .3s linear;
     width: 8px;
   }
   &:hover {
     background-color: #034DA1;
+  }
+}
+.spin {
+  &:before {
+    transform: rotate(180deg);
+    transition: transform .3s linear;
   }
 }
 
