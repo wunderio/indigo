@@ -919,6 +919,7 @@ $('.close').click(function() {
   $('.facets').removeClass('show-facet');
   $('.search-meta, .search-results').removeClass('move');
   $('.close-me').removeClass('showit');
+  $('.off-canvas').removeClass('spin');
   return false;
 });
 
@@ -926,6 +927,7 @@ $('.close-me').click(function() {
   $('.facets').removeClass('show-facet');
   $('.search-meta, .search-results').removeClass('move');
   $('.close-me').removeClass('showit');
+  $('.off-canvas').removeClass('spin');
   return false;
 });
 
