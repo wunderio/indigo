@@ -2175,7 +2175,7 @@ footer {
     text-decoration: none;
     vertical-align: bottom;
     background: #131313;
-    padding: 4px 5px;
+    padding: 5px 6px;
     border-radius: 50%;
     position: absolute;
     right: 16px;
@@ -2316,8 +2316,9 @@ p cite {
   width: 280px; }
 
 .search-results {
-  position: relative;
+  clear: both;
   left: 0;
+  position: relative;
   transition: left .3s ease-in-out;
   width: 100%; }
 
