@@ -2168,14 +2168,18 @@ footer {
     margin: 0 0 20px 0;
     padding: 0; }
   .module--facets .close {
-    color: #131313;
-    float: right;
-    font-weight: bold;
+    color: #fff;
     line-height: 1;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     text-decoration: none;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    background: #131313;
+    padding: 4px 5px;
+    border-radius: 50%;
+    position: absolute;
+    right: 16px;
+    top: 16px; }
 
 .pillboxes {
   float: left;

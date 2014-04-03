@@ -79,7 +79,7 @@ $stone: #d6d2c4;
     }
   }
   @media (min-width: 768px) {
-      padding: 0 40px;
+    padding: 0 40px;
   }
   .fb-summary {
     color: #131313; /* text color */
@@ -116,11 +116,11 @@ $stone: #d6d2c4;
   position: absolute;
   right: 0;
   margin: 10px 0 0;
-@media (min-width: 768px) {
-  float: right;
-  font-size: 14px;
-  margin: 10px 40px 20px 0;
-  position: relative;
+  @media (min-width: 768px) {
+    float: right;
+    font-size: 14px;
+    margin: 10px 40px 20px 0;
+    position: relative;
   }
 }
 
@@ -168,19 +168,21 @@ $stone: #d6d2c4;
     margin: 0 0 20px 0;
     padding: 0;
   }
-  @media (min-width: 768px) {
-//    font-size: 20px;
-}
-.close {
-  color: #131313;
-  float: right;
-  font-weight: bold;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  vertical-align: bottom;
-}
+
+  .close {
+    color: #fff;
+    line-height: 1;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    vertical-align: bottom;
+    background: #131313;
+    padding: 4px 5px;
+    border-radius: 50%;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
 }
 .pillboxes {
   float: left;
