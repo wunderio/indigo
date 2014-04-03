@@ -2177,18 +2177,18 @@ footer {
     margin: 0 0 20px 0;
     padding: 0; }
   .module--facets .close {
-    color: #fff;
+    color: #FFF;
     line-height: 1;
     margin: 0px;
-    padding: 0px;
     text-decoration: none;
     vertical-align: bottom;
-    background: #131313;
-    padding: 5px 6px;
+    background: none repeat scroll 0% 0% #131313;
+    padding: 7px 9px;
     border-radius: 50%;
     position: absolute;
     right: 16px;
-    top: 16px; }
+    top: 16px;
+    font-size: 12px; }
 
 .pillboxes {
   float: left;
@@ -2570,9 +2570,11 @@ h2 {
     margin-left: 5px;
     margin-right: 0;
     padding: 5px 10px;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: background .2s linear; }
     .fb-page-nav > a:hover {
-      background-color: #034DA1; }
+      background-color: #034DA1;
+      transition: background .2s linear; }
   .fb-page-nav .fb-current-result-page {
     font-weight: bold;
     padding: 5px 10px; }

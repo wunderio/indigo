@@ -183,18 +183,18 @@ $stone: #d6d2c4;
   }
 
   .close {
-    color: #fff;
+    color: #FFF;
     line-height: 1;
     margin: 0px;
-    padding: 0px;
     text-decoration: none;
     vertical-align: bottom;
-    background: #131313;
-    padding: 5px 6px;
+    background: none repeat scroll 0% 0% #131313;
+    padding: 7px 9px;
     border-radius: 50%;
     position: absolute;
     right: 16px;
     top: 16px;
+    font-size: 12px;
   }
 }
 .pillboxes {
