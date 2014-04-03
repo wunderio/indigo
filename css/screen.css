@@ -2402,10 +2402,6 @@ h2 {
       top: 10px;
       transition: transform 110ms ease-in-out;
       width: 18px; } }
-  .collections * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
 
 @media (max-width: 767px) {
   .spinner:before {
@@ -2416,8 +2412,7 @@ h2 {
 
 .show-list {
   height: auto;
-  z-index: 5050;
-  box-shadow: 0 2px 3px #d6d2c4; }
+  z-index: 5050; }
   .show-list .collections__item {
     border-top: 1px solid #d6d2c4; }
   .show-list .collections__item--button {
@@ -2444,7 +2439,7 @@ h2 {
     .collections__item a span {
       margin-left: 5px; }
   .collections__item:hover, .collections__item:focus {
-    background-color: #d6d2c4; }
+    background-color: #c1bba6; }
 
 .collections__item--button {
   border-top: none;
