@@ -2050,7 +2050,13 @@ footer {
 @media (min-width: 768px) {
   #fb-matching {
     clear: none;
+    margin-left: 10px; } }
+@media (min-width: 800px) {
+  #fb-matching {
     margin-left: 40px; } }
+@media (min-width: 768px) and (max-width: 959px) {
+  #fb-matching {
+    margin-top: 25px; } }
 #fb-total-matching {
   font-weight: bold; }
 
@@ -2135,6 +2141,9 @@ footer {
       font-size: 14px;
       margin: 10px 40px 20px 0;
       position: relative; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    #sorting {
+      margin-top: 20px; } }
 
 .facets {
   background-color: #d6d2c4;
@@ -2531,7 +2540,8 @@ h2 {
     width: 75.9%; }
   #fb-queryform button {
     padding: 8px 10px;
-    top: -1px; }
+    top: -1px;
+    transition: background .2s linear; }
   #fb-queryform .search {
     width: 20%; }
     #fb-queryform .search:hover {
@@ -2595,6 +2605,9 @@ h2 {
     width: 8px; }
   .off-canvas:hover {
     background-color: #034DA1; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    .off-canvas {
+      margin-bottom: 20px; } }
 
 .spin:before {
   transform: rotate(180deg);

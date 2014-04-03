@@ -16,7 +16,17 @@ $stone: #d6d2c4;
 @media (min-width: 768px) {
   #fb-matching {
     clear: none;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 800px) {
+  #fb-matching {
     margin-left: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 959px) {
+  #fb-matching {
+    margin-top: 25px;
   }
 }
 #fb-total-matching {
@@ -121,6 +131,9 @@ $stone: #d6d2c4;
     font-size: 14px;
     margin: 10px 40px 20px 0;
     position: relative;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    margin-top: 20px;
   }
 }
 
