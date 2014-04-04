@@ -5,7 +5,7 @@ $yellow: #f6be00;
 $stone: #d6d2c4;
 
 
-#fb-matching {
+.results-listed {
   color: #131313;
   font-size: 14px;
   margin-top: 15px;
@@ -14,22 +14,22 @@ $stone: #d6d2c4;
   clear: both;
 }
 @media (min-width: 768px) {
-  #fb-matching {
+  .results-listed {
     clear: none;
     margin-left: 10px;
   }
 }
 @media (min-width: 800px) {
-  #fb-matching {
+  .results-listed {
     margin-left: 40px;
   }
 }
 @media (min-width: 768px) and (max-width: 959px) {
-  #fb-matching {
+  .results-listed {
     margin-top: 25px;
   }
 }
-#fb-total-matching {
+.total-matching {
   font-weight: bold;
 }
 .fb-best-bet {
@@ -122,7 +122,7 @@ $stone: #d6d2c4;
 
 
 
-#sorting {
+#results-sort-by {
   position: absolute;
   right: 0;
   margin: 10px 0 0;

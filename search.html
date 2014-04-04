@@ -140,25 +140,32 @@
     <!-- search-results__meta -->
 
     <div class="search-results">
+
+      <!-- button for off-canvas on narrow viewports -->
       <a class="off-canvas btn" href="#">Refine</a>
-      <p id="fb-matching" class="fb-with-faceting">
-        <span class="fb-result-count" id="fb-page-start">1</span> -
-        <span class="fb-result-count" id="fb-page-end">10</span> of
-        <span class="fb-result-count" id="fb-total-matching">6,958</span>
+
+      <!-- results-listed -->
+      <p class="results-listed">
+        <span class="page-start">1</span> -
+        <span class="page-end">10</span> of
+        <span class="total-matching">6,958</span>
         results found for <strong class="results-query">president</strong>.
-        <!--<span class="did-you-mean">El Presidenté</span>-->
-        <span class="did-you-mean">        Did you mean: <a href="search.html?query=engineers&amp;collection=ucl-public-meta">
-          <span class="funnelback-highlight">engineers</span></a>?
+        <span class="did-you-mean">Did you mean: <a href="search.html?query=engineers&amp;collection=ucl-public-meta">
+          <span class="search-highlight">engineers</span></a>?
         </span>
-      </p> <!-- #fb-matching -->
-      <div id="sorting">
+      </p>
+      <!-- results-listed -->
+
+      <!-- results sort by option -->
+      <div id="results-sort-by">
         <select name="select">
           <option value="value1" selected>Sort By</option>
           <option value="value2">Author</option>
           <option value="value3">A-Z</option>
           <option value="value4">Z-A</option>
         </select>
-      </div> <!-- ends #sorting -->
+      </div>
+      <!-- results sort by option -->
 
       <!-- FEATURED PAGES (BEST BETS) -->
       <div class="fb-best-bet">

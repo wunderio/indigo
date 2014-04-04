@@ -2039,7 +2039,7 @@ footer {
     width: 46.79688%;
     clear: left; } }
 /* Search */
-#fb-matching {
+.results-listed {
   color: #131313;
   font-size: 14px;
   margin-top: 15px;
@@ -2048,16 +2048,16 @@ footer {
   clear: both; }
 
 @media (min-width: 768px) {
-  #fb-matching {
+  .results-listed {
     clear: none;
     margin-left: 10px; } }
 @media (min-width: 800px) {
-  #fb-matching {
+  .results-listed {
     margin-left: 40px; } }
 @media (min-width: 768px) and (max-width: 959px) {
-  #fb-matching {
+  .results-listed {
     margin-top: 25px; } }
-#fb-total-matching {
+.total-matching {
   font-weight: bold; }
 
 .fb-best-bet {
@@ -2131,18 +2131,18 @@ footer {
     #fb-results cita a {
       font-size: 14px; } }
 
-#sorting {
+#results-sort-by {
   position: absolute;
   right: 0;
   margin: 10px 0 0; }
   @media (min-width: 768px) {
-    #sorting {
+    #results-sort-by {
       float: right;
       font-size: 14px;
       margin: 10px 40px 20px 0;
       position: relative; } }
   @media (min-width: 768px) and (max-width: 959px) {
-    #sorting {
+    #results-sort-by {
       margin-top: 20px; } }
 
 .facets {
