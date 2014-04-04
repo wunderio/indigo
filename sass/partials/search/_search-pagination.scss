@@ -1,32 +1,63 @@
-.fb-page-nav {
-  clear: both;
-  > a {
-    background-color: #4c98e5;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    color: #fff;
+.results-nav__list {
+  display: inline-block;
+  > li {
     display: inline-block;
     margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 0;
-    padding: 5px 10px;
+
     text-decoration: none;
-    transition: background .2s linear;
-    &:hover {
+    a {
+      background-color: #4c98e5;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      color: #fff;
+      padding: 5px 10px;
+      transition: background .2s linear;
+    }
+    &:hover > a{
       background-color: #034DA1;
+      text-decoration: none;
       transition: background .2s linear;
     }
   }
-  .fb-current-result-page {
+  .current-page {
     font-weight: bold;
     padding: 5px 10px;
   }
 }
+.results-nav {
+  p {
+    display: inline-block;
+    line-height: 32px;
+  }
+  .fb-current-result-page {
+    display: inline-block;
+  }
+  .next-results {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    position: relative;
+    text-decoration: none;
+    background-color: #4c98e5;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 4px 10px;
+    transition: background .2s linear;
+    &:hover {
+      background-color: #034DA1;
+      text-decoration: none;
+      transition: background .2s linear;
+    }
+  }
+}
 
 @media (min-width: 768px) {
-  .fb-page-nav {
+  .results-nav {
     text-align: center;
-  > a {
+    > a {
       display: inline;
       margin-bottom: 0;
     }

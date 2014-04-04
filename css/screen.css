@@ -2060,75 +2060,76 @@ footer {
 .total-matching {
   font-weight: bold; }
 
-.fb-best-bet {
+.result__item--best-bet {
   border: 4px solid #1667c3;
   border-left: none;
   border-right: none;
   background-color: #4693EA;
   clear: both;
   margin: 0 0 30px;
-  padding: 10px 20px; }
-  .fb-best-bet h3 {
+  padding: 10px 40px; }
+  .result__item--best-bet .result__title {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 20px; }
-    .fb-best-bet h3 a {
+    .result__item--best-bet .result__title a {
       color: #131313;
       color: #fff; }
-  .fb-best-bet p {
+  .result__item--best-bet .result__text {
     font-size: 16px;
     color: #fff; }
-    .fb-best-bet p a {
-      font-size: 14px;
-      color: #131313;
-      /* text color */
-      color: #fff;
-      font-style: normal; }
+  .result__item--best-bet .result__link {
+    font-size: 14px;
+    color: #131313;
+    /* text color */
+    color: #fff;
+    font-style: normal; }
   @media (min-width: 768px) {
-    .fb-best-bet {
+    .result__item--best-bet {
       margin: 0 40px 30px 40px; } }
 
 #fb-results {
   clear: both; }
-  #fb-results li {
-    list-style: none;
-    margin: 0 0 20px;
-    padding: 0 0 4px; }
-  #fb-results h3 {
-    line-height: 1.1;
-    margin: 0;
-    margin-bottom: 10px; }
-    #fb-results h3 a {
-      color: #131313;
-      /* text color */
-      font-size: 18px;
-      font-weight: bold; }
   @media (min-width: 768px) {
     #fb-results {
       padding: 0 40px; } }
-  #fb-results .fb-summary {
+
+.result__item {
+  list-style: none; }
+
+.result__item--web {
+  margin: 0 0 20px;
+  padding: 0 0 4px; }
+  .result__item--web .result__title {
+    line-height: 1.1;
+    margin: 0;
+    margin-bottom: 10px; }
+    .result__item--web .result__title a {
+      color: #131313;
+      font-size: 18px;
+      font-weight: bold; }
+  .result__item--web .result__summary {
     color: #131313;
     /* text color */
     font-size: 12px;
     line-height: 1.3;
     margin-bottom: 5px; }
     @media (min-width: 1200px) {
-      #fb-results .fb-summary {
+      .result__item--web .result__summary {
         line-height: 1.5;
         word-spacing: 3px; } }
-  #fb-results cite a {
+  .result__item--web .result__link {
     color: #4c98e5;
-    /* text color */
     display: block;
     font-size: 12px;
     font-style: normal;
     font-weight: bold; }
   @media (min-width: 768px) {
-    #fb-results h3 a {
+    .result__item--web .result__title a {
       font-size: 20px; }
-    #fb-results .fb-summary {
+    .result__item--web .result__summary {
       font-size: 16px; }
-    #fb-results cita a {
+    .result__item--web .result__link {
       font-size: 14px; } }
 
 #results-sort-by {
@@ -2406,6 +2407,7 @@ h2 {
     .collections__list:before {
       background-image: url("../images/triangle.svg");
       background-repeat: no-repeat;
+      border-radius: 0;
       content: '';
       height: 17px;
       padding: 0;
@@ -2561,31 +2563,55 @@ h2 {
 
   .search {
     width: 80px; } }
-.fb-page-nav {
-  clear: both; }
-  .fb-page-nav > a {
-    background-color: #4c98e5;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    color: #fff;
+.results-nav__list {
+  display: inline-block; }
+  .results-nav__list > li {
     display: inline-block;
     margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 0;
-    padding: 5px 10px;
-    text-decoration: none;
-    transition: background .2s linear; }
-    .fb-page-nav > a:hover {
-      background-color: #034DA1;
+    text-decoration: none; }
+    .results-nav__list > li a {
+      background-color: #4c98e5;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      color: #fff;
+      padding: 5px 10px;
       transition: background .2s linear; }
-  .fb-page-nav .fb-current-result-page {
+    .results-nav__list > li:hover > a {
+      background-color: #034DA1;
+      text-decoration: none;
+      transition: background .2s linear; }
+  .results-nav__list .current-page {
     font-weight: bold;
     padding: 5px 10px; }
 
+.results-nav p {
+  display: inline-block;
+  line-height: 32px; }
+.results-nav .fb-current-result-page {
+  display: inline-block; }
+.results-nav .next-results {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  position: relative;
+  text-decoration: none;
+  background-color: #4c98e5;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  padding: 4px 10px;
+  transition: background .2s linear; }
+  .results-nav .next-results:hover {
+    background-color: #034DA1;
+    text-decoration: none;
+    transition: background .2s linear; }
+
 @media (min-width: 768px) {
-  .fb-page-nav {
+  .results-nav {
     text-align: center; }
-    .fb-page-nav > a {
+    .results-nav > a {
       display: inline;
       margin-bottom: 0; } }
 .off-canvas {
