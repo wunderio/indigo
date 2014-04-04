@@ -907,7 +907,7 @@ $('.facet-list__item input').click(function() {
 
 $('.off-canvas').click(function() {
   $('.facets').toggleClass('show-facet');
-  $('.search-meta').toggleClass('move');
+  $('.search-results__meta').toggleClass('move');
   $('.search-results').toggleClass('move');
   $('.close-me').toggleClass('showit');
   $('.off-canvas').toggleClass('spin');
@@ -917,7 +917,7 @@ $('.off-canvas').click(function() {
 
 $('.close').click(function() {
   $('.facets').removeClass('show-facet');
-  $('.search-meta, .search-results').removeClass('move');
+  $('.search-results__meta, .search-results').removeClass('move');
   $('.close-me').removeClass('showit');
   $('.off-canvas').removeClass('spin');
   return false;
@@ -925,7 +925,7 @@ $('.close').click(function() {
 
 $('.close-me').click(function() {
   $('.facets').removeClass('show-facet');
-  $('.search-meta, .search-results').removeClass('move');
+  $('.search-results__meta, .search-results').removeClass('move');
   $('.close-me').removeClass('showit');
   $('.off-canvas').removeClass('spin');
   return false;
