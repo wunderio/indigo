@@ -1,10 +1,10 @@
-.search-meta {
+.search-results__meta {
   left: 0;
   position: relative;
   transition: left .3s ease-in-out;
   width: 100%;
 }
-#fb-queryform {
+.search-box {
   & * {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -43,7 +43,7 @@
 }
 
 @media (min-width: 768px) {
-  #fb-queryform {
+  .search-box {
     border-bottom: none;
     margin: 0 auto 30px;
     max-width: 560px;

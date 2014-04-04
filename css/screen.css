@@ -2389,7 +2389,10 @@ h2 {
     </ul>
 
  */
-.collections {
+.collection {
+  position: relative; }
+
+.collections__list {
   border-radius: 4px;
   border-width: 1px 1px 4px;
   border-style: solid;
@@ -2400,7 +2403,7 @@ h2 {
   overflow: hidden;
   position: relative; }
   @media (max-width: 619px) {
-    .collections:before {
+    .collections__list:before {
       background-image: url("../images/triangle.svg");
       background-repeat: no-repeat;
       content: '';
@@ -2421,23 +2424,23 @@ h2 {
 
 .show-list {
   height: auto;
-  z-index: 5050; }
+  z-index: 1984; }
   .show-list .collections__item {
     border-top: 1px solid #d6d2c4; }
   .show-list .collections__item--button {
     border-top: none; }
 
-.collections__item {
+.list__item {
   background-color: #ebe9e2;
   list-style: none;
   line-height: 30px;
   padding: 0 10px;
   transition: background-color .16s linear; }
-  .collections__item:first-child {
+  .list__item:first-child {
     background-color: #d6d2c4;
     border-top: none;
     font-weight: bold; }
-  .collections__item a {
+  .list__item a {
     line-height: 36px;
     margin: 0;
     padding: 0;
@@ -2445,12 +2448,12 @@ h2 {
     display: block;
     font-size: 14px;
     text-decoration: none; }
-    .collections__item a span {
+    .list__item a span {
       margin-left: 5px; }
-  .collections__item:hover, .collections__item:focus {
+  .list__item:hover, .list__item:focus {
     background-color: #c1bba6; }
 
-.collections__item--button {
+.collections-list__show-hide {
   border-top: none;
   left: 5px;
   height: 30px;
@@ -2459,16 +2462,16 @@ h2 {
   z-index: 5050;
   background-color: transparent !important;
   width: 100%; }
-  .collections__item--button a {
+  .collections-list__show-hide a {
     display: block;
     height: 30px;
     z-index: 5050; }
 
 @media (min-width: 620px) {
-  .collections__item--button {
+  .collections-list__show-hide {
     display: none !important; }
 
-  .collections {
+  .collections__list {
     border: none;
     height: auto;
     max-width: 100%;
@@ -2478,7 +2481,7 @@ h2 {
     float: left;
     width: 100%; }
 
-  .collections__item {
+  .list__item {
     background-color: #ebe9e2;
     -webkit-border-top-left-radius: 4px;
     border-top-left-radius: 4px;
@@ -2488,45 +2491,45 @@ h2 {
     float: left;
     margin-left: 10px;
     padding: 2px 10px; }
-    .collections__item:hover {
+    .list__item:hover {
       background-color: #dedbd0; }
-    .collections__item a {
+    .list__item a {
       line-height: 30px; }
 
-  .collections__item--is-selected {
+  .list__item--is-selected {
     background-color: #d6d2c4;
     padding: 0 10px 4px; }
-    .collections__item--is-selected:hover {
+    .list__item--is-selected:hover {
       background-color: #d6d2c4 !important; }
-    .collections__item--is-selected a {
+    .list__item--is-selected a {
       font-weight: bold;
       position: relative;
       top: 3px; } }
 @media (min-width: 760px) {
-  .collections .collections__item:first-child {
+  .collections__list .list__item:first-child {
     margin-left: 40px; } }
 @media (min-width: 960px) {
-  .collections {
+  .collections__list {
     float: right;
     width: 68.7%; } }
-.search-meta {
+.search-results__meta {
   left: 0;
   position: relative;
   transition: left .3s ease-in-out;
   width: 100%; }
 
-#fb-queryform {
+.search-box {
   width: 100%;
   clear: both;
   padding: 0 20px;
   position: relative;
   left: -20px;
   margin-bottom: 20px; }
-  #fb-queryform * {
+  .search-box * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  #fb-queryform input {
+  .search-box input {
     border: 1px solid #aaa;
     border-radius: 4px;
     -webkit-box-shadow: none;
@@ -2538,22 +2541,22 @@ h2 {
     margin-right: 2%;
     padding: 0 0 0 10px;
     width: 75.9%; }
-  #fb-queryform button {
+  .search-box button {
     padding: 8px 10px;
     top: -1px;
     transition: background .2s linear; }
-  #fb-queryform .search {
+  .search-box .search {
     width: 20%; }
-    #fb-queryform .search:hover {
+    .search-box .search:hover {
       border-bottom-color: rgba(0, 0, 0, 0.21); }
 
 @media (min-width: 768px) {
-  #fb-queryform {
+  .search-box {
     border-bottom: none;
     margin: 0 auto 30px;
     max-width: 560px;
     padding: 0; }
-    #fb-queryform input {
+    .search-box input {
       width: 75%; }
 
   .search {

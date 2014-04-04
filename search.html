@@ -76,11 +76,11 @@
 
       </header>
 
-<!--       <div class="site-brand">
+      <div class="site-brand">
 
         <p class="photograph-description">A nascent retina, generated from a 3D embryonic stem cell culture</p>
 
-      </div> -->
+      </div>
 
     </div><!-- end .photograph -->
 
@@ -98,44 +98,46 @@
 
   <div id="main" class="clearfix">
 
-    <!-- <div id="content"> -->
+    <div class="search-results__meta">
 
-    <!-- start main slot where silva content gets rendered-->
-
-
-
-
-    <div class="search-meta">
-      <div id="fb-queryform">
-        <form action="" method="GET">
-          <div>
-            <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="ui-autocomplete-input" name="query" id="query" value="president" accesskey="q" type="text">
-            <button class="btn search" type="submit">Search</button>
-          </div>
+      <!-- search-box -->
+      <div class="search-box">
+        <form action="">
+          <input type="text" />
+          <button class="btn search">Search</button>
         </form>
       </div>
+      <!-- search-box -->
 
-      <ul class="collections">
-        <li class="collections__item collections__item--button">
-          <a href=""></a>
-        </li>
-        <li class="collections__item">
-          <a href="">Web<span>(5000)</span></a>
-        </li>
-        <li class="collections__item">
-          <a href="">People<span>(300)</span></a>
-        </li>
-        <li class="collections__item">
-          <a href="">Research<span>(1224)</span></a>
-        </li>
-        <li class="collections__item collections__item--is-selected">
-          <a href="">Courses<span>(44)</span></a>
-        </li>
-        <li class="collections__item">
-          <a href="">Other<span>(4)</span></a>
-        </li>
-      </ul>
+      <div class="collection">
+
+        <!-- blank div for show/hide of collections on narrow viewports -->
+        <div class="collections-list__show-hide"></div>
+
+        <!-- collections__list -->
+        <ul class="collections__list">
+          <li class="list__item">
+            <a href="#">​Websites<span>(5000)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="#">Degrees<span>(300)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="#">Directory<span>(1224)</span></a>
+          </li>
+          <li class="list__item list__item--is-selected">
+            <a href="#">Research<span>(44)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="#">Media<span>(4)</span></a>
+          </li>
+        </ul>
+        <!-- collections__list -->
+
+      </div>
+      <!-- collections -->
     </div>
+    <!-- search-results__meta -->
 
     <div class="search-results">
       <a class="off-canvas btn" href="#">Refine</a>

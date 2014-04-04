@@ -932,25 +932,25 @@ $('.close-me').click(function() {
 });
 
 	// collections show/hide for mobile devices
-	$('.collections__item--button').click(function() {
-		$('.collections').toggleClass('show-list');
-    $('.collections').toggleClass('spinner');
+	$('.collections-list__show-hide').click(function() {
+		$('.collections__list').toggleClass('show-list');
+    $('.collections__list').toggleClass('spinner');
 		return false;
 	});
 
 	// collections put whatever collection is selected at top of list on mobile
-	$('.collections').find('.collections__item--is-selected').prependTo('.collections');
+	$('.collections__list').find('.list__item--is-selected').prependTo('.collections__list');
 
 });
 
 
-function debounce(a,b,c){var d;return function(){var e=this,f=arguments;clearTimeout(d),d=setTimeout(function(){d=null,c||a.apply(e,f)},b),c&&!d&&a.apply(e,f)}}
-var myEfficientFn = debounce(function() {
-  // All the taxing stuff you do
-    $('.facets').removeClass('show-facet');
-  $('.search-meta, .search-results').removeClass('move');
-  $('.close-me').removeClass('showit');
-  $('.off-canvas').removeClass('spin');
-}, 50);
+// function debounce(a,b,c){var d;return function(){var e=this,f=arguments;clearTimeout(d),d=setTimeout(function(){d=null,c||a.apply(e,f)},b),c&&!d&&a.apply(e,f)}}
+// var myEfficientFn = debounce(function() {
+//   // All the taxing stuff you do
+//     $('.facets').removeClass('show-facet');
+//   $('.search-meta, .search-results').removeClass('move');
+//   $('.close-me').removeClass('showit');
+//   $('.off-canvas').removeClass('spin');
+// }, 50);
 
-window.addEventListener('resize', myEfficientFn);
+// window.addEventListener('resize', myEfficientFn);
