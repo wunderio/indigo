@@ -62,9 +62,14 @@ mixture.json
 
 config.codekit
 
-sass/.sass-cache/
+/.sass-cache/
 
 
 **/*/.DS_Store
 
 .DS_Store
+
+
+npm-debug.log
+js/min/
+*.css.map
