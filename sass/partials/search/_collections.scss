@@ -178,6 +178,7 @@
 }
 @media (min-width: 760px) {
   .collections__list {
+    border-radius: 0;
     .list__item {
       &:first-child {
         margin-left: 40px;
@@ -192,4 +193,3 @@
     width: 68.7%;
   }
 }
-

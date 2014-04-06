@@ -2967,6 +2967,9 @@ h2 {
   }
 }
 @media (min-width: 760px) {
+  .collections__list {
+    border-radius: 0;
+  }
   .collections__list .list__item:first-child {
     margin-left: 40px;
   }
