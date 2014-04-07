@@ -2479,11 +2479,6 @@ footer hr {
   }
 }
 
-.result__item--web {
-  margin: 0 0 20px;
-  padding: 0 0 4px;
-}
-
 #results-sort-by {
   position: absolute;
   right: 0;
@@ -2721,6 +2716,8 @@ h2 {
 }
 .result__item {
   list-style: none;
+  margin: 0 0 20px;
+  padding: 0 0 4px;
 }
 .result__item .result__title {
   line-height: 1.1;

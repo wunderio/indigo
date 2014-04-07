@@ -98,135 +98,166 @@
 
   <div id="main" class="clearfix">
 
-    <!-- <div id="content"> -->
+    <div class="search-results__meta">
 
-    <!-- start main slot where silva content gets rendered-->
-
-
-
-
-    <div class="search-meta">
-      <div id="fb-queryform">
-        <form action="" method="GET">
-          <div>
-            <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="ui-autocomplete-input" name="query" id="query" value="" accesskey="q" type="text" placeholder="search...">
-            <button class="btn search" type="submit">Search</button>
-          </div>
+      <!-- search-box -->
+      <div class="search-box">
+        <form action="">
+          <input type="text" />
+          <button class="btn search">Search</button>
         </form>
       </div>
+      <!-- search-box -->
 
-      <ul class="collections">
-        <li class="collections__item collections__item--button">
-          <a href=""></a>
-        </li>
-        <li class="collections__item">
-          <a href="">Web<span>(5000)</span></a>
-        </li>
-        <li class="collections__item">
-          <a href="">People<span>(300)</span></a>
-        </li>
-        <li class="collections__item">
-          <a href="">Research<span>(1224)</span></a>
-        </li>
-        <li class="collections__item collections__item--is-selected">
-          <a href="">Courses<span>(44)</span></a>
-        </li>
-        <li class="collections__item">
-          <a href="">Other<span>(4)</span></a>
-        </li>
-      </ul>
+      <div class="collection">
+
+        <!-- blank div for show/hide of collections on narrow viewports -->
+        <div class="collections-list__show-hide"></div>
+
+        <!-- collections__list -->
+        <ul class="collections__list">
+          <li class="list__item">
+            <a href="#">​Websites<span>(5000)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="#">Degrees<span>(300)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="#">Directory<span>(1224)</span></a>
+          </li>
+          <li class="list__item list__item--is-selected">
+            <a href="#">Research<span>(44)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="#">Media<span>(4)</span></a>
+          </li>
+        </ul>
+        <!-- collections__list -->
+
+      </div>
+      <!-- collections -->
     </div>
+    <!-- search-results__meta -->
 
     <div class="search-results">
-      <a class="off-canvas btn" href="#">refine</a>
-      <p id="fb-matching" class="fb-with-faceting">
-        <span class="fb-result-count" id="fb-page-start">1</span> -
-        <span class="fb-result-count" id="fb-page-end">10</span> of
-        <span class="fb-result-count" id="fb-total-matching">6,958</span>
+
+      <!-- button for off-canvas on narrow viewports -->
+      <a class="off-canvas btn" href="#">Refine</a>
+
+      <!-- results-listed -->
+      <p class="results-listed">
+        <span class="page-start">1</span> -
+        <span class="page-end">10</span> of
+        <span class="total-matching">6,958</span>
         results found for <strong class="results-query">president</strong>.
-        <!--<span class="did-you-mean">El Presidenté</span>-->
-        <span class="did-you-mean">        Did you mean: <a href="search.html?query=engineers&amp;collection=ucl-public-meta">
-          <span class="funnelback-highlight">engineers</span></a>?
+        <span class="did-you-mean">Did you mean: <a href="search.html?query=engineers&amp;collection=ucl-public-meta">
+          <span class="search-highlight">engineers</span></a>?
         </span>
-      </p> <!-- #fb-matching -->
-      <div id="sorting">
+      </p>
+      <!-- results-listed -->
+
+      <!-- results sort by option -->
+      <div id="results-sort-by">
         <select name="select">
           <option value="value1" selected>Sort By</option>
           <option value="value2">Author</option>
           <option value="value3">A-Z</option>
           <option value="value4">Z-A</option>
         </select>
-      </div> <!-- ends #sorting -->
-
-      <!-- FEATURED PAGES (BEST BETS) -->
-      <div class="fb-best-bet">
-        <h3><a href="/search/click.cgi?&amp;collection=ucl-public-meta&amp;url=http%3A%2F%2Fwww.ucl.ac.uk%2Fprovost%2F&amp;auth=p83eE%2Fy2ou40PpXCCXCp2A&amp;type=FP&amp;profile=_default"><strong>President</strong> and Provost</a></h3>
-        <p>UCL President &Provost. UCL President & Provost Professor Michael Arthur is internationally renowned for his contribution to education and to medical research.</p>
-        <p><cite><a href="/search/click.cgi?&amp;collection=ucl-public-meta&amp;url=http%3A%2F%2Fwww.ucl.ac.uk%2Fprovost%2F&amp;auth=p83eE%2Fy2ou40PpXCCXCp2A&amp;type=FP&amp;profile=_default" title="President and Provost">http://www.ucl.ac.uk/provost/</a></cite></p>
       </div>
-      <!-- RESULTS -->
+      <!-- results sort by option -->
 
 
       <ol id="fb-results">
-
-        <li class="results__degrees results__degrees--UG">
-          <h3><a href="">Engineering (Biochemical)</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cum animi deleniti, consectetur adipisicing elit...</p>
-          <a href=""> University College London (University of London)</a>
-          <ul>
-            <li class="">Qualification<div class="">MEng (Hons)</div>
-            </li>
-            <li class="">Duration<div class="">4 Years</div>
-            </li>
-            <li class="">Study mode<div class="">Full-time</div>
-            </li>
-            <li class="">Course code<div class="">H801</div>
-            </li>
-          </ul>
+        <li class="result__item result__item--degrees result__item--degrees--UG">
+          <h3 class="result__title"><a href="">Engineering (Biochemical)</a></h3>
+          <p class="result__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cum animi deleniti, consectetur adipisicing elit...</p>
+          <a class="result__link" href=""> University College London (University of London)</a>
+          <table class="course-details" dir="ltr" width="100%" border="1"
+          			summary="Course Details">
+            	<thead>
+          		    <tr>
+          			      <th>Qualififaction</th>
+          			      <th>Duration</th>
+          			      <th>Study Mode</th>
+                <th>Course Code</th>
+          		    </tr>
+            	</thead>
+            	<tbody>
+              <tr>
+              			  <td>MEng (Hons)</td>
+          			      <td>4 Years</td>
+          			    <td>Full-time</td>
+                    <td>H801</td>
+          		    </tr>
+          	  </tbody>
+          </table>
         </li>
-        <li class="results__degrees results__degrees--PGT">
-          <h3><a href="">Engineering (Biochemical)</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cum animi deleniti, consectetur adipisicing elit...</p>
-          <a href=""> University College London (University of London)</a>
-          <ul>
-            <li class="">Qualification<div class="">MEng (Hons)</div>
-            </li>
-            <li class="">Duration<div class="">4 Years</div>
-            </li>
-            <li class="">Study mode<div class="">Full-time</div>
-            </li>
-          </ul>
+        <li class="result__item result__item--degrees result__item--degrees--PGT">
+          <h3 class="result__title"><a href="">Engineering (Biochemical)</a></h3>
+          <p class="result__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cum animi deleniti, consectetur adipisicing elit...</p>
+          <a class="result__link" href=""> University College London (University of London)</a>
+          <table class="course-details" dir="ltr" width="100%" border="1"
+                summary="Course Details">
+              <thead>
+                  <tr>
+                      <th>Qualififaction</th>
+                      <th>Duration</th>
+                      <th>Study Mode</th>
+                  </tr>
+              </thead>
+              <tbody>
+              <tr>
+                      <td>MEng (Hons)</td>
+                      <td>4 Years</td>
+                      <td>Full-time</td>
+                  </tr>
+              </tbody>
+          </table>
         </li>
-        <li class="results__degrees results__degrees--PGD">
-          <h3><a href="">Engineering (Biochemical)</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cum animi deleniti, consectetur adipisicing elit...</p>
-          <a href=""> University College London (University of London)</a>
-          <ul>
-            <li class="">Qualification<div class="">MEng (Hons)</div>
-            </li>
-            <li class="">Duration<div class="">4 Years</div>
-            </li>
-            <li class="">Study mode<div class="">Full-time</div>
-            </li>
-          </ul>
+        <li class="result__item result__item--degrees result__item--degrees--PGD">
+          <h3 class="result__title"><a href="">Engineering (Biochemical)</a></h3>
+          <p class="result__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cum animi deleniti, consectetur adipisicing elit...</p>
+          <a class="result__link" href=""> University College London (University of London)</a>
+          <table class="course-details" dir="ltr" width="100%" border="1" summary="Course Details">
+          <thead>
+            <tr>
+            <th>Qualififaction</th>
+            <th>Duration</th>
+            <th>Study Mode</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+            <td>MEng (Hons)</td>
+            <td>4 Years</td>
+            <td>Full-time</td>
+        </tr>
+    </tbody>
+</table>
         </li>
-
       </ol>
-      <!-- SEARCH: NAVIGATION -->
-      <p class="fb-page-nav">
-        Page:
-        <span class="fb-current-result-page">1</span>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=11">2</a>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=21">3</a>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=31">4</a>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=41">5</a>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=51">6</a>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=61">7</a>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=71">8</a>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=81">9</a>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=91">10</a>
-        <a href="search.html?query=president&amp;collection=ucl-public-meta&amp;sumbit=Go&amp;start_rank=11" rel="next" class="fb-next-result-page fb-page-nav">Next 10</a>
-      </p>
+      <!-- search results list -->
+
+
+      <!-- search navigation -->
+      <div class="results-nav">
+        <p>Page:</p>
+        <ol class="results-nav__list">
+          <li class="current-page"><p>1</p></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <li><a href="">5</a></li>
+          <li><a href="">6</a></li>
+          <li><a href="">7</a></li>
+          <li><a href="">8</a></li>
+          <li><a href="">9</a></li>
+          <li><a href="">10</a></li>
+        </ol>
+        <a class="next-results" href="" rel="next">Next 10</a>
+      </div>
+      <!-- search navigation -->
     </div><!-- end .search-results -->
 
     <aside class="facets">
@@ -234,23 +265,32 @@
         <h2>Refine your results</h2>
         <a href="#" class="close">X</a>
         <!--<a href="" class="close">x</a>-->
+        <!-- pillboxes -->
         <ul class="pillboxes">
+
+          <!-- pillbox item -->
           <li class="pillbox">
-            <h4 class="pillbox__item"><a class="pillbox__link" href="#">A Pillbox thing <span>x</span></a></h4>
+            <a class="pillbox__link" href="#">A Pillbox<span>x</span></a>
           </li>
+          <!-- pillbox item -->
+          <!-- pillbox item -->
           <li class="pillbox">
-            <h4 class="pillbox__item"><a class="pillbox__link" href="#">One Pillbox <span>x</span></a></h4>
+            <a class="pillbox__link" href="#">A Pillbox<span>x</span></a>
           </li>
+          <!-- pillbox item -->
+          <!-- pillbox item -->
           <li class="pillbox">
-            <h4 class="pillbox__item"><a class="pillbox__link" href="#">A really long Pillbox <span>x</span></a></h4>
+            <a class="pillbox__link" href="#">A Pillbox<span>x</span></a>
           </li>
+          <!-- pillbox item -->
+          <!-- pillbox item -->
           <li class="pillbox">
-            <h4 class="pillbox__item"><a class="pillbox__link" href="#">A long Pillbox <span>x</span></a></h4>
+            <a class="pillbox__link" href="#">A Pillbox<span>x</span></a>
           </li>
-          <li class="pillbox">
-            <h4 class="pillbox__item"><a class="pillbox__link" href="#">One Pillbox <span>x</span></a></h4>
-          </li>
+          <!-- pillbox item -->
+
         </ul>
+        <!-- pillboxes -->
         <div class="facet">
           <h4>A Facet</h4>
           <ul class="facet-list">
