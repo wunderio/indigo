@@ -1,0 +1,42 @@
+  .pillboxes {
+    float: left;
+    margin-bottom: 10px;
+  }
+  .pillbox {
+    background-color: lighten(#d6d2c4, 10%);
+    border: 1px solid darken(#d6d2c4, 20%);
+    border-radius: 4px;
+    float: left;
+    list-style: none;
+    margin: 0 10px 10px 0;
+    padding: 0 20px 0 10px;
+    transition: background-color .16s linear;
+    &:hover {
+      background-color: darken(#d6d2c4, 10%);
+      > .pillbox__link span {
+        color: #131313;
+      }
+    }
+  }
+
+  .pillbox__link {
+    color: #131313;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    span {
+      color: #aaa;
+      font-weight: bold;
+      position: relative;
+      right: -10px;
+      top: 0px;
+    }
+    &:hover {
+      color: #131313;
+      text-decoration: none;
+    }
+  }
