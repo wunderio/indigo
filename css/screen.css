@@ -3239,32 +3239,12 @@ h2 {
     display: none !important;
   }
 }
-.results__degrees {
-  clear: both;
+.result__item--degrees .result__title {
+  font-size: 20px;
 }
-.results__degrees ul {
-  margin: 10px 0 0 0;
-  padding: 0;
-}
-.results__degrees li {
-  float: left;
-  font-size: 12px;
-  font-weight: bold;
-  position: relative;
-  vertical-align: top;
-}
-.results__degrees li div {
-  font-size: 12px;
-  font-weight: normal;
-  margin-top: 5px;
-  vertical-align: baseline;
-}
-.results__degrees a {
+.result__item--degrees .result__title span {
   color: #4C98E5;
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 0 !important;
-  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .results__degrees--UG li {
