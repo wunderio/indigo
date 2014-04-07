@@ -2571,6 +2571,8 @@ footer hr {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   float: left;
+  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1;
   margin: 0 0 10px 0;
   padding: 10px;
@@ -3081,6 +3083,11 @@ h2 {
 .pillbox__link:hover {
   color: #131313;
   text-decoration: none;
+}
+
+.results-nav {
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .results-nav__list {
