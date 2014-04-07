@@ -10,14 +10,18 @@
     margin-left: 40px;
   }
   &:before {
-    background: url('../images/carat--refine.svg') no-repeat;
+
     content: '';
-    height: 8px;
+
     left: 5px;
     position: absolute;
-    top: 11px;
+    top: 10px;
     transition: transform .3s linear;
-    width: 8px;
+    width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 4px 8px 4px 0;
+border-color: transparent #ffffff transparent
   }
   &:hover {
     background-color: #034DA1;

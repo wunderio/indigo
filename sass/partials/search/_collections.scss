@@ -40,17 +40,19 @@
   position: relative;
   @media (max-width: 619px) {
     &:before {
-      background-image: url('../images/triangle.svg');
       background-repeat: no-repeat;
       border-radius: 0;
       content: '';
-      height: 17px;
       padding: 0;
       position: absolute;
       right: 10px;
       top: 10px;
       transition: transform 110ms ease-in-out;
-      width: 18px;
+      width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 16px 8px 0 8px;
+border-color: #ffffff transparent transparent 
     }
   }
 }
