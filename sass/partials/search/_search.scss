@@ -312,23 +312,7 @@ h2 {
 @import "_off-canvas--search";
 @import "_search-courses";
 
-.close-facet {
-  display: none;
-}
 
-
-.rounded {
-  border-radius: 4px;
-  transition: border-radius .1s ease-in-out;
-}
-
-
-.upside-down {
-  &:after {
-    transform: rotate(180deg);
-    transition: transform .2s ease-in-out;
-  }
-}
 
 // Search Secure Login Link
 .sign-in--search {

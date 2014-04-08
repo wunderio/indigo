@@ -37,3 +37,42 @@
     .result__link { font-size: 14px; }
   }
 }
+
+
+.result__item--person {
+  ul {
+
+  }
+  ul li {
+    margin-bottom: 0px;
+    margin-left: 0;
+  }
+  .org {
+    clear: both;
+    color: #4c98e5;
+    display: inline-block;
+    font-size: 12px;
+    p {
+      color: #131313;
+      display: inline-block;
+    }
+    a {
+      color: #4c98e5;
+      display: inline-block;
+      text-decoration: underline;
+    }
+  }
+  .tel {
+    font-size: 14px;
+  }
+  .org {
+    margin-bottom: 0.5em;
+  }
+}
+
+
+.result__item--person--secure {
+  li {
+    max-width: 60%;
+  }
+}
