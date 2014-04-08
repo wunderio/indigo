@@ -2788,6 +2788,13 @@ h2 {
 .result__item--person .org {
   margin-bottom: 0.5em;
 }
+.result__item--person .email a {
+  color: #4c98e5;
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+}
 
 .result__item--person--secure li {
   max-width: 60%;
