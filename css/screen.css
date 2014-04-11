@@ -2791,9 +2791,23 @@ h2 {
 }
 .result__item--person .tel {
   font-size: 14px;
+  line-height: 24px;
 }
 .result__item--person .org {
   margin-bottom: 0.5em;
+}
+.result__item--person .email {
+  padding-left: 20px;
+  line-height: 24px;
+  position: relative;
+}
+.result__item--person .email:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  width: 18px;
+  height: 12px;
+  top: 3px;
 }
 .result__item--person .email a {
   color: #4c98e5;
@@ -2806,6 +2820,23 @@ h2 {
 }
 .result__item--person .tel {
   font-size: 16px;
+  padding-left: 20px;
+  position: relative;
+}
+.result__item--person .tel:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  width: 20px;
+  height: 18px;
+  top: 3px;
+  background-position: 0 -31px;
+}
+.result__item--person .tel--external:before {
+  background-position: 0 -67px;
+}
+.result__item--person .tel--extension:before {
+  background-position: 0 -105px;
 }
 .result__item--person .email a {
   display: block;
@@ -2815,6 +2846,10 @@ h2 {
 
 .result__item--person--secure li {
   max-width: 60%;
+}
+
+.sprite, .result__item--person .email:before, .result__item--person .tel:before {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAADFCAQAAAD+4hoMAAACKklEQVRo3u2Zu23DMBRFzwgaQSOoTRFAI2gEJhMYyAJsUmsETRC4dac+jUbQCJrAYQpK/Ig/B0hnko1BHzx+TN5LP4IqV4UCBFsW2xAahAaZgDckDWhwRQANY4CNNIBg1aBCMdMDLZOBJlqgZ7ZjPL7ScMfISGehENRwB0BnoTioUFy5xpfn4XX8f3AugrNCPRSQClbwCcBkmbSSUQClCTXkwMaRwTkHdufDqrIj1FWWJrPsYJcHOyOE5Cdj4uVAi42QBi226AYXFFyRALQO1vhgY6R4cvxmoT26OMAxsgNMNBcMhXRyMQv2HrQynGdnJ3PY5oKIrVY9rhWsYNXwZ9LwF95shJyGv3LnXYMpDf/ixo1vFD98kNHwu9f2mdbwAExp+Lnrwka1kymAdnmqAFSwgtUVnsIV3nh5xBXeufN6gOmb/Qc/KL65ceMr7QqfXts97QoBmL7Z+11nN6o7mcKOtstTBaCCFfwXV2i4ILnsf/LbQzQvgYxuTv56ZrJWMXrgekp26xT17imzyUz0wQDFoY42zyxoA9D0ZsUzXmVoZ/FqMhd9AWxjPhVTX6fkRnnKhqyPxNO/xRJ9V+jyjmreKPzxDVyYgreKNYw2BBay6qeMWGkZkEgkIj6uelwrWMG/arhgZQvEOThXxDQrD3YlcNrvjMWuoc11a0G5V8xnQYNkZmN2X0ldDzs0cfHvuykwcIUc6F61txCcPQsa4k+VLtj7UlfBIvgLYQX1YJ6Gu4wAAAAASUVORK5CIIA=");
 }
 
 .result__item--best-bet {
