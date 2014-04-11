@@ -3346,12 +3346,13 @@ h2 {
 }
 @media (min-width: 600px) {
   .sign-in--search {
-    margin-top: -2rem;
+    margin-top: -1rem;
   }
 }
 @media (min-width: 768px) {
   .sign-in--search {
     float: right;
+    margin-top: -2rem;
   }
 }
 
