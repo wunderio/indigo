@@ -2763,6 +2763,12 @@ h2 {
   }
 }
 
+.result__item--person {
+  padding-bottom: 0;
+}
+.result__item--person .vcard {
+  margin-bottom: 0;
+}
 .result__item--person ul li {
   margin-bottom: 0px;
   margin-left: 0;
@@ -2788,11 +2794,16 @@ h2 {
 .result__item--person .org {
   margin-bottom: 0.5em;
 }
+.result__item--person .tel a,
 .result__item--person .email a {
   color: #4c98e5;
+}
+.result__item--person .tel {
+  font-size: 16px;
+}
+.result__item--person .email a {
   display: block;
   font-size: 12px;
-  font-style: normal;
   font-weight: bold;
 }
 
@@ -3012,12 +3023,12 @@ h2 {
 @media (min-width: 1000px) {
   .collections__list {
     float: right;
-    width: 68.7%;
+    width: 65.7%;
   }
 }
 @media (min-width: 1050px) {
   .collections__list .list__item:first-child {
-    margin-left: 40px;
+    margin-left: 0;
   }
 }
 .search-results__meta {
@@ -3289,6 +3300,10 @@ h2 {
   .close {
     display: none !important;
   }
+}
+.result__item--degrees th, .result__item--degrees td {
+  font-size: 13px;
+  line-height: 19px;
 }
 .result__item--degrees .result__title {
   font-size: 20px;

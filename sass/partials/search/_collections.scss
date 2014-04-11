@@ -30,7 +30,7 @@
 
  .collections__list {
   border-radius: 4px;
-      border-width: 1px 1px 4px;
+  border-width: 1px 1px 4px;
   border-style: solid;
   border-color: darken(#d6d2c4, 8%);
   height: 36px;
@@ -49,10 +49,10 @@
       top: 10px;
       transition: transform 110ms ease-in-out;
       width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 16px 8px 0 8px;
-border-color: #ffffff transparent transparent
+      height: 0px;
+      border-style: solid;
+      border-width: 16px 8px 0 8px;
+      border-color: #ffffff transparent transparent
     }
   }
 }
@@ -187,14 +187,15 @@ border-color: #ffffff transparent transparent
 @media (min-width: 1000px) {
   .collections__list {
     float: right;
-    width: 68.7%;
+    width: 65.7%;
   }
 }
 @media (min-width: 1050px) {
 .collections__list {
   .list__item {
     &:first-child {
-      margin-left: 40px;
+    //  margin-left: 40px;
+    margin-left: 0;
     }
   }
 }
