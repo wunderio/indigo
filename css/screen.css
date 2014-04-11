@@ -3339,8 +3339,10 @@ h2 {
 }
 
 .sign-in--search {
+  color: #4693EA;
   float: left;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
   margin-top: -1rem;
   margin-bottom: 5px;
 }
