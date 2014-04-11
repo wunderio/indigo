@@ -896,7 +896,7 @@ $('.facet h4').click(function() {
 // create pillbox and use the relevant checked checkboxs label as the text
 $('.facet-list__item input').click(function() {
 	if ($(this).attr('checked')) {
-		$('.pillboxes').append('<li class="pillbox"><h4 class="pillbox__item"><a class="pillbox__link" href="">A Thing <span>x</span></a></h4></li>');
+		$('.pillboxes').append('<li class="pillbox"><a class="pillbox__link" href="#">A Pillbox<span>x</span></a></li>');
 	}
 	else {
 		// crude for demo needs fixing properly
