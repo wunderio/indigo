@@ -2797,7 +2797,11 @@ h2 {
 }
 .result__item--person .tel a,
 .result__item--person .email a {
-  color: #4c98e5;
+  color: #131313;
+}
+.result__item--person .tel a:hover,
+.result__item--person .email a:hover {
+  text-decoration: none;
 }
 .result__item--person .tel {
   font-size: 16px;

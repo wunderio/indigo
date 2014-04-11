@@ -77,8 +77,10 @@
   }
   .tel a,
   .email a {
-    color: #4c98e5;
-
+    color: #131313;
+    &:hover {
+      text-decoration: none;
+    }
   }
   .tel {
     font-size: 16px;
