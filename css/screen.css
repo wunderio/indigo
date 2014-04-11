@@ -2858,6 +2858,13 @@ h2 {
   right: 3.0303%;
   top: 10px;
 }
+.secure-details a {
+  color: #4c98e5;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 26px;
+}
 
 .twitter {
   position: relative;
