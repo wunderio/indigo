@@ -1,4 +1,5 @@
 .result__item {
+    clear: both;
     list-style: none;
     margin: 0 0 20px;
     padding: 0 0 4px;
@@ -192,26 +193,62 @@
   }
 }
 
+.result__item--other {
+  border-bottom: 2px solid lighten(#131313, 20%);
+  float: left;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+// SoundCloud search results specific
 
 .result__thumbnail {
   background-color: $stone;
   border: 2px solid darken($stone, 30%);
+  display: block;
+  width: 14%;
+  padding-bottom: 14%;
   float: left;
   margin: 0 20px 1.2% 0;
-  padding-bottom: 12%;
-  width: 12%;
+}
+.result__meta--thumbnail {
+
+}
+.results__meta--text {
+  float: right;
+  margin-bottom: 10px;
+  width: 77%;
+  @media (min-width: 650px) {
+    width: 82%;
+  }
+  .result__title {
+    span {
+      clear: both;
+      float: left;
+      margin-bottom: 10px;
+      width: 100%;
+      font-size: 14px;
+      color: lighten(#131313, 40%);
+    }
+
+  }
 }
 .sc-audio {
     float: left;
     width: 100%;
+    @media (min-width: 650px) {
+      float: right;
+      width: 82%;
+    }
     .play-audio {
       background-color: #ffbe00;
       border-radius: 50%;
       color: white;
       float: left;
       font-weight: bold;
-      padding: 5%;
+      padding: 20px;
       position: relative;
+      top: 15px;
       &:after {
         content:'';
         width: 0px;
@@ -228,16 +265,17 @@
     float: left;
     margin-left: 4%;
     position: relative;
-    top: 1%;
-    width: 86%;
+    width: 81%;
+
   }
 }
 .soundcloud__meta {
   .result__title {
+    clear: right;
     float: left;
-    width: 79%;
   }
   .result__summary {
+    clear: both;
     width: 100%;
   }
 }
