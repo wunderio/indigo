@@ -191,3 +191,53 @@
     background-position: 0 -179px;
   }
 }
+
+
+.result__thumbnail {
+  background-color: $stone;
+  border: 2px solid darken($stone, 30%);
+  float: left;
+  margin: 0 20px 1.2% 0;
+  padding-bottom: 12%;
+  width: 12%;
+}
+.sc-audio {
+    float: left;
+    width: 100%;
+    .play-audio {
+      background-color: #ffbe00;
+      border-radius: 50%;
+      color: white;
+      float: left;
+      font-weight: bold;
+      padding: 5%;
+      position: relative;
+      &:after {
+        content:'';
+        width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 5px 0 5px 10px;
+      border-color: transparent transparent transparent #ffffff;
+      position: absolute;
+      top: 35%;
+      left: 40%;
+      }
+    }
+  &__soundwave {
+    float: left;
+    margin-left: 4%;
+    position: relative;
+    top: 1%;
+    width: 86%;
+  }
+}
+.soundcloud__meta {
+  .result__title {
+    float: left;
+    width: 79%;
+  }
+  .result__summary {
+    width: 100%;
+  }
+}
