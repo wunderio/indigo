@@ -271,9 +271,12 @@
 
 .results__meta {
   clear: both;
-//  text-align: center;
+  float: left;
+  margin-top: 20px;
+  width: 100%;
   p {
     float: left;
+    font-size: 14px;
     width: 33.3%;
     span {
       clear: both;

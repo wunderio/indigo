@@ -2972,9 +2972,13 @@ h2 {
 
 .results__meta {
   clear: both;
+  float: left;
+  margin-top: 20px;
+  width: 100%;
 }
 .results__meta p {
   float: left;
+  font-size: 14px;
   width: 33.3%;
 }
 .results__meta p span {
