@@ -194,7 +194,7 @@
 }
 
 .result__item--other {
-  border-bottom: 2px solid lighten(#131313, 20%);
+//  border-bottom: 2px solid lighten(#131313, 20%);
   float: left;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -258,23 +258,14 @@
 
   }
 }
-.soundcloud__meta {
-  .result__title {
-    clear: right;
-    float: left;
-  }
-  .result__summary {
-    clear: both;
-    width: 100%;
-  }
-}
+
 
 .results__meta {
   clear: both;
   float: left;
   margin-top: 20px;
   width: 100%;
-  p {
+  p, a {
     float: left;
     font-size: 14px;
     width: 33.3%;

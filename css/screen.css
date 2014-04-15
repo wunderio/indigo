@@ -2896,7 +2896,6 @@ h2 {
 }
 
 .result__item--other {
-  border-bottom: 2px solid #464646;
   float: left;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -2961,27 +2960,18 @@ h2 {
   width: 81%;
 }
 
-.soundcloud__meta .result__title {
-  clear: right;
-  float: left;
-}
-.soundcloud__meta .result__summary {
-  clear: both;
-  width: 100%;
-}
-
 .results__meta {
   clear: both;
   float: left;
   margin-top: 20px;
   width: 100%;
 }
-.results__meta p {
+.results__meta p, .results__meta a {
   float: left;
   font-size: 14px;
   width: 33.3%;
 }
-.results__meta p span {
+.results__meta p span, .results__meta a span {
   clear: both;
   float: left;
   font-weight: bold;
