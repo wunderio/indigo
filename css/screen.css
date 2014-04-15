@@ -2912,23 +2912,15 @@ h2 {
   margin: 0 20px 1.2% 0;
 }
 
-.results__meta--text {
+.result__details {
   float: right;
   margin-bottom: 10px;
   width: 77%;
 }
 @media (min-width: 650px) {
-  .results__meta--text {
+  .result__details {
     width: 82%;
   }
-}
-.results__meta--text .result__title span {
-  clear: both;
-  float: left;
-  margin-bottom: 10px;
-  width: 100%;
-  font-size: 14px;
-  color: #797979;
 }
 
 .sc-audio {
@@ -2976,6 +2968,36 @@ h2 {
 .soundcloud__meta .result__summary {
   clear: both;
   width: 100%;
+}
+
+.results__meta {
+  clear: both;
+}
+.results__meta p {
+  float: left;
+  width: 33.3%;
+}
+.results__meta p span {
+  clear: both;
+  float: left;
+  font-weight: bold;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .results__meta p span {
+    clear: none;
+    float: none;
+    width: auto;
+  }
+}
+.results__meta--alpha {
+  text-align: left;
+}
+.results__meta--beta {
+  text-align: center;
+}
+.results__meta--gamma {
+  text-align: right;
 }
 
 .result__item--best-bet {
