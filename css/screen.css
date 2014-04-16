@@ -3398,10 +3398,6 @@ h2 {
 .result__item--person .vcard {
   margin-bottom: 0;
 }
-.result__item--person ul li {
-  margin-bottom: 0px;
-  margin-left: 0;
-}
 .result__item--person .org {
   clear: both;
   color: #4c98e5;
@@ -3416,10 +3412,6 @@ h2 {
   color: #4c98e5;
   display: inline-block;
   text-decoration: underline;
-}
-.result__item--person .tel {
-  font-size: 14px;
-  line-height: 24px;
 }
 .result__item--person .org {
   margin-bottom: 0.5em;
@@ -3453,7 +3445,6 @@ h2 {
   position: relative;
 }
 .result__item--person .tel span {
-  font-size: 12px;
   font-weight: bold;
 }
 .result__item--person .tel:before {
@@ -3469,8 +3460,6 @@ h2 {
   background-position: 0 -67px;
 }
 .result__item--person .email a {
-  display: block;
-  font-size: 14px;
   font-weight: bold;
 }
 

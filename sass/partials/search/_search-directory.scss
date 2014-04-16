@@ -3,13 +3,6 @@
   .vcard {
     margin-bottom: 0;
   }
-  ul {
-
-  }
-  ul li {
-    margin-bottom: 0px;
-    margin-left: 0;
-  }
   .org {
     clear: both;
     color: #4c98e5;
@@ -24,10 +17,6 @@
       display: inline-block;
       text-decoration: underline;
     }
-  }
-  .tel {
-    font-size: 14px;
-    line-height: 24px;
   }
   .org {
     margin-bottom: 0.5em;
@@ -62,7 +51,6 @@
     padding-left: 30px;
     position: relative;
     span {
-      font-size: 12px;
       font-weight: bold;
     }
     &:before {
@@ -82,14 +70,7 @@
       background-position: 0 -67px;
     }
   }
-  // .tel--extension {
-  //   &:before {
-  //     background-position: 0 -105px;
-  //   }
-  // }
   .email a {
-    display: block;
-    font-size: 14px;
     font-weight: bold;
   }
 }
