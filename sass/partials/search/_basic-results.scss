@@ -3,6 +3,7 @@
     list-style: none;
     margin: 0 0 20px;
     padding: 0 0 4px;
+
   .result__title {
     line-height: 1.1;
     margin: 0;
@@ -12,10 +13,7 @@
       font-size: 18px;
       font-weight: bold;
     }
-
   }
-
-
   .result__summary {
     color: #131313; /* text color */
     font-size: 12px;
@@ -102,9 +100,14 @@
     }
   }
   .tel {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 20px;
     padding-left: 30px;
     position: relative;
+    span {
+      font-size: 12px;
+      font-weight: bold;
+    }
     &:before {
       @extend .sprite;
 
@@ -122,22 +125,15 @@
       background-position: 0 -67px;
     }
   }
-  .tel--extension {
-    &:before {
-      background-position: 0 -105px;
-    }
-  }
+  // .tel--extension {
+  //   &:before {
+  //     background-position: 0 -105px;
+  //   }
+  // }
   .email a {
     display: block;
     font-size: 12px;
     font-weight: bold;
-  }
-}
-
-
-.result__item--person--secure {
-  li {
-    max-width: 60%;
   }
 }
 
@@ -149,15 +145,54 @@
 
 
 .secure-details {
-  position: absolute;
-  right: 3.0303%;
-  top: 10px;
+  li {
+    max-width: 100%;
+  }
   a {
     color: #4c98e5;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     line-height: 26px;
+  }
+  img {
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 480px) {
+  .profile-details {
+    float: left;
+    width: 70%;
+  }
+  .secure-details {
+    float: right;
+    top: 10px;
+    width: 30%;
+  }
+}
+@media (min-width: 600px){
+  .profile-details {
+    width: 75%;
+    p,
+    a {
+      font-size: 14px;
+    }
+  }
+  .secure-details {
+    width: 25%;
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 1000px){
+  .profile-details {
+    width: 80%;
+  }
+  .secure-details {
+    width: 20%;
   }
 }
 
@@ -207,9 +242,9 @@
   border: 2px solid darken($stone, 30%);
   display: block;
   float: left;
-  margin: 0 3% 1.2% 3%;
-  padding-bottom: 19.5%;
-  width: 19.5%;
+  margin: 0px 3% 1.2% 2.6%;
+  padding-bottom: 19.2%;
+  width: 19.2%;
 }
 
 .result__details {
