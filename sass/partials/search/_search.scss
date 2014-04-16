@@ -327,7 +327,23 @@ h2 {
     margin-top: -1rem;
   }
   @media (min-width: 768px) {
-    float: right;
     margin-top: -2rem;
+    float: right;
+  }
+}
+
+
+.secure-login {
+  width: 15%;
+  float: right;
+  position: relative;
+  p {
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+  }
+  a:hover + p {
+    display: block;
   }
 }
