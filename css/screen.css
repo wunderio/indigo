@@ -2765,172 +2765,6 @@ h2 {
   }
 }
 
-.result__item--person {
-  padding-bottom: 0;
-}
-.result__item--person .vcard {
-  margin-bottom: 0;
-}
-.result__item--person ul li {
-  margin-bottom: 0px;
-  margin-left: 0;
-}
-.result__item--person .org {
-  clear: both;
-  color: #4c98e5;
-  display: inline-block;
-  font-size: 12px;
-}
-.result__item--person .org p {
-  color: #131313;
-  display: inline-block;
-}
-.result__item--person .org a {
-  color: #4c98e5;
-  display: inline-block;
-  text-decoration: underline;
-}
-.result__item--person .tel {
-  font-size: 14px;
-  line-height: 24px;
-}
-.result__item--person .org {
-  margin-bottom: 0.5em;
-}
-.result__item--person .email {
-  padding-left: 30px;
-  line-height: 24px;
-  position: relative;
-}
-.result__item--person .email:before {
-  content: '';
-  position: absolute;
-  left: -10px;
-  width: 18px;
-  height: 12px;
-  top: 6px;
-}
-.result__item--person .email a {
-  color: #4c98e5;
-}
-.result__item--person .tel a {
-  color: #131313;
-}
-.result__item--person .tel a:hover {
-  text-decoration: none;
-}
-.result__item--person .tel {
-  font-size: 14px;
-  line-height: 20px;
-  padding-left: 30px;
-  position: relative;
-}
-.result__item--person .tel span {
-  font-size: 12px;
-  font-weight: bold;
-}
-.result__item--person .tel:before {
-  content: '';
-  position: absolute;
-  left: -10px;
-  width: 20px;
-  height: 18px;
-  top: 3px;
-  background-position: 0 -31px;
-}
-.result__item--person .tel--external:before {
-  background-position: 0 -67px;
-}
-.result__item--person .email a {
-  display: block;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.sprite, .result__item--person .email:before, .result__item--person .tel:before, .twitter:before, .linkedin:before {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAADFCAQAAAD+4hoMAAACKklEQVRo3u2Zu23DMBRFzwgaQSOoTRFAI2gEJhMYyAJsUmsETRC4dac+jUbQCJrAYQpK/Ig/B0hnko1BHzx+TN5LP4IqV4UCBFsW2xAahAaZgDckDWhwRQANY4CNNIBg1aBCMdMDLZOBJlqgZ7ZjPL7ScMfISGehENRwB0BnoTioUFy5xpfn4XX8f3AugrNCPRSQClbwCcBkmbSSUQClCTXkwMaRwTkHdufDqrIj1FWWJrPsYJcHOyOE5Cdj4uVAi42QBi226AYXFFyRALQO1vhgY6R4cvxmoT26OMAxsgNMNBcMhXRyMQv2HrQynGdnJ3PY5oKIrVY9rhWsYNXwZ9LwF95shJyGv3LnXYMpDf/ixo1vFD98kNHwu9f2mdbwAExp+Lnrwka1kymAdnmqAFSwgtUVnsIV3nh5xBXeufN6gOmb/Qc/KL65ceMr7QqfXts97QoBmL7Z+11nN6o7mcKOtstTBaCCFfwXV2i4ILnsf/LbQzQvgYxuTv56ZrJWMXrgekp26xT17imzyUz0wQDFoY42zyxoA9D0ZsUzXmVoZ/FqMhd9AWxjPhVTX6fkRnnKhqyPxNO/xRJ9V+jyjmreKPzxDVyYgreKNYw2BBay6qeMWGkZkEgkIj6uelwrWMG/arhgZQvEOThXxDQrD3YlcNrvjMWuoc11a0G5V8xnQYNkZmN2X0ldDzs0cfHvuykwcIUc6F61txCcPQsa4k+VLtj7UlfBIvgLYQX1YJ6Gu4wAAAAASUVORK5CIIA=");
-  margin-left: 10px;
-}
-
-.secure-details li {
-  max-width: 100%;
-}
-.secure-details a {
-  color: #4c98e5;
-  display: block;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 26px;
-}
-.secure-details img {
-  max-width: 120px;
-}
-
-@media (min-width: 480px) {
-  .profile-details {
-    float: left;
-    width: 70%;
-  }
-
-  .secure-details {
-    float: right;
-    top: 10px;
-    width: 30%;
-  }
-}
-@media (min-width: 600px) {
-  .profile-details {
-    width: 75%;
-  }
-  .profile-details p,
-  .profile-details a {
-    font-size: 14px;
-  }
-
-  .secure-details {
-    width: 25%;
-  }
-  .secure-details a {
-    font-size: 14px;
-  }
-}
-@media (min-width: 1000px) {
-  .profile-details {
-    width: 80%;
-  }
-
-  .secure-details {
-    width: 20%;
-  }
-}
-.twitter {
-  position: relative;
-  padding-left: 30px;
-}
-.twitter:before {
-  content: '';
-  position: absolute;
-  left: -10px;
-  width: 20px;
-  height: 18px;
-  top: 3px;
-  background-position: 0 -143px;
-}
-
-.linkedin {
-  position: relative;
-  padding-left: 30px;
-}
-.linkedin:before {
-  content: '';
-  position: absolute;
-  left: -10px;
-  width: 20px;
-  height: 18px;
-  top: 3px;
-  background-position: 0 -179px;
-}
-
 .result__item--other {
   float: left;
   margin-bottom: 20px;
@@ -3739,9 +3573,24 @@ h2 {
 }
 @media (min-width: 768px) {
   .sign-in--search {
-    float: right;
     margin-top: -2rem;
+    float: right;
   }
+}
+
+.secure-login {
+  width: 15%;
+  float: right;
+  position: relative;
+}
+.secure-login p {
+  display: none;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+}
+.secure-login a:hover + p {
+  display: block;
 }
 
 /*# sourceMappingURL=screen.css.map */
