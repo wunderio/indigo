@@ -10,6 +10,7 @@
     font-size: 12px;
     p {
       color: #131313;
+      margin-left: 4px;
       display: inline-block;
     }
     a {
@@ -18,8 +19,15 @@
       text-decoration: underline;
     }
   }
+  .fn {
+    font-size: 15px;
+  }
+  .position {
+    font-size: 16px;
+  }
   .org {
     margin-bottom: 0.5em;
+
   }
   .email {
     padding-left: 30px;

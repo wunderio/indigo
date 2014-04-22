@@ -3391,12 +3391,19 @@ h2 {
 }
 .result__item--person .org p {
   color: #131313;
+  margin-left: 4px;
   display: inline-block;
 }
 .result__item--person .org a {
   color: #4c98e5;
   display: inline-block;
   text-decoration: underline;
+}
+.result__item--person .fn {
+  font-size: 15px;
+}
+.result__item--person .position {
+  font-size: 16px;
 }
 .result__item--person .org {
   margin-bottom: 0.5em;
