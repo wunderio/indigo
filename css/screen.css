@@ -3569,8 +3569,12 @@ h2 {
   position: relative;
 }
 .secure-login p {
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 4px;
   display: none;
   font-size: 12px;
+  padding: 7px;
   position: absolute;
   top: 10px;
 }
