@@ -346,6 +346,7 @@ h2 {
     padding: 7px;
     position: absolute;
     top: 10px;
+    z-index: 5050;
   }
   a:hover + p {
     display: block;
