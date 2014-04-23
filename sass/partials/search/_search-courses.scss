@@ -28,9 +28,9 @@
 .results__degrees--PGT,
 .results__degrees--PGD {
   li {
-  //  width: 33.3%;
+    //  width: 33.3%;
     width: 24%;
-        padding: 0 10px;
+    padding: 0 10px;
     margin-left: 1%;
     &:first-child {
       margin-left: 0;
@@ -45,4 +45,29 @@
 .course-details {
   margin-top: 0.5em;
   margin-bottom: 1em;
+}
+
+
+// make results__link a button style
+
+.result__link {
+  background-color: $orange;
+  width: 25%;
+  position: relative;
+  display: block;
+  margin-top: 14px;
+  &:hover {
+    background-color: lighten($orange, 10%);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width:8px 0 8px 16px;
+    border-color: transparent transparent transparent #ffffff;
+    right: 10px;
+    top: 13px;
+  }
 }
