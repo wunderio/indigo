@@ -44,20 +44,20 @@
 
 
 
-.close-facet {
-  display: none;
-}
-
-
-.rounded {
-  border-radius: 4px;
-  transition: border-radius .1s ease-in-out;
-}
-
-
-.upside-down {
-  &:after {
-    transform: rotate(180deg);
-    transition: transform .2s ease-in-out;
+  .close-facet {
+    display: none;
   }
-}
+
+
+  .rounded {
+    border-radius: 4px;
+    transition: border-radius .1s ease-in-out;
+  }
+
+
+  .upside-down {
+    &:after {
+      transform: rotate(180deg);
+      transition: transform .2s ease-in-out;
+    }
+  }
