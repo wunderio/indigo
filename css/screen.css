@@ -3347,6 +3347,9 @@ h2 {
     display: none !important;
   }
 }
+.result__item--degrees {
+  margin-bottom: 25px;
+}
 .result__item--degrees th, .result__item--degrees td {
   font-size: 13px;
   line-height: 19px;
@@ -3355,7 +3358,7 @@ h2 {
   font-size: 20px;
 }
 .result__item--degrees .result__title span {
-  color: #4C98E5;
+  color: #f6be00;
   margin-left: 10px;
 }
 
@@ -3381,6 +3384,16 @@ h2 {
   margin-left: 0;
   padding-left: 0;
   width: 31%;
+}
+
+.course-details {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.under {
+  float: left;
+  width: 100%;
 }
 
 .result__item--person {

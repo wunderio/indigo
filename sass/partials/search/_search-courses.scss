@@ -1,5 +1,6 @@
 
 .result__item--degrees {
+  margin-bottom: 25px;
   th, td {
     font-size: 13px;
     line-height: 19px;
@@ -7,7 +8,7 @@
   .result__title {
     font-size: 20px;
     span {
-      color: #4C98E5;
+      color: $yellow;
       margin-left: 10px;
     }
   }
@@ -37,4 +38,19 @@
       width: 31%;
     }
   }
+}
+
+// removes the margins for tables in courses collection
+
+.course-details {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+
+// for demo of under
+
+.under {
+  float: left;
+  width: 100%;
 }
