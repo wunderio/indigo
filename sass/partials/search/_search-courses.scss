@@ -8,7 +8,7 @@
   .result__title {
     font-size: 20px;
     span {
-      color: $yellow;
+      color: $darkblue;
       margin-left: 10px;
     }
   }
@@ -45,13 +45,4 @@
 .course-details {
   margin-top: 0.5em;
   margin-bottom: 1em;
-}
-
-
-// for demo of under
-
-.under {
-  table {
-    margin-bottom: 2em !important;
-  }
 }
