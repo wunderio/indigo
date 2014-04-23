@@ -2989,11 +2989,6 @@ h2 {
   padding: 0 10px;
   transition: background-color .16s linear;
 }
-.list__item:first-child {
-  background-color: #d6d2c4;
-  border-top: none;
-  font-weight: bold;
-}
 .list__item a {
   line-height: 36px;
   margin: 0;
@@ -3008,6 +3003,13 @@ h2 {
 }
 .list__item:hover, .list__item:focus {
   background-color: #c1bba6;
+}
+@media (max-width: 700px) {
+  .list__item:first-child {
+    background-color: #d6d2c4;
+    border-top: none;
+    font-weight: bold;
+  }
 }
 
 .collections-list__show-hide {
@@ -3577,6 +3579,7 @@ h2 {
   padding: 7px;
   position: absolute;
   top: 10px;
+  z-index: 5050;
 }
 .secure-login a:hover + p {
   display: block;
