@@ -51,6 +51,7 @@
 // for demo of under
 
 .under {
-  float: left;
-  width: 100%;
+  table {
+    margin-bottom: 2em !important;
+  }
 }
