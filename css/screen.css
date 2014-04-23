@@ -3510,7 +3510,7 @@ h2 {
 }
 
 .sprite, .result__item--person .email:before, .result__item--person .tel:before, .twitter:before, .linkedin:before {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAADFCAQAAAD+4hoMAAACKklEQVRo3u2Zu23DMBRFzwgaQSOoTRFAI2gEJhMYyAJsUmsETRC4dac+jUbQCJrAYQpK/Ig/B0hnko1BHzx+TN5LP4IqV4UCBFsW2xAahAaZgDckDWhwRQANY4CNNIBg1aBCMdMDLZOBJlqgZ7ZjPL7ScMfISGehENRwB0BnoTioUFy5xpfn4XX8f3AugrNCPRSQClbwCcBkmbSSUQClCTXkwMaRwTkHdufDqrIj1FWWJrPsYJcHOyOE5Cdj4uVAi42QBi226AYXFFyRALQO1vhgY6R4cvxmoT26OMAxsgNMNBcMhXRyMQv2HrQynGdnJ3PY5oKIrVY9rhWsYNXwZ9LwF95shJyGv3LnXYMpDf/ixo1vFD98kNHwu9f2mdbwAExp+Lnrwka1kymAdnmqAFSwgtUVnsIV3nh5xBXeufN6gOmb/Qc/KL65ceMr7QqfXts97QoBmL7Z+11nN6o7mcKOtstTBaCCFfwXV2i4ILnsf/LbQzQvgYxuTv56ZrJWMXrgekp26xT17imzyUz0wQDFoY42zyxoA9D0ZsUzXmVoZ/FqMhd9AWxjPhVTX6fkRnnKhqyPxNO/xRJ9V+jyjmreKPzxDVyYgreKNYw2BBay6qeMWGkZkEgkIj6uelwrWMG/arhgZQvEOThXxDQrD3YlcNrvjMWuoc11a0G5V8xnQYNkZmN2X0ldDzs0cfHvuykwcIUc6F61txCcPQsa4k+VLtj7UlfBIvgLYQX1YJ6Gu4wAAAAASUVORK5CIIA=");
+  background-image: url("../../../images/search-sprite.png");
   margin-left: 10px;
 }
 
