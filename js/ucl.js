@@ -938,10 +938,18 @@ $('.close-me').click(function() {
 		return false;
 	});
 
-	// collections put whatever collection is selected at top of list on mobile
-	$('.collections__list').find('.list__item--is-selected').prependTo('.collections__list');
+  $(window).resize(function() {
+
+    if ($(window).width() < 700) {
+      // collections put whatever collection is selected at top of list on mobile
+      $('.collections__list').find('.list__item--is-selected').prependTo('.collections__list');
+    }
+    else {
+    }
+  });
 
 });
+
 
 
 function debounce(a,b,c){var d;return function(){var e=this,f=arguments;clearTimeout(d),d=setTimeout(function(){d=null,c||a.apply(e,f)},b),c&&!d&&a.apply(e,f)}}
