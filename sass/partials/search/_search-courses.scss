@@ -12,6 +12,27 @@
       margin-left: 10px;
     }
   }
+  .result__link {
+    background-color: $orange;
+    position: relative;
+    display: block;
+    margin-top: 14px;
+    width: 220px;
+    &:hover {
+      background-color: lighten($orange, 10%);
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 6px 0 6px 12px;
+      border-color: transparent transparent transparent #ffffff;
+      right: 16px;
+      top: 16px;
+    }
+  }
 }
 .results__degrees--UG {
   li {
@@ -49,25 +70,3 @@
 
 
 // make results__link a button style
-
-.result__link {
-  background-color: $orange;
-  width: 25%;
-  position: relative;
-  display: block;
-  margin-top: 14px;
-  &:hover {
-    background-color: lighten($orange, 10%);
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 6px 0 6px 12px;
-    border-color: transparent transparent transparent #ffffff;
-    right: 16px;
-    top: 16px;
-  }
-}

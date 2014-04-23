@@ -3357,6 +3357,27 @@ h2 {
   color: #131313;
   margin-left: 10px;
 }
+.result__item--degrees .result__link {
+  background-color: #ea7600;
+  position: relative;
+  display: block;
+  margin-top: 14px;
+  width: 220px;
+}
+.result__item--degrees .result__link:hover {
+  background-color: #ff8f1e;
+}
+.result__item--degrees .result__link:before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 6px 0 6px 12px;
+  border-color: transparent transparent transparent #ffffff;
+  right: 16px;
+  top: 16px;
+}
 
 .results__degrees--UG li {
   width: 23%;
@@ -3385,28 +3406,6 @@ h2 {
 .course-details {
   margin-top: 0.5em;
   margin-bottom: 1em;
-}
-
-.result__link {
-  background-color: #ea7600;
-  width: 25%;
-  position: relative;
-  display: block;
-  margin-top: 14px;
-}
-.result__link:hover {
-  background-color: #ff8f1e;
-}
-.result__link:before {
-  content: '';
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 6px 0 6px 12px;
-  border-color: transparent transparent transparent #ffffff;
-  right: 16px;
-  top: 16px;
 }
 
 .result__item--person {
