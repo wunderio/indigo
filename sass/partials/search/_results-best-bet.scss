@@ -5,7 +5,7 @@
   background-color: #4693EA;
   clear: both;
   margin: 0 0 30px;
-  padding: 10px 40px;
+  padding: 10px 20px;
   .result__title {
     margin-top: 0; // override
     margin-bottom: 10px;
@@ -28,5 +28,6 @@
 
   @media (min-width: 768px) {
     margin: 0 40px 30px 40px;
+    padding: 10px 40px;
   }
 }
