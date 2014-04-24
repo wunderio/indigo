@@ -3383,7 +3383,8 @@ h2 {
   position: relative;
   display: block;
   margin-top: 14px;
-  width: 220px;
+  padding: 10px 20px 10px 0;
+  width: 130px;
 }
 .result__item--degrees .result__link:hover {
   background-color: #ff8f1e;
