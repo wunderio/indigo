@@ -948,6 +948,13 @@ $('.close-me').click(function() {
     }
   });
 
+  // show/hide the login details by tapping the span
+
+  $('.sign-in--search span').click(function() {
+    $('.secure-login p').toggleClass('show-login');
+    return false;
+  });
+
 });
 
 
