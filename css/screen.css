@@ -3435,6 +3435,12 @@ h2 {
 .result__item--person .vcard {
   margin-bottom: 0;
 }
+.result__item--person .vcard li {
+  margin-left: 16px;
+}
+.result__item--person .vcard li li {
+  margin-left: 16px;
+}
 .result__item--person .org {
   clear: both;
   color: #4c98e5;
@@ -3443,7 +3449,7 @@ h2 {
 }
 .result__item--person .org p {
   color: #131313;
-  margin-left: 4px;
+  margin-right: 4px;
   display: inline-block;
 }
 .result__item--person .org a {
@@ -3461,6 +3467,9 @@ h2 {
   margin-bottom: 0.5em;
 }
 .result__item--person .email {
+  clear: left;
+  float: left;
+  margin-left: 16px;
   padding-left: 30px;
   line-height: 24px;
   position: relative;
@@ -3475,6 +3484,7 @@ h2 {
 }
 .result__item--person .email a {
   color: #4c98e5;
+  font-size: 14px;
 }
 .result__item--person .tel a {
   color: #131313;
@@ -3485,6 +3495,7 @@ h2 {
 .result__item--person .tel {
   font-size: 14px;
   line-height: 20px;
+  margin-left: 16px;
   padding-left: 30px;
   position: relative;
 }

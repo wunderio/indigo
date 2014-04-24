@@ -2,6 +2,12 @@
   padding-bottom: 0;
   .vcard {
     margin-bottom: 0;
+    li {
+      margin-left: 16px;
+      li {
+        margin-left: 16px;
+      }
+    }
   }
   .org {
     clear: both;
@@ -10,7 +16,7 @@
     font-size: 12px;
     p {
       color: #131313;
-      margin-left: 4px;
+      margin-right: 4px;
       display: inline-block;
     }
     a {
@@ -30,6 +36,9 @@
 
   }
   .email {
+    clear: left;
+    float: left;
+    margin-left: 16px; // fixes ol li li
     padding-left: 30px;
     line-height: 24px;
     position: relative;
@@ -45,6 +54,7 @@
     }
     a {
       color: #4c98e5;
+      font-size: 14px;
     }
   }
   .tel a {
@@ -56,6 +66,7 @@
   .tel {
     font-size: 14px;
     line-height: 20px;
+    margin-left: 16px;
     padding-left: 30px;
     position: relative;
     span {
