@@ -3108,11 +3108,6 @@ h2 {
     padding: 2px 5px;
   }
 }
-@media (min-width: 1050px) {
-  .collections__list .list__item:first-child {
-    margin-left: 0;
-  }
-}
 .search-results__meta {
   left: 0;
   position: relative;

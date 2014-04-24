@@ -194,13 +194,3 @@
     padding: 2px 5px;
   }
 }
-@media (min-width: 1050px) {
-.collections__list {
-  .list__item {
-    &:first-child {
-    //  margin-left: 40px;
-    margin-left: 0;
-    }
-  }
-}
-}
