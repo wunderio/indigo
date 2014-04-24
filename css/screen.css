@@ -3383,7 +3383,7 @@ h2 {
   position: relative;
   display: block;
   margin-top: 14px;
-  padding: 10px 20px 10px 0;
+  padding: 8px 20px 8px 0;
   width: 130px;
 }
 .result__item--degrees .result__link:hover {
@@ -3397,8 +3397,8 @@ h2 {
   border-style: solid;
   border-width: 6px 0 6px 12px;
   border-color: transparent transparent transparent #ffffff;
-  right: 16px;
-  top: 16px;
+  right: 13px;
+  top: 13px;
 }
 
 .results__degrees--UG li {
