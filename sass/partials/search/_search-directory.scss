@@ -116,6 +116,11 @@
     max-width: 120px;
   }
 }
+@media (max-width: 479px) {
+  .secure-details {
+    clear: both;
+  }
+}
 
 @media (min-width: 480px) {
   .profile-details {
@@ -145,6 +150,15 @@
 }
 
 @media (min-width: 1000px){
+  .profile-details {
+    width: 73%;
+  }
+  .secure-details {
+    width: 27%;
+  }
+}
+
+@media (min-width: 1200px){
   .profile-details {
     width: 80%;
   }
