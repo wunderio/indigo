@@ -2867,7 +2867,6 @@ h2 {
 
 .no-facets .collections__list {
   width: 100%;
-  max-width: 631px;
   margin: 0 auto;
   height: 34px;
   float: none;
@@ -2884,6 +2883,11 @@ h2 {
 @media (max-width: 700px) {
   .no-facets .results-listed {
     margin-top: 45px;
+  }
+}
+@media (min-width: 1050px) {
+  .no-facets .collections__list {
+    max-width: 631px;
   }
 }
 
@@ -2963,7 +2967,7 @@ h2 {
   overflow: hidden;
   position: relative;
 }
-@media (max-width: 619px) {
+@media (max-width: 767px) {
   .collections__list:before {
     background-repeat: no-repeat;
     border-radius: 0;
@@ -3023,7 +3027,7 @@ h2 {
 .list__item:hover, .list__item:focus {
   background-color: #c1bba6;
 }
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .list__item:first-child {
     background-color: #d6d2c4;
     border-top: none;

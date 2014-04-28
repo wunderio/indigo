@@ -152,7 +152,6 @@
 .no-facets {
   .collections__list {
     width: 100%;
-    max-width: 631px;
     margin: 0 auto;
     height: 34px;
     float: none;
@@ -169,6 +168,11 @@
   @media (max-width: 700px) {
     .results-listed {
       margin-top: 45px;
+    }
+  }
+  @media (min-width: 1050px) {
+    .collections__list {
+      max-width: 631px;
     }
   }
 }

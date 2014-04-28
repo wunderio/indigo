@@ -38,7 +38,7 @@
   max-width: 600px;
   overflow: hidden;
   position: relative;
-  @media (max-width: 619px) {
+  @media (max-width: 767px) {
     &:before {
       background-repeat: no-repeat;
       border-radius: 0;
@@ -101,7 +101,7 @@
   &:focus {
     background-color: darken(#d6d2c4, 10%);
   }
-  @media (max-width: 700px) {
+  @media (max-width: 767px) {
     &:first-child {
       background-color: #d6d2c4;
       border-top: none;
