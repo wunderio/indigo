@@ -3435,17 +3435,22 @@ h2 {
   margin-bottom: 1em;
 }
 
-.degrees--inline .result__summary {
+.result__item .result__summary {
   clear: both;
 }
-.degrees--inline .result__title {
+.result__item .result__title {
   float: left;
-  line-height: 41px;
+  line-height: 27px;
   margin-right: 20px;
 }
-.degrees--inline .result__link {
+.result__item .result__link {
   float: left;
   margin: 0;
+}
+@media (min-width: 479px) {
+  .result__item .result__title {
+    line-height: 41px;
+  }
 }
 
 .result__item--person {
