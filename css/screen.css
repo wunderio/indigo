@@ -2867,7 +2867,7 @@ h2 {
 
 .no-facets .collections__list {
   width: 100%;
-  max-width: 627px;
+  max-width: 631px;
   margin: 0 auto;
   height: 34px;
   float: none;
@@ -2875,7 +2875,7 @@ h2 {
 .no-facets .search-results {
   float: none;
   width: 100%;
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
 }
 .no-facets .off-canvas {
@@ -3433,6 +3433,19 @@ h2 {
 .course-details {
   margin-top: 0.5em;
   margin-bottom: 1em;
+}
+
+.degrees--inline .result__summary {
+  clear: both;
+}
+.degrees--inline .result__title {
+  float: left;
+  line-height: 41px;
+  margin-right: 20px;
+}
+.degrees--inline .result__link {
+  float: left;
+  margin: 0;
 }
 
 .result__item--person {

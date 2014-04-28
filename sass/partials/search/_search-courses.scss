@@ -70,4 +70,19 @@
 }
 
 
-// make results__link a button style
+// inline button
+
+.degrees--inline {
+  .result__summary {
+    clear: both;
+  }
+  .result__title {
+    float: left;
+    line-height: 41px;
+    margin-right: 20px;
+  }
+  .result__link {
+    float: left;
+    margin: 0;
+  }
+}
