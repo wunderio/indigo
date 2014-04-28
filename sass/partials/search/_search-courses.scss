@@ -18,9 +18,11 @@
     display: block;
     margin-top: 14px;
     padding: 8px 20px 8px 0;
+    transition: background-color .25s linear;
     width: 130px;
     &:hover {
       background-color: lighten($orange, 10%);
+      transition: background-color .25s linear;
     }
     &:before {
       content: '';

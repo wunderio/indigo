@@ -3389,10 +3389,12 @@ h2 {
   display: block;
   margin-top: 14px;
   padding: 8px 20px 8px 0;
+  transition: background-color .25s linear;
   width: 130px;
 }
 .result__item--degrees .result__link:hover {
   background-color: #ff8f1e;
+  transition: background-color .25s linear;
 }
 .result__item--degrees .result__link:before {
   content: '';
