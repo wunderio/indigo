@@ -3525,7 +3525,7 @@ h2 {
 }
 
 .sprite, .result__item--person .email:before, .result__item--person .tel:before, .twitter:before, .linkedin:before {
-  background-image: url("../../../images/search-sprite.png");
+  background-image: url("../images/search-sprite.png");
   margin-left: 10px;
 }
 
