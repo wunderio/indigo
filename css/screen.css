@@ -2895,7 +2895,7 @@ h2 {
   border: 4px solid #1667c3;
   border-left: none;
   border-right: none;
-  background-color: #4693EA;
+  background-color: #4693ea;
   clear: both;
   margin: 0 0 30px;
   padding: 10px 20px;
@@ -3290,7 +3290,7 @@ h2 {
   }
 }
 .off-canvas {
-  background: none repeat scroll 0% 0% #4693EA;
+  background: none repeat scroll 0% 0% #4693ea;
   padding: 6px 10px 6px 20px;
   position: relative;
   float: left;
@@ -3647,59 +3647,60 @@ h2 {
 }
 
 .sign-in--search {
-  color: #4693EA;
+  color: #4693ea;
   float: left;
   font-size: 14px;
   font-weight: bold;
-  margin-top: -1rem;
-  margin-bottom: 5px;
-}
-@media (min-width: 600px) {
-  .sign-in--search {
-    margin-top: -1rem;
-  }
-}
-@media (min-width: 768px) {
-  .sign-in--search {
-    margin-top: -2rem;
-    float: right;
-  }
 }
 
 .secure-login {
-  float: right;
+  float: left;
+  margin-bottom: 20px;
   position: relative;
 }
+.secure-login a {
+  float: left;
+  margin-right: 1%;
+  width: 14%;
+}
 .secure-login p {
-  background: #FFF;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  display: none;
+  float: left;
   font-size: 12px;
-  padding: 4px 7px;
-  position: absolute;
-  right: 0;
-  top: 5px;
-  width: 220px;
+  width: 85%;
   z-index: 5050;
-}
-@media (max-width: 480px) {
-  .secure-login p {
-    top: 16px;
-    width: 280px;
-  }
-}
-.secure-login a:hover + p {
-  display: block;
 }
 .secure-login span {
   content: '?';
-  background: #4693EA;
+  background: #4693ea;
   color: #FFF;
   font-size: 14px;
   padding: 1px 5px;
   border-radius: 50%;
   margin-right: 8px;
+}
+@media (min-width: 1020px) {
+  .secure-login {
+    float: right;
+  }
+  .secure-login a {
+    margin-top: -20px;
+  }
+  .secure-login p {
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 4px 7px;
+    position: absolute;
+    top: 15px;
+    width: 220px;
+    right: -20px;
+    top: 5px;
+  }
+}
+@media (min-width: 1100px) {
+  .secure-login p {
+    right: 0;
+  }
 }
 
 .site-brand-none {
