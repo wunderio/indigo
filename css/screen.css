@@ -3669,15 +3669,6 @@ h2 {
   width: 85%;
   z-index: 5050;
 }
-.secure-login span {
-  content: '?';
-  background: #4693ea;
-  color: #FFF;
-  font-size: 14px;
-  padding: 1px 5px;
-  border-radius: 50%;
-  margin-right: 8px;
-}
 @media (min-width: 1020px) {
   .secure-login {
     float: right;

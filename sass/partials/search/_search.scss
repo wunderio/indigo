@@ -342,15 +342,6 @@ h2 {
     @media (max-width: 480px) {
     }
   }
-  span {
-    content: '?';
-    background: $search-blue;
-    color: #FFF;
-    font-size: 14px;
-    padding: 1px 5px;
-    border-radius: 50%;
-    margin-right: 8px;
-  }
   @media (min-width: 1020px) {
     float: right;
     a {
