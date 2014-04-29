@@ -1,8 +1,8 @@
 .result__item--best-bet {
-  border: 4px solid darken(#4693EA, 17%);
+  border: 4px solid darken($search-blue, 17%);
   border-left: none;
   border-right: none;
-  background-color: #4693EA;
+  background-color: $search-blue;
   clear: both;
   margin: 0 0 30px;
   padding: 10px 20px;
