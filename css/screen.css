@@ -2657,6 +2657,10 @@ p cite {
   color: #000;
   font-size: 14px;
 }
+.facet-list__item em {
+  font-size: 12px;
+  margin-left: 10px;
+}
 
 .facets {
   left: -280px;

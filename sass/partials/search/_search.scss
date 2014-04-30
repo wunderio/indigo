@@ -232,10 +232,16 @@ p cite {
   z-index: 5050;
 }
 
-.facet-list__item span {
-  margin-left: 5px;
-  color: #000;
-  font-size: 14px;
+.facet-list__item {
+  span {
+    margin-left: 5px;
+    color: #000;
+    font-size: 14px;
+  }
+  em {
+    font-size: 12px;
+    margin-left: 10px;
+  }
 }
 
 
