@@ -100,6 +100,37 @@
   margin-left: 10px;
 }
 
+.twitter {
+  position: relative;
+  padding-left: 30px;
+  &:before {
+    @extend .sprite;
+
+    content: '';
+    position: absolute;
+    left: -10px;
+    width: 20px;
+    height: 18px;
+    top: 3px;
+    background-position: 0 -143px;
+  }
+}
+
+.linkedin {
+  position: relative;
+  padding-left: 30px;
+  &:before {
+    @extend .sprite;
+
+    content: '';
+    position: absolute;
+    left: -10px;
+    width: 20px;
+    height: 18px;
+    top: 3px;
+    background-position: 0 -179px;
+  }
+}
 
 .secure-details {
   li {
@@ -117,8 +148,21 @@
   }
 }
 @media (max-width: 479px) {
+  .profile-details {
+    float: left;
+    width: 64%;
+    margin-right: 1%;
+  }
+  .result__item--person .vcard li {
+    margin-left: 0;
+  }
   .secure-details {
-    clear: both;
+    float: left;
+    width: 35%;
+  }
+  .twitter,
+  .linkedin {
+    padding-left: 24px;
   }
 }
 
@@ -164,37 +208,5 @@
   }
   .secure-details {
     width: 20%;
-  }
-}
-
-.twitter {
-  position: relative;
-  padding-left: 30px;
-  &:before {
-    @extend .sprite;
-
-    content: '';
-    position: absolute;
-    left: -10px;
-    width: 20px;
-    height: 18px;
-    top: 3px;
-    background-position: 0 -143px;
-  }
-}
-
-.linkedin {
-  position: relative;
-  padding-left: 30px;
-  &:before {
-    @extend .sprite;
-
-    content: '';
-    position: absolute;
-    left: -10px;
-    width: 20px;
-    height: 18px;
-    top: 3px;
-    background-position: 0 -179px;
   }
 }
