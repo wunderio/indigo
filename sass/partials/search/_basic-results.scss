@@ -176,3 +176,41 @@
     }
   }
 }
+
+
+
+// research search results
+
+.result__item--research {
+  margin-bottom: 20px;
+  .result__link {
+    float: left;
+    position: relative;
+    &:before {
+      background-image: url(../images/search-sprite.png);
+      background-repeat: no-repeat;
+      content: '';
+      position: absolute;
+      right: -24px;
+      width: 15px;
+    }
+  }
+}
+
+.result__item--research--open {
+  .result__link {
+    &:before {
+      background-position: -2px -217px;
+      height: 22px;
+    }
+  }
+}
+
+.result__item--research--closed {
+  .result__link {
+    &:before {
+      background-position: -2px -259px;
+      height: 23px;
+    }
+  }
+}
