@@ -99,9 +99,13 @@ $(document).ready(function(){
 
 // pickaday called
 
-var picker = new Pikaday({ field: $('#datepicker')[0] });
-
-$('.datepicker').pikaday({ firstDay: 1 });
+var picker = new Pikaday({
+        field: document.getElementById('datepicker'),
+        format: 'D MMM YYYY',
+        onSelect: function() {
+            console.log(this.getMoment().format('Do MMMM YYYY'));
+        }
+    });
 
 
 // removes pillbox > needs to remove from facet
