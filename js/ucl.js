@@ -119,25 +119,25 @@ $('.pillbox').click(function() {
 
 // face show/hide
 // # needs fixing so doesn't hide _all_ facet-list
-$('.facet h4').click(function() {
-  //event.preventDefault();
-  $(this).next('.facet-list').toggleClass('close-facet');
-  $(this).toggleClass('rounded');
-  $(this).toggleClass('upside-down');
-  return false;
-});
-
-// create pillbox and use the relevant checked checkboxs label as the text
-$('.facet-list__item input').click(function() {
-	if ($(this).attr('checked')) {
-		$('.pillboxes').append('<li class="pillbox"><a class="pillbox__link" href="#">A Pillbox<span>x</span></a></li>');
-	}
-	else {
-		// crude for demo needs fixing properly
-		$('.pillbox:last').remove();
-	//	$('.pillboxes').last('.pillbox').remove();
-	}
-});
+// $('.facet h4').click(function() {
+//   //event.preventDefault();
+//   $(this).next('.facet-list').toggleClass('close-facet');
+//   $(this).toggleClass('rounded');
+//   $(this).toggleClass('upside-down');
+//   return false;
+// });
+//
+// // create pillbox and use the relevant checked checkboxs label as the text
+// $('.facet-list__item input').click(function() {
+// 	if ($(this).attr('checked')) {
+// 		$('.pillboxes').append('<li class="pillbox"><a class="pillbox__link" href="#">A Pillbox<span>x</span></a></li>');
+// 	}
+// 	else {
+// 		// crude for demo needs fixing properly
+// 		$('.pillbox:last').remove();
+// 	//	$('.pillboxes').last('.pillbox').remove();
+// 	}
+// });
 
 $('.off-canvas').click(function() {
   $('.facets').toggleClass('show-facet');
