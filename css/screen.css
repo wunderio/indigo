@@ -3173,13 +3173,7 @@ h2 {
 .result__item .result__summary a:hover {
   color: #034DA1;
 }
-@media (min-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000317}}
-  .result__item .result__summary {
-    line-height: 1.4;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000330}}
 .result__item .result__link {
   color: #4c98e5;
   display: block;
@@ -3189,28 +3183,28 @@ h2 {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000339}}
   .result__item .result__title a {
     font-size: 20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000340}}
   .result__item .result__summary {
     font-size: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000341}}
   .result__item .result__link {
     font-size: 14px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000346}}
 .result__item--other {
   float: left;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000355}}
 .result__thumbnail {
   background-color: #d6d2c4;
   border: 2px solid #978d6a;
@@ -3221,32 +3215,32 @@ h2 {
   width: 19.2%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000365}}
 .result__details {
   float: right;
   margin-bottom: 10px;
   width: 72.5%;
 }
 @media (min-width: 650px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000365}}
   .result__details {
     width: 72.5%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000375}}
 .sc-audio {
   float: left;
   width: 100%;
 }
 @media (min-width: 650px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000375}}
   .sc-audio {
     float: right;
     width: 72.5%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000382}}
 .sc-audio .play-audio {
   background-color: #ffbe00;
   border-radius: 50%;
@@ -3257,7 +3251,7 @@ h2 {
   position: relative;
   top: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000391}}
 .sc-audio .play-audio:after {
   content: '';
   width: 0px;
@@ -3269,7 +3263,7 @@ h2 {
   top: 35%;
   left: 40%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003103}}
 .sc-audio__soundwave {
   float: left;
   margin-left: 4%;
@@ -3277,7 +3271,7 @@ h2 {
   width: 81%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003113}}
 .results__meta {
   clear: both;
   float: left;
@@ -3285,13 +3279,13 @@ h2 {
   margin-top: 20px;
   width: 96%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003119}}
 .results__meta p, .results__meta a {
   float: left;
   font-size: 14px;
   width: 33.3%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003123}}
 .results__meta p span, .results__meta a span {
   clear: both;
   float: left;
@@ -3299,69 +3293,72 @@ h2 {
   width: 100%;
 }
 @media (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003131}}
   .results__meta p span {
     clear: none;
     float: none;
     width: auto;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003137}}
 .results__meta--alpha {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003140}}
 .results__meta--beta {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003143}}
 .results__meta--gamma {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003155}}
 .no-facets .collections__list {
   width: 100%;
   margin: 0 auto;
   height: 34px;
   float: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003161}}
 .no-facets .search-results {
   float: none;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003167}}
 .no-facets .off-canvas {
   display: none !important;
 }
 @media (max-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003171}}
   .no-facets .results-listed {
     margin-top: 45px;
   }
 }
 @media (min-width: 1050px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003176}}
   .no-facets .collections__list {
     max-width: 631px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003186}}
 .result__item--research {
   float: left;
-  font-size: 14px;
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003189}}
+.result__item--research .result__summary {
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003192}}
 .result__item--research .result__meta {
   float: left;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003196}}
 .result__item--research .result__meta:before {
   background-image: url(../images/search-sprite.png);
   background-repeat: no-repeat;
@@ -3370,18 +3367,18 @@ h2 {
   right: -24px;
   width: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003205}}
 .result__item--research .result__meta a {
   color: #4693ea;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003213}}
 .result__item--research--open .result__meta:before {
   background-position: -2px -217px;
   height: 22px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003224}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003222}}
 .result__item--research--closed .result__meta:before {
   background-position: -2px -259px;
   height: 23px;
