@@ -182,10 +182,13 @@
 // research search results
 
 .result__item--research {
+  float: left;
+  font-size: 14px;
   margin-bottom: 20px;
-  .result__link {
+  .result__meta {
     float: left;
     position: relative;
+
     &:before {
       background-image: url(../images/search-sprite.png);
       background-repeat: no-repeat;
@@ -194,11 +197,15 @@
       right: -24px;
       width: 15px;
     }
+
+    a {
+      color: $search-blue;
+    }
   }
 }
 
 .result__item--research--open {
-  .result__link {
+  .result__meta {
     &:before {
       background-position: -2px -217px;
       height: 22px;
@@ -207,7 +214,7 @@
 }
 
 .result__item--research--closed {
-  .result__link {
+  .result__meta {
     &:before {
       background-position: -2px -259px;
       height: 23px;
