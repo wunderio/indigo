@@ -3168,8 +3168,8 @@ h2 {
 @media (min-width: 1200px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000317}}
   .result__item .result__summary {
-    line-height: 1.5;
-    word-spacing: 3px;
+    line-height: 1.4;
+    word-spacing: 2px;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\0000328}}
