@@ -182,14 +182,17 @@ $('.close-me').click(function() {
     }
   });
 
-  // show/hide the login details by tapping the span
+// show/hide login details
 
-  $('.sign-in--search span').click(function() {
-    $('.secure-login p').toggleClass('show-login');
-    return false;
-  });
+$('.secure-login--mobile').click(function() {
+  $('.secure-login p').toggleClass('open-me');
+
+  return false;
+});
 
 });
+
+
 
 
 
