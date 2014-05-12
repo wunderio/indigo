@@ -327,14 +327,25 @@ h2 {
   font-size: 14px;
   font-weight: bold;
 }
+.secure-login--mobile {
+  background-color: $search-blue;
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 14px;
+  left: 0;
+  padding: 2px 7px;
+  position: absolute;
+}
 
-
+.open-me {
+  display: block !important;
+}
 .secure-login {
   float: left;
-  margin-bottom: 20px;
+
   position: relative;
 
-  a {
+  .sign-in--search {
     float: left;
     margin-right: 1%;
     width: 14%;
@@ -342,14 +353,31 @@ h2 {
   p {
     float: left;
     font-size: 12px;
-    width: 85%;
+    width: 75%;
     z-index: 5050;
-    @media (max-width: 480px) {
+  }
+  @media (max-width: 480px) {
+    margin-bottom: 10px;
+    p {
+      display: none;
+    }
+    .sign-in--search {
+      line-height: 27px;
+      margin-left: 30px;
+      position: relative;
+      &:before {
+      }
+    }
+  }
+  @media (min-width: 481px) {
+    margin-bottom: 20px;
+    .secure-login--mobile {
+      display: none;
     }
   }
   @media (min-width: 1020px) {
     float: right;
-    a {
+    .sign-in--search {
       margin-top: -20px;
     }
     p {
