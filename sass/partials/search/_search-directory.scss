@@ -12,16 +12,17 @@
   .org {
     clear: both;
     color: #4c98e5;
-    display: inline-block;
+    display: block;
     font-size: 12px;
+    margin-bottom: 16px;
     p {
       color: #131313;
       margin-right: 4px;
-      display: inline-block;
+      display: inline;
     }
     a {
       color: #4c98e5;
-      display: inline-block;
+      display: inline;
       text-decoration: underline;
     }
   }
