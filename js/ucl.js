@@ -191,18 +191,3 @@ $('.close-me').click(function() {
   });
 
 });
-
-
-
-
-//
-// function debounce(a,b,c){var d;return function(){var e=this,f=arguments;clearTimeout(d),d=setTimeout(function(){d=null,c||a.apply(e,f)},b),c&&!d&&a.apply(e,f)}}
-// var myEfficientFn = debounce(function() {
-//   // All the taxing stuff you do
-//   $('.facets').removeClass('show-facet');
-//   $('.search-results__meta, .search-results').removeClass('move');
-//   $('.close-me').removeClass('showit');
-//   $('.off-canvas').removeClass('spin');
-// }, 50);
-//
-// window.addEventListener('resize', myEfficientFn);
