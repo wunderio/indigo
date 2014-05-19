@@ -2,11 +2,10 @@
   background-color: #fff;
   border: 1px solid #aaa;
   border-radius: 4px;
-  height: 400px;
   left: 5%;
 
   position: absolute;
-  top: 35%;
+  top: 5%;
   width: 90%;
   z-index: 5050;
 }
@@ -16,15 +15,27 @@
   display: table;
   height: 100%;
   padding: 20px 0;
+  table-layout: fixed;
   width: 100%;
 }
 .AC-result {
   display: table-cell;
   height: 100%;
   margin-left: 5px;
+  padding: 0 16px;
   border-left: 1px solid #AAA;
+
   &:first-child {
     margin-left: 0;
     border-left: 1px solid transparent;
+  }
+
+  & > h2 {
+    color: $search-blue;
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  li {
+    list-style-position: inside;
   }
 }
