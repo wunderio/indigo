@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="author" content="Mark Boulton Design" />
+  <meta name="description" content="UCL Homepage" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0" />
+
+  <title>UCL Design Language</title>
+
+  <link href="./css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+  <!--[if IE]><link href="./css/ie.css" rel="stylesheet" /><![endif]-->
+  <!--[if lt IE 8]><link href="./css/ie-old.css" rel="stylesheet" /><![endif]-->
+
+  <!--[if lte IE 8]><script src="./js/html5.js"></script><![endif]-->
+
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" href="favicon-152.png">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+
+</head>
+
+<body id="index">
+
+  <div id="nav-wrap">
+    <a id="nav-mobile-back" href="#"><img src="images/close.png" alt="X" /> Close</a>
+
+    <nav id="global-masthead">
+
+      <div class="wrapper clearfix">
+
+        <div id="global-search">
+          <form action="#" method="get">
+            <!--
+            <div class="search-type">
+              <input type="radio" id="ucl-site" name="operation" value="1" checked="checked">
+              <label for="ucl-site" class="site">Site</label>
+              <input type="radio" id="ucl-search" name="operation" value="2">
+              <label for="ucl-search" class="staff">Directory</label>
+            </div>
+          -->
+          <div id="searchform">
+            <input type="search" placeholder="Search UCL websites, people, and more" id="search" role="search" value="">
+          </div>
+
+          <input type="submit" name="sumbit" value="Go" class="btn search" />
+        </form>
+
+
+      </div>
+
+      <ul id="audiences" class="m-clear">
+        <li><a href="index.php">UCL Home</a></li>
+        <li><a href="prospective-students.php">Prospective students</a></li>
+        <li><a href="current-students.php">Current students</a></li>
+        <li><a href="staff.php">Staff</a></li>
+      </ul>
+    </div>
+
+  </nav><!-- end #global-masthead -->
+
+  <div class="wrapper">
+
+    <div class="photograph">
+
+      <header id="ucl-masthead" role="header">
+
+        <div id="branding">
+          <h1>Search</h1>
+          <img src="./images/ucl-logo.svg" alt="UCL logo" id="logo">
+        </div>
+
+      </header>
+
+      <div class="site-brand site-brand-none">
+
+        <p class="photograph-description">A nascent retina, generated from a 3D embryonic stem cell culture</p>
+
+      </div>
+
+    </div><!-- end .photograph -->
+
+  </div> <!-- end .wrapper -->
+
+</div><!-- end #nav-wrap -->
+
+<div id="site-content" class="wrapper">
+
+  <header id="header-mobile">
+
+    <a id="nav-mobile-menu" href="#"><img src="./images/mob-nav.png" alt="Menu" /></a>
+
+  </header>
+
+  <div id="main" class="clearfix">
+
+    <div class="search-results__meta">
+      <div class="secure-login">
+        <button class="secure-login--mobile">?</button>
+        <a href="" class="sign-in--search">Login</a>
+        <p>Authenticated UCL staff &amp; students have access to more, and richer, results</p>
+      </div>
+      <!-- search-box -->
+      <div class="search-box">
+
+        <form action="" role="search">
+          <input type="text" />
+          <button class="btn search">Search</button>
+        </form>
+      </div>
+      <!-- search-box -->
+
+      <div class="collection">
+
+        <!-- blank div for show/hide of collections on narrow viewports -->
+        <div class="collections-list__show-hide"></div>
+
+        <!-- collections__list -->
+        <ul class="collections__list">
+          <li class="list__item list__item--is-selected">
+            <a href="search.html">​Websites<span>(5000)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="search--courses.html">Degrees<span>(300)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="search--people.html">Directory<span>(1224)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="search--research.html">Research<span>(44)</span></a>
+          </li>
+          <li class="list__item">
+            <a href="search--other.html">Media &amp; More<span>(4)</span></a>
+          </li>
+        </ul>
+        <!-- collections__list -->
+
+      </div>
+      <!-- collections -->
+    </div>
+    <!-- search-results__meta -->
+
+    <div class="search-results">
+
+      <!-- button for off-canvas on narrow viewports -->
+      <a class="off-canvas btn" href="#">Refine</a>
+
+      <!-- results-listed -->
+      <p class="results-listed">
+        <span class="page-start">1</span> -
+        <span class="page-end">10</span> of
+        <span class="total-matching">6,958</span>
+        results found for <strong class="results-query">president</strong>.
+        <span class="did-you-mean">Did you mean: <a href="search.html?query=engineers&amp;collection=ucl-public-meta">
+          <span class="search-highlight">engineers</span></a>?
+        </span>
+      </p>
+      <!-- results-listed -->
+
+      <!-- results sort by option -->
+      <div id="results-sort-by">
+        <select name="select">
+          <option value="value1" selected>Sort By</option>
+          <option value="value2">Author</option>
+          <option value="value3">A-Z</option>
+          <option value="value4">Z-A</option>
+        </select>
+      </div>
+      <!-- results sort by option -->
+
+      <!-- best bet result -->
+      <div class="result__item result__item--best-bet">
+        <h3 class="result__title">
+          <a href=""><strong>President</strong> and Provost</a>
+        </h3>
+        <p class="result__text">UCL <strong>President</strong></strong> &amp; Provost. UCL <strong>President</strong></strong> &amp; Provost Professor Michael Arthur is internationally renowned for his <em>contribution to education and to medical research.</em></p>
+        <a class="result__link" href="" title="President and Provost">http://www.ucl.ac.uk/provost/</a>
+      </div>
+      <!-- best be result -->
+
+      <ol id="fb-results">
+
+        <!-- search result -->
+        <li class="result__item result__item--web">
+          <h3 class="result__title">
+            <a href="" title="http://www.ucl.ac.uk/provost">UCL <strong>President</strong> &amp; Provost</a>
+          </h3>
+          <a class="result__link" href="" title="UCL President &amp; Provost">www.ucl.ac.uk/provost</a>
+          <p class="result__summary">
+            UCL <strong>President</strong> &amp; Provost. UCL <strong>President</strong> &amp; Provost Professor Michael Arthur is internationally renowned for his <em>contribution to education and to medical research.</em> ... Read more news from UCL s <strong>President</strong> &amp;Provost...
+          </p>
+        </li>
+        <!-- search result -->
+
+      </ol>
+      <!-- search results list -->
+
+
+      <!-- search navigation -->
+      <div class="results-nav">
+        <ol class="results-nav__list">
+          <li class=pagination__first>First</li><!--
+       --><li class=pagination__prev>Previous</li><!--
+       --><li><a href=/page/1>1</a></li><!--
+       --><li><a href=/page/2>2</a></li><!--
+       --><li class=current><a href=/page/3>3</a></li><!--
+       --><li><a href=/page/4>4</a></li><!--
+       --><li><a href=/page/5>5</a></li><!--
+       --><li class=pagination__next><a href=/page/next>Next</a></li><!--
+       --><li class=pagination__last><a href=/page/last>Last</a></li>
+        </ol>
+      </div>
+      <!-- search navigation -->
+    </div><!-- end .search-results -->
+
+    <aside class="facets">
+      <div class="module--facets module">
+        <h2>Refine your results</h2>
+        <a href="#" class="close">X</a>
+        <!--<a href="" class="close">x</a>-->
+        <!-- pillboxes -->
+        <ul class="pillboxes">
+
+          <!-- pillbox item -->
+          <li class="pillbox">
+            <a class="pillbox__link" href="#">A Pillbox<span>x</span></a>
+          </li>
+          <!-- pillbox item -->
+          <!-- pillbox item -->
+          <li class="pillbox">
+            <a class="pillbox__link" href="#">A Pillbox<span>x</span></a>
+          </li>
+          <!-- pillbox item -->
+          <!-- pillbox item -->
+          <li class="pillbox">
+            <a class="pillbox__link" href="#">A Pillbox<span>x</span></a>
+          </li>
+          <!-- pillbox item -->
+          <!-- pillbox item -->
+          <li class="pillbox">
+            <a class="pillbox__link" href="#">A Pillbox<span>x</span></a>
+          </li>
+          <!-- pillbox item -->
+
+        </ul>
+        <!-- pillboxes -->
+
+        <!-- search facet with checkboxes -->
+        <div class="facet">
+          <h4>A Facet</h4>
+          <ul class="facet-list">
+            <li class="facet-list__item"><input type="checkbox" id="checkbox_id1" /><label for="checkbox_id1">An option</label><span>(45)</span></li>
+            <li class="facet-list__item"><input type="checkbox" id="checkbox_id2" /><label for="checkbox_id2">Another option</label><span>(45)</span></li>
+            <li class="facet-list__item"><input type="checkbox" id="checkbox_id3" /><label for="checkbox_id3">One more option</label><span>(45)</span></li>
+            <li class="facet-list__item"><input type="checkbox" id="checkbox_id4" /><label for="checkbox_id4">The final option</label><span>(45)</span></li>
+          </ul>
+        </div>
+        <!-- search facet with checkboxes -->
+
+        <!-- search facet with radio buttons -->
+        <div class="facet">
+          <h4>A Facet</h4>
+          <ul class="facet-list">
+            <li class="facet-list__item">
+              <input checked="checked" class="radio" name="radio" id="radio1" type="radio">
+              <label for="radio1">Option 1</label>
+            </li>
+            <li class="facet-list__item">
+              <input class="radio" name="radio" id="radio2" type="radio">
+              <label for="radio2">Option 2</label>
+            </li>
+          </ul>
+        </div>
+        <!-- search facet with radio buttons -->
+
+        <!-- search facet with a range -->
+        <div class="facet">
+          <h4>A Facet</h4>
+          <ul class="facet-list">
+            <li class="facet-list__item">
+              <label for="phone">Range</label>
+              <input name="points" min="1" max="5" type="range">
+              <em>Note about this field</em>
+            </li>
+          </ul>
+        </div>
+        <!-- search facet with a range -->
+
+        <!-- search facet with a date picker -->
+        <div class="facet">
+          <h4>A Facet</h4>
+          <ul class="facet-list">
+            <li class="facet-list__item">
+              <label for="datefrom">From Date"</label>
+              <input type="text" id="datepicker" title="datefrom">
+              <em>Note about this date picker</em>
+            </li>
+            <li class="facet-list__item">
+              <label for="dateto">To Date</label>
+              <input type="text" id="datepicker" title="dateto">
+              <em>Note about this date picker</em>
+            </li>
+          </ul>
+        </div>
+        <!-- search facet with a date picker-->
+
+        <!-- search facet with a select option -->
+        <div class="facet">
+          <h4>A Facet</h4>
+          <ul class="facet-list">
+            <li class="facet-list__item">
+              <label for="select">Select</label>
+              <select id="select">
+              	<optgroup label="Option Group 1">
+                  	<option>Option One</option>
+                    <option>Option Two</option>
+                  	<option>Option Three</option>
+                  </optgroup>
+                  <optgroup label="Option Group 2">
+                  	<option>Option One</option>
+                  	<option>Option Two</option>
+                  	<option>Option Three</option>
+                  </optgroup>
+              </select>
+              <em>Note about this selection</em>
+            </li>
+          </ul>
+        </div>
+        <!-- search facet with a select option -->
+
+        <!-- search facet with a link -->
+        <div class="facet">
+          <h4>A Facet</h4>
+          <ul class="facet-list">
+            <li class="facet-list__item">
+              <a href="#" class="facet-list__link">a link in a facet</a>
+            </li>
+          </ul>
+        </div>
+        <!-- search facet with a link -->
+
+      </div>
+    </aside>
+  </div>
+
+  <!-- end main slot where silva content gets rendered-->
+
+</div>
+
+
+<!--End last modified info-->
+
+
+<!-- </div>end #site-content -->
+
+<footer class="wrapper clearfix">
+
+  <article class="block-myucl">
+    <h2>Facilities</h2>
+    <ul>
+      <li><a href="http://www.ucl.ac.uk/departments/faculties">Faculties and departments</a></li>
+      <li><a href="http://www.ucl.ac.uk/library/">Library</a></li>
+      <li><a href="http://www.ucl.ac.uk/museums">Museums and Collections</a></li>
+      <li><a href="http://www.thebloomsbury.com/">UCL Bloomsbury Theatre</a></li>
+      <li><a href="http://www.ucl.ac.uk/maps">Maps and buildings</a></li>
+    </ul>
+  </article>
+
+  <article class="block-finditfast1">
+    <h2>Locations</h2>
+    <ul>
+      <li><a href="http://www.ucl.ac.uk/london">UCL and London</a></li>
+      <li><a href="http://www.ucl.ac.uk/australia#">UCL Australia</a></li>
+      <li><a href="http://www.ucl.ac.uk/qatar">UCL Qatar</a></li>
+    </ul>
+  </article>
+
+  <article class="block-finditfast2">
+    <h2>Connect with us</h2>
+    <ul>
+      <li><a href="http://www.ucl.ac.uk/alumni">Alumni</a></li>
+      <li><a href="http://www.ucl.ac.uk/enterprise">Businesses</a></li>
+      <li><a href="http://www.ucl.ac.uk/media">Media Relations</a></li>
+      <li><a href="http://www.ucl.ac.uk/hr/jobs/">Jobs</a></li>
+      <li><a href="http://www.ucl.ac.uk/makeyourmark">Support us</a></li>
+    </ul>
+
+  </article>
+
+  <hr>
+
+  <p>University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</p>
+
+  <p id="footer-links">Copyright © 2013 UCL <a href="#">Disclaimer</a> | <a href="#">Freedom of Information</a> | <a href="#">Accessibility</a> | <a href="#">Privacy</a> | <a href="#">Cookies</a> | <a href="#">Contact Us</a></p>
+
+</footer>
+
+<div class="search--modal">
+  <div class="AC-results">
+    <section class="AC-result"></section>
+    <section class="AC-result"></section>
+    <section class="AC-result"></section>
+    <section class="AC-result"></section>
+    <section class="AC-result"></section>
+  </div>
+</div>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/ucl.js"></script>
+<script src="./js/gridset-overlay.js"></script>
+
+</body>
+</html>

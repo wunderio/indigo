@@ -1,0 +1,30 @@
+.search--modal {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  height: 400px;
+  left: 5%;
+
+  position: absolute;
+  top: 35%;
+  width: 90%;
+  z-index: 5050;
+}
+
+.AC-results {
+  box-sizing: border-box;
+  display: table;
+  height: 100%;
+  padding: 20px 0;
+  width: 100%;
+}
+.AC-result {
+  display: table-cell;
+  height: 100%;
+  margin-left: 5px;
+  border-left: 1px solid #AAA;
+  &:first-child {
+    margin-left: 0;
+    border-left: 1px solid transparent;
+  }
+}
