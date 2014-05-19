@@ -43,8 +43,8 @@
       font-size: 2rem;
     }
     .result__summary {
-      font-size: 16px;
-      font-size: 1.6rem;
+//      font-size: 16px;
+//      font-size: 1.6rem;
     }
     .result__link {
       font-size: 14px;
@@ -65,12 +65,12 @@
 
 .result__thumbnail {
   background-color: $stone;
-  border: 2px solid darken($stone, 30%);
+  box-sizing: border-box;
   display: block;
   float: left;
-  margin: 0px 3% 1.2% 2.6%;
-  padding-bottom: 19.2%;
-  width: 19.2%;
+  margin: 0px 0 12px;
+  padding-bottom: 56.25%;
+  width: 100%;
 }
 
 .result__details {
@@ -123,14 +123,15 @@
 
 .results__meta {
   clear: both;
-  float: left;
-  margin-left: 3%;
+  display: table;
   margin-top: 20px;
-  width: 96%;
+  width: 100%;
+  table-layout: fixed;
   p, a {
-    float: left;
+    display: table-cell;
     font-size: 14px;
-    width: 33.3%;
+    text-align: center;
+
     span {
       clear: both;
       float: left;
@@ -138,23 +139,14 @@
       width: 100%;
     }
   }
-  @media (min-width: 600px) {
-    p span {
-      clear: none;
-      float: none;
-      width: auto;
+  @media (max-width: 470px) {
+    display: block;
+    p,a {
+      float: left;
+      margin-bottom: 3px;
+      width: 50%;
     }
   }
-  &--alpha {
-    text-align: left;
-  }
-  &--beta {
-    text-align: center;
-  }
-  &--gamma {
-    text-align: right;
-  }
-
 }
 
 
@@ -233,6 +225,53 @@
     &:before {
       background-position: -2px -259px;
       height: 23px;
+    }
+  }
+}
+
+
+
+// YouTube
+
+.result__item--youtube {
+  .result__thumbnail {
+
+    margin: 0px 0 12px;
+    height: 120px;
+    overflow: hidden;
+    padding-bottom: 0;
+    width: 100%;
+    // img for now, but might be different
+    a {
+      display: table;
+      height: 120px;
+      width: 100%;
+    }
+    img {
+      position: relative;
+      top: 100%;
+      margin-top: -22%;
+    }
+  }
+  .result__details {
+    width: 100%;
+  }
+  @media (min-width: 600px) {
+    .result__thumbnail {
+      width: 32.5%;
+      height: auto;
+      a {
+        display: block;
+        height: auto;
+      }
+      img {
+        position: relative;
+        top: 0;
+        margin-top: auto;
+      }
+    }
+    .result__details {
+      width: 65%;
     }
   }
 }
