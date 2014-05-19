@@ -238,7 +238,9 @@
 // YouTube
 
 .result__item--youtube {
-  border-bottom: 1px solid #AAA;
+  background-color: none !important;
+  border-bottom: 1px solid lighten(#AAA, 20%);
+  position: relative;
   .result__thumbnail {
 
     margin: 0px 0 12px;
@@ -350,5 +352,60 @@
     left: -24px;
     top: 2px;
     width: 18px;
+  }
+  @media (min-width: 580px) {
+    clear: both;
+    float: left;
+    margin-left: 24px;
+  }
+}
+
+
+// LEO
+
+.result__item--leo {
+  .result__details {
+    width: 100%;
+  }
+  .result__thumbnail {
+    background-color: none !important;
+    padding-bottom: 0;
+    a {
+      display: block;
+      position: relative;
+      width: 100%;
+      &:hover {
+        &:before {
+          background-image: url('../../images/youtube-button.png');
+          content: '';
+          position: absolute;
+          width: 100px;
+          left: 50%;
+          margin-left: -50px;
+          top: 50%;
+          margin-top: -34px;
+          height: 100px;
+          z-index: 5050;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      @media (max-width: 1024px) {
+        &:before {
+          background-image: url('../../images/youtube-button.png');
+          content: '';
+          position: absolute;
+          width: 100px;
+          left: 50%;
+          margin-left: -50px;
+          top: 50%;
+          margin-top: -34px;
+          height: 100px;
+          z-index: 5050;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
   }
 }
