@@ -68,7 +68,7 @@
 // SoundCloud search results specific
 
 .result__thumbnail {
-  background-color: $stone;
+//  background-color: $stone;
   box-sizing: border-box;
   display: block;
   float: left;
@@ -368,7 +368,6 @@
     width: 100%;
   }
   .result__thumbnail {
-    background-color: none !important;
     padding-bottom: 0;
     a {
       display: block;
@@ -406,6 +405,24 @@
           background-repeat: no-repeat;
         }
       }
+    }
+  }
+  @media (min-width: 600px) {
+    .result__thumbnail {
+      width: 32.5%;
+      height: auto;
+      a {
+        display: block;
+        height: auto;
+      }
+      img {
+        position: relative;
+        top: 0;
+        margin-top: auto;
+      }
+    }
+    .result__details {
+      width: 65%;
     }
   }
 }
