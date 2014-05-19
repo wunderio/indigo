@@ -3960,6 +3960,12 @@ h2 {
     display: none !important;
   }
 }
+@media (min-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_off-canvas--search\.scss}line{font-family:\0000382}}
+  .move {
+    left: 0;
+  }
+}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search-courses\.scss}line{font-family:\000032}}
 .result__item--degrees {
   margin-bottom: 25px;

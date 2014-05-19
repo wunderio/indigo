@@ -77,3 +77,9 @@
     display: none !important;
   }
 }
+// fixes show/hide on resizing with CSS rather than JS
+@media (min-width: 1024px) {
+  .move {
+    left: 0;
+  }
+}
