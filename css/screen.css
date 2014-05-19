@@ -4332,6 +4332,14 @@ h2 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003338}}
 .secure-login--mobile {
+  width: auto;
+  border: 0 none;
+  margin: 0;
+  background: transparent;
+  overflow: visible;
+  /* Stupid IE */
+  #vertical-align: middle;
+  /* IE6,IE7 */
   background-color: #4693ea;
   border-radius: 50%;
   color: #FFF;
@@ -4340,25 +4348,31 @@ h2 {
   left: 0;
   padding: 2px 7px;
   position: absolute;
+  top: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003339}}
+.secure-login--mobile::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003361}}
 .open-me {
   display: block !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003364}}
 .secure-login {
   float: left;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003369}}
 .secure-login .sign-in--search {
   float: left;
   margin-right: 1%;
   width: 14%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003374}}
 .secure-login p {
   float: left;
   font-size: 12px;
@@ -4367,15 +4381,15 @@ h2 {
   z-index: 5050;
 }
 @media (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003364}}
   .secure-login {
     margin-bottom: 10px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003383}}
   .secure-login p {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003386}}
   .secure-login .sign-in--search {
     line-height: 27px;
     margin-left: 30px;
@@ -4383,25 +4397,25 @@ h2 {
   }
 }
 @media (min-width: 481px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003364}}
   .secure-login {
     margin-bottom: 20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003396}}
   .secure-login .secure-login--mobile {
     display: none;
   }
 }
 @media (min-width: 1020px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003364}}
   .secure-login {
     float: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003402}}
   .secure-login .sign-in--search {
     margin-top: -20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003405}}
   .secure-login p {
     padding: 2px 0 0;
     position: absolute;
@@ -4413,18 +4427,18 @@ h2 {
   }
 }
 @media (min-width: 1100px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003404}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003416}}
   .secure-login p {
     right: 0;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003414}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003426}}
 .site-brand-none {
   padding-top: 9.3%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003418}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003430}}
 .show-login {
   display: block !important;
 }
@@ -4433,7 +4447,7 @@ h2 {
  * Pikaday
  * Copyright © 2012 David Bushell | BSD & MIT license | http://dbushell.com/
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003434}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003446}}
 .pika-single {
   z-index: 9999;
   display: block;
@@ -4447,24 +4461,24 @@ h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003447}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003459}}
 .pika-single.is-hidden {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003451}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003463}}
 .pika-single.is-bound {
   position: absolute;
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.5);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003456}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003468}}
 .pika-title {
   position: relative;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003461}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003473}}
 .pika-label {
   display: inline-block;
   *display: inline;
@@ -4479,7 +4493,7 @@ h2 {
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003474}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003486}}
 .pika-title select {
   cursor: pointer;
   position: absolute;
@@ -4490,7 +4504,7 @@ h2 {
   opacity: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003484}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003496}}
 .pika-prev,
 .pika-next {
   display: block;
@@ -4513,13 +4527,13 @@ h2 {
   *top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003506}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003518}}
 .pika-prev:hover,
 .pika-next:hover {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003511}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003523}}
 .pika-prev,
 .is-rtl .pika-next {
   float: left;
@@ -4527,7 +4541,7 @@ h2 {
   *left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003518}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003530}}
 .pika-next,
 .is-rtl .pika-prev {
   float: right;
@@ -4535,20 +4549,20 @@ h2 {
   *right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003525}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003537}}
 .pika-prev.is-disabled,
 .pika-next.is-disabled {
   cursor: default;
   opacity: .2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003531}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003543}}
 .pika-select {
   display: inline-block;
   *display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003536}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003548}}
 .pika-table {
   width: 100%;
   border-collapse: collapse;
@@ -4556,13 +4570,13 @@ h2 {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003543}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003555}}
 .pika-table th,
 .pika-table td {
   width: 14.285714285714286%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003548}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003560}}
 .pika-table th {
   color: #999;
   font-size: 12px;
@@ -4571,7 +4585,7 @@ h2 {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003556}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003568}}
 .pika-button {
   cursor: pointer;
   display: block;
@@ -4587,13 +4601,13 @@ h2 {
   background: #f5f5f5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003583}}
 .is-today .pika-button {
   color: #33aaff;
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003576}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003588}}
 .is-selected .pika-button {
   color: #fff;
   font-weight: bold;
@@ -4602,7 +4616,7 @@ h2 {
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003584}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003596}}
 .is-disabled .pika-button {
   pointer-events: none;
   cursor: default;
@@ -4610,7 +4624,7 @@ h2 {
   opacity: .3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003591}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003603}}
 .pika-button:hover {
   color: #fff !important;
   background: #ff8000 !important;

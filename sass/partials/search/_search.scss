@@ -336,6 +336,17 @@ h2 {
   font-weight: bold;
 }
 .secure-login--mobile {
+  &::-moz-focus-inner {
+  border:0;
+  padding:0
+}
+  width:auto;
+  border:0 none;
+  margin:0;
+  background:transparent;
+  overflow:visible;
+  /* Stupid IE */
+  #vertical-align:middle; /* IE6,IE7 */
   background-color: $search-blue;
   border-radius: 50%;
   color: #FFF;
@@ -344,6 +355,7 @@ h2 {
   left: 0;
   padding: 2px 7px;
   position: absolute;
+  top: 4px;
 }
 
 .open-me {
