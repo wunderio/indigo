@@ -37,99 +37,86 @@ $stone: #d6d2c4;
 
 #fb-results {
   clear: both;
-
-
   @media (min-width: 768px) {
     padding: 0 40px;
   }
-
-
 }
 
-.result__item--web {
-
-}
-
-
-
-  #results-sort-by {
-    position: absolute;
-    right: 0;
-    margin: 10px 0 0;
-    @media (min-width: 768px) {
-      float: right;
-      font-size: 14px;
-      font-size: 1.4rem;
-      margin: 10px 40px 20px 0;
-      position: relative;
-    }
-    @media (min-width: 768px) and (max-width: 959px) {
-      margin-top: 20px;
-    }
-  }
-
-
-
-
-  .facets {
-    background-color: $stone;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
+#results-sort-by {
+  position: absolute;
+  right: 0;
+  margin: 10px 0 0;
+  @media (min-width: 768px) {
+    float: right;
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin: 10px 40px 20px 0;
     position: relative;
-    top: -33px;
-
-    h2 {
-      font-size: 20px;
-      font-size: 2rem;
-      padding-bottom: 40px;
-    }
   }
+  @media (min-width: 768px) and (max-width: 959px) {
+    margin-top: 20px;
+  }
+}
 
-  .results-page {
+.facets {
+  background-color: $stone;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  top: -33px;
+
+  h2 {
+    font-size: 20px;
+    font-size: 2rem;
+    padding-bottom: 40px;
+  }
+}
+
+.results-page {
+  float: left;
+}
+
+.facets {
+  padding: 20px 10px 0;
+  left: -280px;
+  position: absolute;
+  top: 0;
+  width: 280px;
+  @media (min-width: 768px) {
+    padding: 20px 20px 0;
+  }
+}
+
+.module--facets {
+  background-color: #d6d1c5;
+  h2 {
     float: left;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 20px 0;
+    padding: 0;
   }
 
-
-  .facets {
-    padding: 20px 10px 0;
-    width: 31.3%;
-    @media (min-width: 768px) {
-      padding: 20px 20px 0;
-    }
+  .close {
+    color: #FFF;
+    line-height: 1;
+    margin: 0px;
+    text-decoration: none;
+    vertical-align: bottom;
+    background: none repeat scroll 0% 0% #131313;
+    padding: 7px 9px;
+    border-radius: 50%;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    font-size: 12px;
   }
-
-
-
-  .module--facets {
-    background-color: #d6d1c5;
-    h2 {
-      float: left;
-      font-size: 20px;
-      font-size: 2rem;
-      font-weight: bold;
-      line-height: 1;
-      margin: 0 0 20px 0;
-      padding: 0;
-    }
-
-    .close {
-      color: #FFF;
-      line-height: 1;
-      margin: 0px;
-      text-decoration: none;
-      vertical-align: bottom;
-      background: none repeat scroll 0% 0% #131313;
-      padding: 7px 9px;
-      border-radius: 50%;
-      position: absolute;
-      right: 16px;
-      top: 16px;
-      font-size: 12px;
-    }
-  }
+}
 
   .facet > * {
     -webkit-box-sizing: border-box;
@@ -137,40 +124,37 @@ $stone: #d6d2c4;
     box-sizing: border-box;
   }
 
-  .facet {
-    clear: both;
+.facet {
+  clear: both;
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+  h4 {
+    background-color: #fff;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
     float: left;
-    margin-bottom: 20px;
+    font-sizce: 14px;
+    font-size: 1.4rem;
+    line-height: 1;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    position: relative;
+    transition: border-radius .2s ease-in-out;
     width: 100%;
-    h4 {
-      background-color: #fff;
-      -webkit-border-top-left-radius: 4px;
-      border-top-left-radius: 4px;
-      -webkit-border-top-right-radius: 4px;
-      border-top-right-radius: 4px;
-      float: left;
-      font-sizce: 14px;
-      font-size: 1.4rem;
-      line-height: 1;
-      margin: 0 0 10px 0;
-      padding: 10px;
-      position: relative;
-      transition: border-radius .2s ease-in-out;
-      width: 100%;
-      @media(min-width:768px) {
-//      font-size: 20px;
-}
-&:after {
-  content: '';
-  position: absolute;
-  right: 10px;
-  top: 13px;
-  transition: all .2s ease-in-out;
-  border-style: solid;
-  border-width: 10px 6px 0;
-  border-color: #d6d1c5 transparent transparent transparent;
-}
-}
+      &:after {
+        content: '';
+        position: absolute;
+        right: 10px;
+        top: 13px;
+        transition: all .2s ease-in-out;
+        border-style: solid;
+        border-width: 10px 6px 0;
+        border-color: #d6d1c5 transparent transparent transparent;
+      }
+    }
 }
 
 .facet-list {
@@ -252,12 +236,6 @@ p cite {
 
 
 
-.facets {
-  left: -280px;
-  position: absolute;
-  top: 0;
-  width: 280px;
-}
 
 .search-results {
   clear: both;
@@ -435,8 +413,6 @@ h2 {
 
 
 // pickaday boilerplate CSS
-
-@charset "UTF-8";
 
 /*!
  * Pikaday
