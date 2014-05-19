@@ -7,6 +7,7 @@ $stone: #d6d2c4;
 .results-listed {
   color: #131313;
   font-size: 14px;
+  font-size: 1.4rem;
   margin-top: 15px;
   margin-bottom: 10px;
   float: left;
@@ -58,6 +59,7 @@ $stone: #d6d2c4;
     @media (min-width: 768px) {
       float: right;
       font-size: 14px;
+      font-size: 1.4rem;
       margin: 10px 40px 20px 0;
       position: relative;
     }
@@ -81,6 +83,7 @@ $stone: #d6d2c4;
 
     h2 {
       font-size: 20px;
+      font-size: 2rem;
       padding-bottom: 40px;
     }
   }
@@ -105,6 +108,7 @@ $stone: #d6d2c4;
     h2 {
       float: left;
       font-size: 20px;
+      font-size: 2rem;
       font-weight: bold;
       line-height: 1;
       margin: 0 0 20px 0;
@@ -185,6 +189,7 @@ $stone: #d6d2c4;
   }
   label {
     font-size: 14px;
+    font-size: 1.4rem;
     font-weight: normal;
     line-height: 1;
     margin: 0;
@@ -236,9 +241,11 @@ p cite {
     margin-left: 5px;
     color: #000;
     font-size: 14px;
+    font-size: 1.4rem;
   }
   em {
     font-size: 12px;
+    font-size: 1.2rem;
     margin-left: 10px;
   }
 }
@@ -325,6 +332,7 @@ h2 {
   color: $search-blue;
   float: left;
   font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 .secure-login--mobile {
@@ -332,6 +340,7 @@ h2 {
   border-radius: 50%;
   color: #FFF;
   font-size: 14px;
+  font-size: 1.4rem;
   left: 0;
   padding: 2px 7px;
   position: absolute;
@@ -353,6 +362,7 @@ h2 {
   p {
     float: left;
     font-size: 12px;
+    font-size: 1.2rem;
     width: 75%;
     z-index: 5050;
   }
