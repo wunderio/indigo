@@ -3582,6 +3582,21 @@ h2 {
   }
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003433}}
+.result__item--blogpost .result__title {
+  margin-bottom: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003437}}
+.result__domain {
+  color: #4693ea;
+  display: block;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_results-best-bet\.scss}line{font-family:\000031}}
 .result__item--best-bet {
   border: 4px solid #1667c3;
