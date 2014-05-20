@@ -3399,7 +3399,7 @@ h2 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003257}}
 .result__item--youtube .result__thumbnail a:hover:before {
-  background-image: url("../../images/youtube-button.png");
+  background-image: url("../images/youtube-button.png");
   content: '';
   position: absolute;
   width: 100px;
@@ -3415,7 +3415,7 @@ h2 {
 @media (max-width: 1024px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003273}}
   .result__item--youtube .result__thumbnail a:before {
-    background-image: url("../../images/youtube-button.png");
+    background-image: url("../images/youtube-button.png");
     content: '';
     position: absolute;
     width: 100px;
@@ -3529,7 +3529,7 @@ h2 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003377}}
 .result__item--leo .result__thumbnail a:hover:before {
-  background-image: url("../../images/youtube-button.png");
+  background-image: url("../images/youtube-button.png");
   content: '';
   position: absolute;
   width: 100px;
@@ -3545,7 +3545,7 @@ h2 {
 @media (max-width: 1024px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003393}}
   .result__item--leo .result__thumbnail a:before {
-    background-image: url("../../images/youtube-button.png");
+    background-image: url("../images/youtube-button.png");
     content: '';
     position: absolute;
     width: 100px;

@@ -255,7 +255,7 @@
       width: 100%;
       &:hover {
         &:before {
-          background-image: url('../../images/youtube-button.png');
+          background-image: url('../images/youtube-button.png');
           content: '';
           position: absolute;
           width: 100px;
@@ -271,7 +271,7 @@
       }
       @media (max-width: 1024px) {
         &:before {
-          background-image: url('../../images/youtube-button.png');
+          background-image: url('../images/youtube-button.png');
           content: '';
           position: absolute;
           width: 100px;
@@ -375,7 +375,7 @@
       width: 100%;
       &:hover {
         &:before {
-          background-image: url('../../images/youtube-button.png');
+          background-image: url('../images/youtube-button.png');
           content: '';
           position: absolute;
           width: 100px;
@@ -391,7 +391,7 @@
       }
       @media (max-width: 1024px) {
         &:before {
-          background-image: url('../../images/youtube-button.png');
+          background-image: url('../images/youtube-button.png');
           content: '';
           position: absolute;
           width: 100px;
