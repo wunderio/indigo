@@ -4531,14 +4531,57 @@ h2 {
   background-color: #fff;
   border: 1px solid #aaa;
   border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.3);
   left: 5%;
   position: absolute;
-  top: 5%;
+  top: 38px;
   width: 90%;
   z-index: 5050;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000312}}
+.search--modal .no-results {
+  color: #0f4888;
+  font-weight: bold;
+  margin-top: 16px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000318}}
+.search--modal ul {
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000322}}
+.search--modal li {
+  list-style: none;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000327}}
+.search--modal li li {
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000330}}
+.search--modal li p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000336}}
+.search--modal li a {
+  color: #4693ea;
+  display: block;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000344}}
+.search--modal li p a {
+  color: #333;
+  text-decoration: none;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000351}}
 .AC-results {
   box-sizing: border-box;
   display: table;
@@ -4548,7 +4591,7 @@ h2 {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000359}}
 .AC-result {
   display: table-cell;
   height: 100%;
@@ -4556,20 +4599,116 @@ h2 {
   padding: 0 16px;
   border-left: 1px solid #AAA;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000366}}
 .AC-result:first-child {
   margin-left: 0;
   border-left: 1px solid transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000371}}
 .AC-result > h2 {
   color: #4693ea;
   font-size: 16px;
   font-size: 1.6rem;
+  margin-bottom: 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000338}}
-.AC-result li {
-  list-style-position: inside;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000377}}
+.AC-result > a {
+  color: #4693ea;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000391}}
+.AC-result--directory li {
+  display: table;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000395}}
+.AC-result--directory .AC-details__image {
+  display: table-cell;
+  padding-top: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000398}}
+.AC-result--directory .AC-details__image img {
+  margin-right: 20px;
+  display: block;
+  padding-left: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003104}}
+.AC-result--directory .AC-details {
+  display: table-cell;
+  vertical-align: bottom;
+  width: 77%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003108}}
+.AC-result--directory .AC-details .fn,
+.AC-result--directory .AC-details .position {
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003112}}
+.AC-result--directory .AC-details .profile-details {
+  margin-bottom: 0;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003115}}
+.AC-result--directory .AC-details .profile-details li {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003121}}
+.AC-result--directory .AC-details .profile-details li p {
+  font-size: 12px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003132}}
+.AC-result--secure .AC-details {
+  padding-left: 10px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003139}}
+.AC-result__degrees h3 {
+  display: inline;
+  font-size: 12px;
+  line-height: 1.2;
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003145}}
+.AC-result__degrees .result__summary {
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003148}}
+.AC-result__degrees .result__link {
+  background-color: #ea7600;
+  color: #fff;
+  position: relative;
+  display: block;
+  margin: 8px 0 16px 0;
+  padding: 8px 20px 8px 0;
+  transition: background-color .25s linear;
+  width: 130px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003157}}
+.AC-result__degrees .result__link:hover {
+  background-color: #ff8f1e;
+  transition: background-color .25s linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003161}}
+.AC-result__degrees .result__link:before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 6px 0 6px 12px;
+  border-color: transparent transparent transparent #ffffff;
+  right: 13px;
+  top: 13px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search\.scss}line{font-family:\00003310}}
