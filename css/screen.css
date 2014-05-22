@@ -4579,7 +4579,7 @@ h2 {
   list-style: none;
   border-bottom: 1px solid #e7e7e7;
   margin-bottom: 8px;
-  height: 72px;
+  height: 74px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\0000327}}
 .search--modal li li {
@@ -4715,7 +4715,7 @@ h2 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003150}}
 .AC-result .email a {
   color: #4c98e5;
-  font-size: 14px;
+  font-size: 12px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search--modal\.scss}line{font-family:\00003155}}
 .AC-result .tel {
