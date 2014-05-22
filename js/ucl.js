@@ -89,57 +89,53 @@ $(document).ready(function(){
 
 	}
 
-  // placeholder.js called
-
-  $('input, textarea').placeholder();
-
 	// Search things
 
-// pickaday called
+  // placeholder.js called
+  $('input, textarea').placeholder();
 
-var picker = new Pikaday({
-        field: document.getElementById('datepicker'),
-        format: 'D MMM YYYY',
-        onSelect: function() {
-            console.log(this.getMoment().format('Do MMMM YYYY'));
-        }
-    });
+  // pickaday called
+  var picker = new Pikaday({
+    field: document.getElementById('datepicker'),
+    format: 'D MMM YYYY',
+    onSelect: function() {
+        console.log(this.getMoment().format('Do MMMM YYYY'));
+    }
+  });
 
 
-// face show/hide
-// # needs fixing so doesn't hide _all_ facet-list
-$('.facet h4').click(function() {
-  $(this).next('.facet-list').toggleClass('close-facet');
-  $(this).toggleClass('rounded');
-  $(this).toggleClass('upside-down');
-  return false;
-});
+  // face show/hide
+  $('.facet h4').click(function() {
+    $(this).next('.facet-list').toggleClass('close-facet');
+    $(this).toggleClass('rounded');
+    $(this).toggleClass('upside-down');
+    return false;
+  });
 
-$('.off-canvas').click(function() {
-  $('.facets').toggleClass('show-facet');
-  $('.search-results__meta').toggleClass('move');
-  $('.search-results').toggleClass('move');
-  $('.close-me').toggleClass('showit');
-  $('.off-canvas').toggleClass('spin');
+  $('.off-canvas').click(function() {
+    $('.facets').toggleClass('show-facet');
+    $('.search-results__meta').toggleClass('move');
+    $('.search-results').toggleClass('move');
+    $('.close-me').toggleClass('showit');
+    $('.off-canvas').toggleClass('spin');
+    return false;
+  });
 
-  return false;
-});
+  $('.close').click(function() {
+    $('.facets').removeClass('show-facet');
+    $('.search-results__meta, .search-results').removeClass('move');
+    $('.close-me').removeClass('showit');
+    $('.off-canvas').removeClass('spin');
+    return false;
+  });
 
-$('.close').click(function() {
-  $('.facets').removeClass('show-facet');
-  $('.search-results__meta, .search-results').removeClass('move');
-  $('.close-me').removeClass('showit');
-  $('.off-canvas').removeClass('spin');
-  return false;
-});
-
-$('.close-me').click(function() {
-  $('.facets').removeClass('show-facet');
-  $('.search-results__meta, .search-results').removeClass('move');
-  $('.close-me').removeClass('showit');
-  $('.off-canvas').removeClass('spin');
-  return false;
-});
+  $('.close-me').click(function() {
+    $('.facets').removeClass('show-facet');
+    $('.search-results__meta, .search-results').removeClass('move');
+    $('.close-me').removeClass('showit');
+    $('.off-canvas').removeClass('spin');
+    return false;
+  });
 
 	// collections show/hide for mobile devices
 	$('.collections-list__show-hide').click(function() {
@@ -148,22 +144,9 @@ $('.close-me').click(function() {
 		return false;
 	});
 
-  $(window).resize(function() {
-
-    if ($(window).width() < 700) {
-      // collections put whatever collection is selected at top of list on mobile
-      $('.collections__list').find('.list__item--is-selected').prependTo('.collections__list');
-    }
-    else {
-    }
-  });
-
   // show/hide login details
-
   $('.secure-login--mobile').click(function() {
     $('.secure-login p').toggleClass('open-me');
-
     return false;
   });
-
 });
