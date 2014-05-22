@@ -17,15 +17,16 @@
   }
   ul {
     margin-bottom: 10px;
-
   }
   li {
     list-style: none;
     border-bottom: 1px solid lighten(#aaa, 24%);
     margin-bottom: 8px;
+    height: 72px;
   //  padding-left: 16px;
     li {
       padding-left: 0;
+      height: auto;
     }
     p {
       font-size: 14px;
@@ -91,6 +92,7 @@
   li {
     display: table;
     padding-left: 0;
+    width: 100%;
   }
   .AC-details__image {
     display: table-cell;
@@ -110,7 +112,7 @@
       font-size: 14px;
     }
     .profile-details {
-      margin-bottom: 0;
+      margin-bottom: 4px;
       width: 100%;
       li {
         border-bottom: 0;
@@ -127,47 +129,41 @@
   }
 }
 
-.AC-result--secure {
-//  padding-left: 16px !important;
-  .AC-details {
-    padding-left: 10px !important;
-  }
-}
-
-
-.AC-result__degrees {
-  h3 {
-    display: inline;
-    font-size: 12px;
-    line-height: 1.2;
-    margin-top: 0;
-  }
-  .result__summary {
-    font-size: 12px;
-  }
-  .result__link {
-    background-color: $orange;
-    color: #fff;
+.AC-result {
+  .tel {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 20px;
+    margin-left: 30px;
+    padding-left: 30px;
     position: relative;
-    display: block;
-    margin: 8px 0 16px 0;
-    padding: 8px 20px 8px 0;
-    transition: background-color .25s linear;
-    width: 130px;
-    &:hover {
-      background-color: lighten($orange, 10%);
-      transition: background-color .25s linear;
+    span {
+      font-weight: bold;
+      display: inline;
+    }
+    a {
+      display: inline;
     }
     &:before {
+      @extend .sprite;
+
       content: '';
       position: absolute;
-      width: 0px;
-      height: 0px;
-      border-style: solid;
-      border-width: 6px 0 6px 12px;
-      border-color: transparent transparent transparent #ffffff;
-      right: 13px;
-      top: 13px;
+      left: -35px;
+      width: 20px;
+      height: 18px;
+      top: 3px;
+      background-position: 0 -31px;
+    }
+  }
+}
+.AC-result__degrees {
+  h3 {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    span {
+      margin-left: 4px;
     }
   }
 }
