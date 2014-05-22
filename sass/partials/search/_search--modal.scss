@@ -105,7 +105,7 @@
   }
   .AC-details {
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: top;
     width: 77%;
     .fn,
     .position {
@@ -130,6 +130,28 @@
 }
 
 .AC-result {
+  .email {
+    clear: left;
+    float: left;
+    margin-left: 32px; // fixes ol li li
+    padding-left: 30px;
+    line-height: 24px;
+    position: relative;
+    &:before {
+      @extend .sprite;
+
+      content: '';
+      position: absolute;
+      left: -40px;
+      width: 18px;
+      height: 12px;
+      top: 6px;
+    }
+    a {
+      color: #4c98e5;
+      font-size: 14px;
+    }
+  }
   .tel {
     font-size: 14px;
     font-size: 1.4rem;
