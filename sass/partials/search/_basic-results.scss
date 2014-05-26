@@ -292,11 +292,14 @@
       position: relative;
       &:before {
         color: darken(#AAA, 20%);
-          content: '|';
+        content: '|';
         font-size: 18px;
         position: absolute;
         right: -10px;
         top: -6px;
+        &:last-child {
+          display: none !important;
+        }
       }
     }
   }
