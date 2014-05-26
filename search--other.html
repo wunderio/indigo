@@ -175,12 +175,12 @@
       <ol id="fb-results">
 
         <!-- search result // soundcloud -->
-        <li class="result__item result__item--other result__item--soundcloud">
-          <a class="result__thumbnail" href="#"></a>
+        <li class="result__item result__item--other result__item--audio">
           <div class="result__details">
             <h3 class="result__title">
               <a href="" title="http://www.ucl.ac.uk/provost">Sounds of UCL: Mechanical Engineering wave tank with lute</a>
             </h3>
+
             <div class="results__meta">
               <p class="results__meta--category"><a href="">UCL Geomatics</a></p>
               <p class="results__meta--date">24/12/12</p>
@@ -190,15 +190,19 @@
           One of my colleagues thought at first I might have placed a pre-recorded lute track alongside the sound of breaking waves during multi-track editing.
             </p>
           </div>
-        <div class="sc-audio">
-          <a class="play-audio"></a>
-          <div class="sc-audio__soundwave">
-            <div class="waveform">
-              <img src="../../images/sc-example.png" alt="" />
+          <div class="result__thumbnail">
+            <a class="result__thumbnail--youtube" href="#">
+              <img src="images/mqdefault.jpg" alt="">
+            </a>
+          </div>
+          <div class="sc-audio">
+            <a class="play-audio"></a>
+            <div class="sc-audio__soundwave">
+              <div class="waveform">
+                <img src="../../images/sc-example.png" alt="" />
+              </div>
             </div>
           </div>
-        </div>
-
       </li>
         <!-- search result // soundcloud -->
 
@@ -275,7 +279,7 @@
         <!-- search result // iTunesU Video -->
 
         <!-- search result // iTunesU Audio -->
-        <li class="result__item result__item--other result__item--iTunes-audio">
+        <li class="result__item result__item--other result__item--audio">
           <div class="result__details">
             <h3 class="result__title">
               <a href="" title="http://www.ucl.ac.uk/provost">Sounds of UCL: Mechanical Engineering wave tank with lute</a>
@@ -385,7 +389,17 @@
     </aside>
   </div>
 
-  <!-- end main slot where silva content gets rendered-->
+  <!-- This is the modal window where JWPlayer will drop in -->
+    <section class="semantic-content" id="modal-video">
+
+        <div class="modal-inner">
+            <header id="modal-label"><!-- Header --></header>
+            <div class="modal-content"><!-- The modals content --></div>
+        </div>
+
+        <a href="#!" class="modal-close" title="Close this modal">×</a>
+    </section>
+  <!-- This is the modal window where JWPlayer will drop in -->
 
 </div>
 
