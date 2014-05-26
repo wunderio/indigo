@@ -5,18 +5,18 @@
     padding: 0 0 4px;
 
   .result__title {
+    font-size: 18px;
+    font-size: 18rem;
+    font-weight: bold;
     line-height: 1.1;
     margin: 0;
     margin-bottom: 5px;
     a {
       color: #131313;
-      font-size: 18px;
-      font-size: 1.8rem;
-      font-weight: bold;
     }
   }
   .result__summary {
-    color: #131313; /* text color */
+    color: #131313;
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 1.3;
@@ -24,13 +24,13 @@
     a {
       color: $search-blue;
       &:hover {
-        color: #034DA1;
+        color: #c;
       }
     }
   }
 
   .result__link {
-    color: #4c98e5;
+    color: $search-blue;
     display: block;
     font-size: 12px;
     font-size: 1.2rem;
@@ -38,7 +38,7 @@
     margin-bottom: 10px;
   }
   @media (min-width: 768px) {
-    .result__title a {
+    .result__title {
       font-size: 20px;
       font-size: 2rem;
     }
@@ -308,13 +308,15 @@
   margin-left: 24px;
   position: relative;
   &:before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAABU0lEQVQoFQXBv4sQBBzA0c8SasvhtQiJmSII6XXw4BYJm4L+IyF/JhwFbk2CyXGGopzg6CREJYiQOggKIiiapHEFIQhq395LkmTJcTc888zPTlqWJCXJDmeNMcYYY5zzsaQk+903Np32pXPWHPatl8YDn0nJLo+MDfskCxYle102ntij5KxxzTZJ1l2SZIsrxpqyZPxjtyS56bYk2eWVIceNU5Ikv7gpSfKNsZpfvfG5JMkd9yRJDnrt97zy3mWLknxlvLUiyYJ172zmL+9d9ZEkX/vXuC7Jdhe983d+88aSJMkhG8Z5SQ567W5OGsckSZIzxg+2yhHj+ywbmz6RJElWjW0WPTdWkh+NDVskSZIFH1g3flKyx1Pjkk8lW30o2e6C8ad9SnLAQ+OFE76w4ZpDjnpqPLYsJclOa8YYY/xnjAt2S0qShFW3/OGF276zIkn6H5Oct3wlGXaFAAAAAElFTkSuQmCC');
+    background-image: url('../images/search-sprite.png');
+    background-position: 0 -418px;
+    background-repeat: no-repeat;
     content: '';
-    height: 18px;
+    height: 24px;
     position: absolute;
-    left: -24px;
-    top: 0;
-    width: 18px;
+    left: -26px;
+    top: -2px;
+    width: 24px;
   }
 }
 
