@@ -4194,34 +4194,21 @@ h2 {
   left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_off-canvas--search\.scss}line{font-family:\0000356}}
-.showit {
-  background-color: transparent;
-  left: 280px;
-  transition: left .3s ease-in-out;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: 100%;
-  z-index: 5050505;
-}
-
 @media (min-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_off-canvas--search\.scss}line{font-family:\0000369}}
-  .move,
-  .showit {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_off-canvas--search\.scss}line{font-family:\0000360}}
+  .move {
     left: 320px;
   }
 }
 @media (min-width: 980px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_off-canvas--search\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_off-canvas--search\.scss}line{font-family:\0000365}}
   .off-canvas,
   .close {
     display: none !important;
   }
 }
 @media (min-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_off-canvas--search\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_off-canvas--search\.scss}line{font-family:\0000372}}
   .move {
     left: 0;
   }

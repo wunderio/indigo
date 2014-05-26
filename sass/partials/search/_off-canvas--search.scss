@@ -53,21 +53,11 @@
 .close-me {
   left: 0;
 }
-.showit {
-  background-color: transparent;
-  left: 280px;
-  transition: left .3s ease-in-out;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: 100%;
-  z-index: 5050505;
-}
+
 
 
 @media(min-width: 1000px) {
-  .move,
-  .showit {
+  .move {
     left: 320px;
   }
 }

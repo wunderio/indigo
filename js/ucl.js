@@ -107,7 +107,7 @@ $(document).ready(function(){
     $('.facets').toggleClass('show-facet');
     $('.search-results__meta').toggleClass('move');
     $('.search-results').toggleClass('move');
-    $('.close-me').toggleClass('showit');
+
     $('.off-canvas').toggleClass('spin');
     return false;
   });
@@ -115,16 +115,16 @@ $(document).ready(function(){
   $('.close').click(function() {
     $('.facets').removeClass('show-facet');
     $('.search-results__meta, .search-results').removeClass('move');
-    $('.close-me').removeClass('showit');
+
     $('.off-canvas').removeClass('spin');
     return false;
   });
-  
+
   // facet hide
   $('.close-me').click(function() {
     $('.facets').removeClass('show-facet');
     $('.search-results__meta, .search-results').removeClass('move');
-    $('.close-me').removeClass('showit');
+
     $('.off-canvas').removeClass('spin');
     return false;
   });
