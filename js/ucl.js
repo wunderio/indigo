@@ -99,9 +99,7 @@ $(document).ready(function(){
 
   // face show/hide
   $('.facet h4').click(function() {
-    $(this).next('.facet-list').toggleClass('close-facet');
-    $(this).toggleClass('rounded');
-    $(this).toggleClass('upside-down');
+    $(this).parent().toggleClass('facet--close');
     return false;
   });
 
