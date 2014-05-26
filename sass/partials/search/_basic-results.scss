@@ -6,7 +6,7 @@
 
   .result__title {
     font-size: 18px;
-    font-size: 18rem;
+    font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.1;
     margin: 0;
@@ -83,8 +83,6 @@
   }
 }
 
-// SoundCloud search results specific
-
 .result__thumbnail {
 //  background-color: $stone;
   box-sizing: border-box;
@@ -105,13 +103,13 @@
   .result__title {
   }
 }
+
+// SoundCloud search results specific
+
 .sc-audio {
     float: left;
     width: 100%;
-    @media (min-width: 650px) {
-      float: right;
-      width: 72.5%;
-    }
+
     .play-audio {
       background-color: #ffbe00;
       border-radius: 50%;
@@ -120,7 +118,7 @@
       font-weight: bold;
       padding: 20px;
       position: relative;
-      top: 15px;
+      top: 22px;
       &:after {
         content:'';
         width: 0px;
@@ -138,7 +136,9 @@
     margin-left: 4%;
     position: relative;
     width: 81%;
-
+    @media (min-width: 650px) {
+      width: 85%;
+    }
   }
 }
 
@@ -297,7 +297,9 @@
         position: absolute;
         right: -10px;
         top: -6px;
-        &:last-child {
+      }
+      &:last-child {
+        &:before {
           display: none !important;
         }
       }
@@ -333,7 +335,6 @@
     }
   }
   .result__thumbnail {
-
     margin: 0px 0 12px;
     height: 100%;
     overflow: hidden;
@@ -344,36 +345,26 @@
       display: block;
       position: relative;
       width: 100%;
+      &:before {
+        background-color: $yellow;
+        background-color: rgba($yellow, .3);
+        background-image: url('../images/search-sprite.png');
+        background-position: 38px -446px;
+        content: '';
+        position: absolute;
+        width: 93px;
+        left: 50%;
+        margin-left: -50px;
+        top: 50%;
+        border-radius: 8px;
+        margin-top: -34px;
+        height: 60px;
+        z-index: 5050;
+        background-repeat: no-repeat;
+      }
       &:hover {
         &:before {
-          background-image: url('../images/youtube-button.png');
-          content: '';
-          position: absolute;
-          width: 100px;
-          left: 50%;
-          margin-left: -50px;
-          top: 50%;
-          margin-top: -34px;
-          height: 100px;
-          z-index: 5050;
-          background-size: contain;
-          background-repeat: no-repeat;
-        }
-      }
-      @media (max-width: 1024px) {
-        &:before {
-          background-image: url('../images/youtube-button.png');
-          content: '';
-          position: absolute;
-          width: 100px;
-          left: 50%;
-          margin-left: -50px;
-          top: 50%;
-          margin-top: -34px;
-          height: 100px;
-          z-index: 5050;
-          background-size: contain;
-          background-repeat: no-repeat;
+          background-color: $yellow;
         }
       }
     }
@@ -403,9 +394,9 @@
   }
 }
 
-// iTunes Audio
+// Audio
 
-.result__item--iTunes-audio {
+.result__item--audio {
   .result__title {
     &:before {
       background-position: 0 -341px;
@@ -420,7 +411,7 @@
       width: 100%;
     }
   }
-  @media (min-width: 600px) {
+//  @media (min-width: 600px) {
     .result__thumbnail {
       width: 32.5%;
       height: auto;
@@ -437,7 +428,7 @@
     .result__details {
       width: 65%;
     }
-  }
+//  }
 }
 
 
@@ -459,4 +450,40 @@
   font-size: 1.4rem;
   font-style: italic;
   margin-bottom: 10px;
+}
+#modal-video {
+  display: none;
+}
+.show-modal {
+  width: 90% !important;
+  left: 5%;
+  display: block !important;
+  min-height: 600px;
+  margin-top: 5%;
+  border: 6px solid $search-blue;
+  box-shadow: 0 0 4px rgba(black, .4);
+  border-radius: 8px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.modal-close {
+  background-color: $search-blue;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  line-height: 42px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+    font-style: 24px;
+  }
 }
