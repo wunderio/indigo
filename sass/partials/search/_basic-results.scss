@@ -59,9 +59,19 @@
   float: left;
   margin-bottom: 20px;
   padding-bottom: 20px;
+
   .result__title {
-    width: 94%;
-    margin-right: 2%;
+    width: 95%;
+    padding-right: 5%;
+    position: relative;
+    &:before {
+      background-image: url('../images/search-sprite.png');
+      content: '';
+      height: 20px;
+      position: absolute;
+      right: 0;
+      width: 20px;
+    }
   }
   .result__summary {
     font-size: 14px;
@@ -159,7 +169,6 @@
   .search-results {
     float: none;
     width: 100%;
-    max-width: 960px;
     margin: 0 auto;
   }
   .off-canvas {
@@ -231,15 +240,10 @@
 .result__item--youtube {
   background-color: none !important;
   border-bottom: 1px solid lighten(#AAA, 20%);
-  position: relative;
   .result__title {
     &:before {
-      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAACGklEQVRIx6XU62vPURwH8INlv1lJMuQW5vrgR0m5RGkz12mppZWHo6ShtrLLz1geuKVQPFEeKX8AJbeSa4lfMZZyZ7mMcpkfC2svDzbyy2bf/Xw+D87pnPM6j97nBGHfoukXct/ntkbvQR8mX65f2RHC5blBZn1qeZiWzBSPeRRCe6Y4fA85X9KXZqsQLLShVzwwFXJb05fmYaDbHveKY61/4eCZIxrNN9Z6QbBUnkKDo+EGnDPEMxyXr02xNrOi4YlImOO5FZotc0+Rp2ZEwwEl4u4okFTkrkKPxPuC50qKa1LslqkemBkdbzQaVz0QxzVMj4r3my2odVFccMhBWw2IgrPldG79ikLXmCX733iUizqrzTstXuvAGy1avPPWFVN7wv3cxXOfvdLedUnH71lnNcvqHg/BU4ME/RztOrxYkfTK7x4P0+aHh4LDmn3y0WerTXYfnHcdTOkeD5UC/T1RLWGLPY4ZboSTzhgsxyVM6gl/wVf9NSlXaZ3tdtpkgzLLVJmlNApuVKHOZrvUq7JNuQojFTsXDZc7YLsdqjXYq0yB3W462zPO046U4KYqI8TsV2+0fJU2WiBbVVpM03AMfFfupVtKrJOUtEaxl76JWwTyekrYVr3VnvSE5aT+zOsS1RJq1EqoU6tWnYQaNXbYZlX6K0j939c7oSlTPPxFOF2YKT5RGoSGkvE3Yh9irX3oj+OSlWs7wk8vETtngvqlLQAAAABJRU5ErkJggg==');
-      content: '';
-      height: 30px;
-      position: absolute;
-      right: 0;
-      width: 30px;
+      background-position: 0 -301px;
+      width: 18px;
     }
   }
   .result__thumbnail {
@@ -318,6 +322,9 @@
   p {
 
   }
+  a {
+    color: $brightpink;
+  }
   @media (max-width: 479px) {
     float: left;
     clear: both;
@@ -391,10 +398,88 @@
   }
 }
 
+// iTunes Audio
+
+.result__item--iTunes-video {
+  .result__title {
+    &:before {
+      background-position: 0 -301px;
+      width: 18px;
+    }
+  }
+  .result__thumbnail {
+    padding-bottom: 0;
+    a {
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+  }
+  @media (min-width: 600px) {
+    .result__thumbnail {
+      width: 32.5%;
+      height: auto;
+      a {
+        display: block;
+        height: auto;
+      }
+      img {
+        position: relative;
+        top: 0;
+        margin-top: auto;
+      }
+    }
+    .result__details {
+      width: 65%;
+    }
+  }
+}
+
+.result__item--iTunes-audio {
+  .result__title {
+    &:before {
+      background-position: 0 -341px;
+      width: 20px;
+    }
+  }
+  .result__thumbnail {
+    padding-bottom: 0;
+    a {
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+  }
+  @media (min-width: 600px) {
+    .result__thumbnail {
+      width: 32.5%;
+      height: auto;
+      a {
+        display: block;
+        height: auto;
+      }
+      img {
+        position: relative;
+        top: 0;
+        margin-top: auto;
+      }
+    }
+    .result__details {
+      width: 65%;
+    }
+  }
+}
+
 
 // LEO
 
 .result__item--leo {
+  .result__title {
+    &:before {
+      background-position: 0 -301px;
+      width: 18px;
+    }
+  }
   .result__details {
     width: 100%;
   }
@@ -463,6 +548,11 @@
 .result__item--blogpost {
   .result__title {
     margin-bottom: 3px;
+    &:before {
+      background-position: 0 -380px;
+      height: 18px;
+      width: 10px;
+    }
   }
 }
 .result__domain {
