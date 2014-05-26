@@ -8,8 +8,7 @@
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 1.1;
-    margin: 0;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
     a {
       color: #131313;
     }
@@ -82,7 +81,7 @@
   box-sizing: border-box;
   display: block;
   float: left;
-  margin: 0px 0 12px;
+  margin: 0 0 12px;
   padding-bottom: 56.25%;
   width: 100%;
 }
@@ -115,8 +114,8 @@
       top: 22px;
       &:after {
         content:'';
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
         border-style: solid;
         border-width: 5px 0 5px 10px;
         border-color: transparent transparent transparent #ffffff;
@@ -233,9 +232,6 @@
 
 .results__meta {
   margin-top: 0;
-  p {
-
-  }
   a {
     color: $brightpink;
   }
@@ -329,7 +325,7 @@
     }
   }
   .result__thumbnail {
-    margin: 0px 0 12px;
+    margin:0 0 12px;
     height: 100%;
     overflow: hidden;
     padding-bottom: 0;
