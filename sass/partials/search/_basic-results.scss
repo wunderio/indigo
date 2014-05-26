@@ -55,7 +55,8 @@
 
 
 .result__item--other {
-//  border-bottom: 2px solid lighten(#131313, 20%);
+  background-color: none !important;
+  border-bottom: 1px solid lighten(#AAA, 20%);
   float: left;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -76,6 +77,9 @@
   .result__summary {
     font-size: 14px;
     font-size: 1.4rem;
+  }
+  .result__details {
+    width: 100%;
   }
 }
 
@@ -238,8 +242,6 @@
 // YouTube
 
 .result__item--youtube {
-  background-color: none !important;
-  border-bottom: 1px solid lighten(#AAA, 20%);
   .result__title {
     &:before {
       background-position: 0 -301px;
