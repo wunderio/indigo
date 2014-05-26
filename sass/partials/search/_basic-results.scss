@@ -463,9 +463,10 @@
   border: 6px solid $search-blue;
   box-shadow: 0 0 4px rgba(black, .4);
   border-radius: 8px;
-  position: absolute;
+  position: fixed;
   background-color: #fff;
-  z-index: 9999;
+  top: 0;
+  z-index: 999999999;
 }
 
 .modal-close {
