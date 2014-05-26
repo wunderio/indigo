@@ -49,22 +49,16 @@
   text-decoration: underline;
 }
 
-
-
-  .close-facet {
-    display: none;
-  }
-
-
-  .rounded {
+.facet--close {
+  h4 {
     border-radius: 4px;
     transition: border-radius .1s ease-in-out;
-  }
-
-
-  .upside-down {
     &:after {
       transform: rotate(180deg);
       transition: transform .2s ease-in-out;
     }
   }
+  .facet-list {
+    display: none;
+  }
+}

@@ -4043,21 +4043,19 @@ h2 {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search-aside\.scss}line{font-family:\0000354}}
-.close-facet {
-  display: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search-aside\.scss}line{font-family:\0000359}}
-.rounded {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search-aside\.scss}line{font-family:\0000353}}
+.facet--close h4 {
   border-radius: 4px;
   transition: border-radius .1s ease-in-out;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search-aside\.scss}line{font-family:\0000366}}
-.upside-down:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search-aside\.scss}line{font-family:\0000356}}
+.facet--close h4:after {
   transform: rotate(180deg);
   transition: transform .2s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search-aside\.scss}line{font-family:\0000361}}
+.facet--close .facet-list {
+  display: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_search-pagination\.scss}line{font-family:\000031}}
