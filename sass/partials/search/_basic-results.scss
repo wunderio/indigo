@@ -7,7 +7,6 @@
   .result__title {
     font-size: 18px;
     font-size: 1.8rem;
-    font-weight: bold;
     line-height: 1.1;
     margin: 0;
     margin-bottom: 5px;
@@ -41,10 +40,6 @@
     .result__title {
       font-size: 20px;
       font-size: 2rem;
-    }
-    .result__summary {
-      font-size: 16px;
-      font-size: 1.6rem;
     }
     .result__link {
       font-size: 14px;
@@ -84,7 +79,6 @@
 }
 
 .result__thumbnail {
-//  background-color: $stone;
   box-sizing: border-box;
   display: block;
   float: left;
@@ -368,11 +362,6 @@
         }
       }
     }
-    img {
-    }
-  }
-  .result__details {
-    width: 100%;
   }
   @media (min-width: 600px) {
     .result__thumbnail {
