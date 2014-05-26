@@ -237,88 +237,6 @@
   }
 }
 
-
-
-// YouTube
-
-.result__item--youtube {
-  .result__title {
-    &:before {
-      background-position: 0 -301px;
-      width: 18px;
-    }
-  }
-  .result__thumbnail {
-
-    margin: 0px 0 12px;
-    height: 100%;
-    overflow: hidden;
-    padding-bottom: 0;
-    width: 100%;
-    // img for now, but might be different
-    a {
-      display: block;
-      position: relative;
-      width: 100%;
-      &:hover {
-        &:before {
-          background-image: url('../images/youtube-button.png');
-          content: '';
-          position: absolute;
-          width: 100px;
-          left: 50%;
-          margin-left: -50px;
-          top: 50%;
-          margin-top: -34px;
-          height: 100px;
-          z-index: 5050;
-          background-size: contain;
-          background-repeat: no-repeat;
-        }
-      }
-      @media (max-width: 1024px) {
-        &:before {
-          background-image: url('../images/youtube-button.png');
-          content: '';
-          position: absolute;
-          width: 100px;
-          left: 50%;
-          margin-left: -50px;
-          top: 50%;
-          margin-top: -34px;
-          height: 100px;
-          z-index: 5050;
-          background-size: contain;
-          background-repeat: no-repeat;
-        }
-      }
-    }
-    img {
-    }
-  }
-  .result__details {
-    width: 100%;
-  }
-  @media (min-width: 600px) {
-    .result__thumbnail {
-      width: 32.5%;
-      height: auto;
-      a {
-        display: block;
-        height: auto;
-      }
-      img {
-        position: relative;
-        top: 0;
-        margin-top: auto;
-      }
-    }
-    .result__details {
-      width: 65%;
-    }
-  }
-}
-
 .results__meta {
   margin-top: 0;
   p {
@@ -400,9 +318,9 @@
   }
 }
 
-// iTunes Video
+// Video Video
 
-.result__item--iTunes-video {
+.result__item--video {
   .result__title {
     &:before {
       background-position: 0 -301px;
@@ -495,79 +413,6 @@
       display: block;
       position: relative;
       width: 100%;
-    }
-  }
-  @media (min-width: 600px) {
-    .result__thumbnail {
-      width: 32.5%;
-      height: auto;
-      a {
-        display: block;
-        height: auto;
-      }
-      img {
-        position: relative;
-        top: 0;
-        margin-top: auto;
-      }
-    }
-    .result__details {
-      width: 65%;
-    }
-  }
-}
-
-
-// LEO
-
-.result__item--leo {
-  .result__title {
-    &:before {
-      background-position: 0 -301px;
-      width: 18px;
-    }
-  }
-  .result__details {
-    width: 100%;
-  }
-  .result__thumbnail {
-    padding-bottom: 0;
-    a {
-      display: block;
-      position: relative;
-      width: 100%;
-      &:hover {
-        &:before {
-          background-image: url('../images/youtube-button.png');
-          content: '';
-          position: absolute;
-          width: 100px;
-          left: 50%;
-          margin-left: -50px;
-          top: 50%;
-          margin-top: -34px;
-          height: 100px;
-          z-index: 5050;
-          background-size: contain;
-          background-repeat: no-repeat;
-        }
-      }
-      @media (max-width: 1024px) {
-        &:before {
-          background-image: url('../images/youtube-button.png');
-          content: '';
-          position: absolute;
-          width: 100px;
-          left: 50%;
-          margin-left: -50px;
-          top: 50%;
-          margin-top: -34px;
-          height: 100px;
-          z-index: 5050;
-          background-size: contain;
-          background-repeat: no-repeat;
-        }
-      }
     }
   }
   @media (min-width: 600px) {
