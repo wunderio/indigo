@@ -104,33 +104,29 @@
     width: 100%;
 
     .play-audio {
+      background-color: black;
+      background-color: rgba(black, .3);
+      border-radius: 8px;
       cursor: pointer;
       float: left;
       font-weight: bold;
-      padding: 20px;
       position: relative;
-      top: 22px;
+      width: 93px;
+      height: 60px;
         &:before {
-          background-color: black;
-          background-color: rgba(black, .3);
           background-image: url('../images/search-sprite.png');
-          background-position: 38px -446px;
+          background-position: 0 -460px;
           content: '';
           position: absolute;
-          width: 93px;
-          left: 50%;
-          margin-left: -50px;
-          top: 50%;
-          border-radius: 8px;
-          margin-top: -34px;
-          height: 60px;
+          left: 35px;
+          top: 14px;
+          width: 27px;
+          height: 32px;
           z-index: 5050;
           background-repeat: no-repeat;
         }
         &:hover {
-          &:before {
-            background-color: black;
-          }
+          background-color: black;
         }
     }
   &__soundwave {
@@ -139,7 +135,7 @@
     position: relative;
     width: 81%;
     @media (min-width: 650px) {
-      width: 85%;
+      width: 82%;
     }
   }
 }
@@ -404,10 +400,13 @@
       position: relative;
       width: 100%;
     }
+    img {
+      max-width: 110px;
+    }
   }
 //  @media (min-width: 600px) {
     .result__thumbnail {
-      width: 32.5%;
+      width: 16.5%;
       height: auto;
       a {
         display: block;
@@ -420,7 +419,7 @@
       }
     }
     .result__details {
-      width: 65%;
+      width: 83%;
     }
 //  }
 }
