@@ -104,25 +104,34 @@
     width: 100%;
 
     .play-audio {
-      background-color: #ffbe00;
-      border-radius: 50%;
-      color: white;
+      cursor: pointer;
       float: left;
       font-weight: bold;
       padding: 20px;
       position: relative;
       top: 22px;
-      &:after {
-        content:'';
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 5px 0 5px 10px;
-        border-color: transparent transparent transparent #ffffff;
-        position: absolute;
-        top: 35%;
-        left: 40%;
-      }
+        &:before {
+          background-color: black;
+          background-color: rgba(black, .3);
+          background-image: url('../images/search-sprite.png');
+          background-position: 38px -446px;
+          content: '';
+          position: absolute;
+          width: 93px;
+          left: 50%;
+          margin-left: -50px;
+          top: 50%;
+          border-radius: 8px;
+          margin-top: -34px;
+          height: 60px;
+          z-index: 5050;
+          background-repeat: no-repeat;
+        }
+        &:hover {
+          &:before {
+            background-color: black;
+          }
+        }
     }
   &__soundwave {
     float: left;
