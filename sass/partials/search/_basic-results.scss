@@ -422,9 +422,7 @@
   .result__title {
     margin-bottom: 3px;
     &:before {
-      background-position: 0 -380px;
-      height: 18px;
-      width: 10px;
+      display: none;
     }
   }
 }

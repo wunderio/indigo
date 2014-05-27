@@ -3586,12 +3586,10 @@ h2 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003424}}
 .result__item--blogpost .result__title:before {
-  background-position: 0 -380px;
-  height: 18px;
-  width: 10px;
+  display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003431}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003429}}
 .result__domain {
   color: #4693ea;
   display: block;
@@ -3601,12 +3599,12 @@ h2 {
   margin-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003439}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003437}}
 #modal-video {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003442}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003440}}
 .show-modal {
   width: 90% !important;
   left: 5%;
@@ -3621,7 +3619,7 @@ h2 {
   z-index: 999999999;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003456}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003454}}
 .modal-close {
   background-color: #000;
   border-radius: 50%;
@@ -3636,7 +3634,7 @@ h2 {
   font-size: 16px;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003470}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003468}}
 .modal-close:hover {
   color: #FFF;
   font-size: 20px;
