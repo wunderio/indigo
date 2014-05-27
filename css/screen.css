@@ -3613,7 +3613,6 @@ h2 {
   display: block !important;
   min-height: 600px;
   margin-top: 5%;
-  border: 6px solid #4693ea;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   position: fixed;
@@ -3622,25 +3621,26 @@ h2 {
   z-index: 999999999;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003457}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003456}}
 .modal-close {
-  background-color: #4693ea;
+  background-color: #000;
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  line-height: 42px;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
   position: absolute;
   right: 10px;
   top: 10px;
   color: #FFF;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003471}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_basic-results\.scss}line{font-family:\00003470}}
 .modal-close:hover {
+  color: #FFF;
+  font-size: 20px;
   text-decoration: none;
-  font-style: 24px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/stuartrobson\/Sites\/indigo\/sass\/partials\/search\/_results-best-bet\.scss}line{font-family:\000031}}
