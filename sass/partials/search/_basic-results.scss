@@ -336,8 +336,8 @@
       position: relative;
       width: 100%;
       &:before {
-        background-color: $yellow;
-        background-color: rgba($yellow, .3);
+        background-color: black;
+        background-color: rgba(black, .3);
         background-image: url('../images/search-sprite.png');
         background-position: 38px -446px;
         content: '';
@@ -354,7 +354,7 @@
       }
       &:hover {
         &:before {
-          background-color: $yellow;
+          background-color: black;
         }
       }
     }
