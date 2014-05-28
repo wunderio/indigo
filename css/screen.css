@@ -2836,7 +2836,6 @@ h2 {
   font-weight: bold;
   width: 93px;
   height: 60px;
-  float: left;
   position: absolute;
   right: 0px;
   bottom: 120px;
@@ -2855,6 +2854,13 @@ h2 {
 }
 .sc-audio .play-audio:hover {
   background-color: black;
+}
+@media (min-width: 600px) {
+  .sc-audio .play-audio {
+    bottom: -20%;
+    float: left;
+    position: relative;
+  }
 }
 .sc-audio__soundwave {
   float: left;

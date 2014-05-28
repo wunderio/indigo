@@ -120,7 +120,6 @@
       font-weight: bold;
       width: 93px;
       height: 60px;
-      float: left;
       position: absolute;
       right: 0px;
       bottom: 120px;
@@ -139,7 +138,14 @@
         &:hover {
           background-color: black;
         }
+      @media (min-width: 600px) {
+        bottom: -20%;
+        float: left;
+        position: relative;
+
+      }
     }
+
   &__soundwave {
     float: left;
     position: relative;
