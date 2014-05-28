@@ -246,7 +246,9 @@
     p {
       display: block;
       float: left;
-      width: 50%;
+      overflow: hidden;
+      width: 48%;
+      margin-right: 2%;
     }
     .results__meta--length {
       margin-left: 0;
@@ -347,9 +349,9 @@
         background-position: 38px -446px;
         content: '';
         position: absolute;
-        width: 93px;
+        width: 94px;
         left: 50%;
-        margin-left: -50px;
+        margin-left: -47px;
         top: 50%;
         border-radius: 8px;
         margin-top: -34px;
@@ -422,6 +424,44 @@
       width: 83%;
     }
 //  }
+}
+
+// itunes and soundcloud smaller thumbnail
+
+.result__item--narrow {
+  .result__thumbnail {
+    width: 18.5%;
+  }
+  .result__details {
+    width: 80%;
+  }
+
+  @media (max-width: 479px) {
+    .result__thumbnail {
+      width: 90%;
+      margin-left: 5%;
+      a {
+        &:before {
+          left: 80%;
+        }
+      }
+      img {
+        max-width: 110px;
+      }
+    }
+    .result__details {
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .result__thumbnail {
+      width: 15.5%;
+    }
+    .result__details {
+      width: 83%;
+    }
+
+  }
 }
 
 
