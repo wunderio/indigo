@@ -63,7 +63,22 @@
   }
 }
 
+.facets {
+  input[type="button"] {
+      background-color: $search-blue;
+      padding: 6px 8px;
+      font-weight: 400;
+      margin-bottom: 20px;
+  }
+}
 
+.js {
+  .facets {
+    input[type="button"] {
+        display: none !important;
+    }
+  }
+}
 
 
 // makes input 16px to prevent iOS zoom (should probably go to Indigo)
