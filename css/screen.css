@@ -2855,7 +2855,7 @@ h2 {
 .sc-audio .play-audio:hover {
   background-color: black;
 }
-@media (min-width: 600px) {
+@media (min-width: 420px) {
   .sc-audio .play-audio {
     bottom: -20%;
     float: left;
@@ -2866,10 +2866,16 @@ h2 {
   float: left;
   position: relative;
 }
+@media (min-width: 420px) {
+  .sc-audio__soundwave {
+    margin-left: 2%;
+    width: 75%;
+  }
+}
 @media (min-width: 650px) {
   .sc-audio__soundwave {
     margin-left: 4%;
-    width: 82%;
+    width: 79%;
   }
 }
 
@@ -2973,6 +2979,10 @@ h2 {
     left: 0;
   }
 }
+.results__meta a {
+  color: #4693ea !important;
+  text-decoration: none;
+}
 .results__meta--category {
   color: #ac145a;
   font-size: 14px;
@@ -2983,13 +2993,18 @@ h2 {
   font-size: 14px;
   display: inline;
 }
+.results__meta--date span {
+  clear: none !important;
+  float: none !important;
+  display: inline;
+  font-weight: normal !important;
+}
 .results__meta--views {
   color: #ac145a;
   font-size: 14px;
   display: inline;
 }
 .results__meta--views span {
-  color: #777777;
   clear: none !important;
   float: none !important;
   display: inline;
@@ -3025,11 +3040,11 @@ h2 {
   background-position: 0 -418px;
   background-repeat: no-repeat;
   content: '';
-  height: 24px;
+  height: 26px;
   position: absolute;
   left: -26px;
   top: -2px;
-  width: 24px;
+  width: 26px;
 }
 
 @media (max-width: 479px) {
@@ -3094,6 +3109,13 @@ h2 {
   }
 }
 
+@media (min-width: 600px) {
+  .result__item--iTunes--video img,
+  .result__item--iTunes--audio img {
+    max-width: 100px;
+  }
+}
+
 .result__item--audio .result__title:before {
   background-position: 0 -341px;
   width: 20px;
@@ -3127,7 +3149,7 @@ h2 {
   background-color: black;
 }
 .result__item--audio .result__thumbnail img {
-  max-width: 110px;
+  max-width: 100px;
 }
 .result__item--audio .result__thumbnail {
   width: 16.5%;
@@ -3141,6 +3163,7 @@ h2 {
   position: relative;
   top: 0;
   margin-top: auto;
+  max-width: 100px;
 }
 .result__item--audio .result__details {
   width: 83%;
@@ -3182,12 +3205,12 @@ h2 {
   .result__item--soundcloud .result__thumbnail,
   .result__item--iTunes--audio .result__thumbnail,
   .result__item--iTunes--video .result__thumbnail {
-    width: 15.5%;
+    width: 11.5%;
   }
   .result__item--soundcloud .result__details,
   .result__item--iTunes--audio .result__details,
   .result__item--iTunes--video .result__details {
-    width: 83%;
+    width: 86%;
   }
 }
 
@@ -3243,6 +3266,14 @@ h2 {
   color: #FFF;
   font-size: 20px;
   text-decoration: none;
+}
+
+.is-active:before {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-position: 32px -492px !important;
+}
+.is-active:before:hover {
+  background-color: #000;
 }
 
 .result__item--best-bet {
@@ -3535,6 +3566,7 @@ h2 {
 .pillboxes {
   float: left;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .pillbox {
@@ -3604,6 +3636,10 @@ h2 {
 }
 
 .js .facets input[type="button"] {
+  display: none !important;
+}
+
+.facets input[type="button"] {
   display: none !important;
 }
 

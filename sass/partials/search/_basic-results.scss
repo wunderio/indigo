@@ -111,7 +111,6 @@
 .sc-audio {
     float: left;
     width: 100%;
-
     .play-audio {
       background-color: black;
       background-color: rgba(black, .3);
@@ -138,20 +137,23 @@
         &:hover {
           background-color: black;
         }
-      @media (min-width: 600px) {
+      @media (min-width: 420px) {
         bottom: -20%;
         float: left;
         position: relative;
-
       }
     }
 
   &__soundwave {
     float: left;
     position: relative;
+    @media (min-width: 420px) {
+      margin-left: 2%;
+      width: 75%;
+    }
     @media (min-width: 650px) {
       margin-left: 4%;
-      width: 82%;
+      width: 79%;
     }
   }
 }
@@ -275,6 +277,10 @@
       }
     }
   }
+  a {
+    color: $search-blue !important;
+    text-decoration: none;
+  }
   &--category {
     color: $brightpink;
     font-size: 14px;
@@ -284,13 +290,18 @@
     color: $brightpink;
     font-size: 14px;
     display: inline;
+    span {
+      clear: none !important;
+      float: none !important;
+      display: inline;
+      font-weight: normal !important;
+    }
   }
   &--views {
     color: $brightpink;
     font-size: 14px;
     display: inline;
     span {
-      color: darken(#AAA, 20%);
       clear: none !important;
       float: none !important;
       display: inline;
@@ -330,11 +341,11 @@
     background-position: 0 -418px;
     background-repeat: no-repeat;
     content: '';
-    height: 24px;
+    height: 26px;
     position: absolute;
     left: -26px;
     top: -2px;
-    width: 24px;
+    width: 26px;
   }
 }
 
@@ -412,7 +423,14 @@
     }
   }
 }
-
+.result__item--iTunes--video,
+.result__item--iTunes--audio {
+  @media (min-width: 600px) {
+    img {
+      max-width: 100px;
+    }
+  }
+}
 // Audio
 
 .result__item--audio {
@@ -452,7 +470,7 @@
       }
     }
     img {
-      max-width: 110px;
+      max-width: 100px;
     }
   }
 //  @media (min-width: 600px) {
@@ -467,6 +485,7 @@
         position: relative;
         top: 0;
         margin-top: auto;
+        max-width: 100px;
       }
     }
     .result__details {
@@ -505,10 +524,10 @@
   }
   @media (min-width: 768px) {
     .result__thumbnail {
-      width: 15.5%;
+      width: 11.5%;
     }
     .result__details {
-      width: 83%;
+      width: 86%;
     }
 
   }
@@ -567,5 +586,17 @@
     color: #FFF;
     font-size: 20px;
     text-decoration: none;
+  }
+}
+
+
+
+.is-active {
+  &:before {
+    background-color: rgba(black, 0.5) !important;
+    background-position: 32px -492px !important;
+    &:hover {
+      background-color: #000;
+    }
   }
 }
