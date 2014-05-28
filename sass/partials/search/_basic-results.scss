@@ -99,7 +99,15 @@
 }
 
 // SoundCloud search results specific
-
+.result__item--soundcloud {
+  .result__thumbnail {
+    a {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
 .sc-audio {
     float: left;
     width: 100%;
@@ -324,6 +332,17 @@
   }
 }
 
+.result__item--iTunes--audio,
+.result__item--iTunes--video {
+  .results__meta {
+    @media (max-width: 479px) {
+      p {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
 // Video Video
 
 .result__item--video {
@@ -403,6 +422,28 @@
       display: block;
       position: relative;
       width: 100%;
+      &:before {
+        background-color: black;
+        background-color: rgba(black, .3);
+        background-image: url('../images/search-sprite.png');
+        background-position: 38px -446px;
+        content: '';
+        position: absolute;
+        width: 94px;
+        left: 50%;
+        margin-left: -47px;
+        top: 50%;
+        border-radius: 8px;
+        margin-top: -34px;
+        height: 60px;
+        z-index: 5050;
+        background-repeat: no-repeat;
+      }
+      &:hover {
+        &:before {
+          background-color: black;
+        }
+      }
     }
     img {
       max-width: 110px;
@@ -430,7 +471,9 @@
 
 // itunes and soundcloud smaller thumbnail
 
-.result__item--narrow {
+.result__item--soundcloud,
+.result__item--iTunes--audio,
+.result__item--iTunes--video {
   .result__thumbnail {
     width: 18.5%;
   }
