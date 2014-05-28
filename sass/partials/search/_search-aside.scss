@@ -1,6 +1,7 @@
   .pillboxes {
     float: left;
     margin-bottom: 10px;
+    width: 100%;
   }
   .pillbox {
     background-color: lighten(#d6d2c4, 10%);
@@ -77,6 +78,11 @@
     input[type="button"] {
         display: none !important;
     }
+  }
+}
+.facets {
+  input[type="button"] {
+      display: none !important;
   }
 }
 
