@@ -54,6 +54,7 @@
   float: left;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  position: relative;
 
   .result__title {
     width: 95%;
@@ -108,11 +109,13 @@
       background-color: rgba(black, .3);
       border-radius: 8px;
       cursor: pointer;
-      float: left;
       font-weight: bold;
-      position: relative;
       width: 93px;
       height: 60px;
+      float: left;
+      position: absolute;
+      right: 0px;
+      bottom: 120px;
         &:before {
           background-image: url('../images/search-sprite.png');
           background-position: 0 -460px;
@@ -131,10 +134,9 @@
     }
   &__soundwave {
     float: left;
-    margin-left: 4%;
     position: relative;
-    width: 81%;
     @media (min-width: 650px) {
+      margin-left: 4%;
       width: 82%;
     }
   }
@@ -438,15 +440,14 @@
 
   @media (max-width: 479px) {
     .result__thumbnail {
-      width: 90%;
-      margin-left: 5%;
+      width: 100%;
       a {
         &:before {
-          left: 80%;
+          left: 84%;
         }
       }
       img {
-        max-width: 110px;
+        max-width: 120px;
       }
     }
     .result__details {
