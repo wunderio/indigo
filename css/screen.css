@@ -2838,7 +2838,7 @@ h2 {
   height: 60px;
   position: absolute;
   right: 0px;
-  bottom: 120px;
+  bottom: 70px;
 }
 .sc-audio .play-audio:before {
   background-image: url("../images/search-sprite.png");
@@ -2855,7 +2855,7 @@ h2 {
 .sc-audio .play-audio:hover {
   background-color: black;
 }
-@media (min-width: 420px) {
+@media (min-width: 480px) {
   .sc-audio .play-audio {
     bottom: -20%;
     float: left;
@@ -3029,7 +3029,7 @@ h2 {
 }
 
 .results__meta--length {
-  color: #ac145a;
+  color: #777777;
   display: inline;
   font-size: 14px;
   margin-left: 24px;
@@ -3064,6 +3064,7 @@ h2 {
   overflow: hidden;
   padding-bottom: 0;
   width: 100%;
+  min-width: 200px;
 }
 .result__item--video .result__thumbnail a {
   display: block;
@@ -3090,7 +3091,7 @@ h2 {
 .result__item--video .result__thumbnail a:hover:before {
   background-color: black;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .result__item--video .result__thumbnail {
     width: 32.5%;
     height: auto;
@@ -3109,13 +3110,14 @@ h2 {
   }
 }
 
-@media (min-width: 600px) {
-  .result__item--iTunes--video img,
-  .result__item--iTunes--audio img {
-    max-width: 100px;
+/* .result__item--iTunes--video,
+.result__item--iTunes--audio {
+  @media (min-width: 700px) {
+    img {
+      max-width: 100px;
+    }
   }
-}
-
+} */
 .result__item--audio .result__title:before {
   background-position: 0 -341px;
   width: 20px;
@@ -3169,47 +3171,35 @@ h2 {
   width: 83%;
 }
 
-.result__item--soundcloud .result__thumbnail,
-.result__item--iTunes--audio .result__thumbnail,
-.result__item--iTunes--video .result__thumbnail {
+.result__item--iTunes--audio .result__thumbnail a:before {
+  display: none;
+}
+
+.result__item--soundcloud .result__thumbnail {
   width: 18.5%;
 }
-.result__item--soundcloud .result__details,
-.result__item--iTunes--audio .result__details,
-.result__item--iTunes--video .result__details {
+.result__item--soundcloud .result__details {
   width: 80%;
 }
 @media (max-width: 479px) {
-  .result__item--soundcloud .result__thumbnail,
-  .result__item--iTunes--audio .result__thumbnail,
-  .result__item--iTunes--video .result__thumbnail {
+  .result__item--soundcloud .result__thumbnail {
     width: 100%;
   }
-  .result__item--soundcloud .result__thumbnail a:before,
-  .result__item--iTunes--audio .result__thumbnail a:before,
-  .result__item--iTunes--video .result__thumbnail a:before {
+  .result__item--soundcloud .result__thumbnail a:before {
     left: 84%;
   }
-  .result__item--soundcloud .result__thumbnail img,
-  .result__item--iTunes--audio .result__thumbnail img,
-  .result__item--iTunes--video .result__thumbnail img {
+  .result__item--soundcloud .result__thumbnail img {
     max-width: 120px;
   }
-  .result__item--soundcloud .result__details,
-  .result__item--iTunes--audio .result__details,
-  .result__item--iTunes--video .result__details {
+  .result__item--soundcloud .result__details {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .result__item--soundcloud .result__thumbnail,
-  .result__item--iTunes--audio .result__thumbnail,
-  .result__item--iTunes--video .result__thumbnail {
+  .result__item--soundcloud .result__thumbnail {
     width: 11.5%;
   }
-  .result__item--soundcloud .result__details,
-  .result__item--iTunes--audio .result__details,
-  .result__item--iTunes--video .result__details {
+  .result__item--soundcloud .result__details {
     width: 86%;
   }
 }

@@ -121,7 +121,7 @@
       height: 60px;
       position: absolute;
       right: 0px;
-      bottom: 120px;
+      bottom: 70px;
         &:before {
           background-image: url('../images/search-sprite.png');
           background-position: 0 -460px;
@@ -137,7 +137,7 @@
         &:hover {
           background-color: black;
         }
-      @media (min-width: 420px) {
+      @media (min-width: 480px) {
         bottom: -20%;
         float: left;
         position: relative;
@@ -331,7 +331,7 @@
   }
 }
 .results__meta--length {
-  color: $brightpink;
+  color: darken(#AAA, 20%);
   display: inline;
   font-size: 14px;
   margin-left: 24px;
@@ -360,6 +360,7 @@
   }
 }
 
+
 // Video Video
 
 .result__item--video {
@@ -375,6 +376,7 @@
     overflow: hidden;
     padding-bottom: 0;
     width: 100%;
+    min-width: 200px;
     // img for now, but might be different
     a {
       display: block;
@@ -404,7 +406,7 @@
       }
     }
   }
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     .result__thumbnail {
       width: 32.5%;
       height: auto;
@@ -423,14 +425,14 @@
     }
   }
 }
-.result__item--iTunes--video,
+/* .result__item--iTunes--video,
 .result__item--iTunes--audio {
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     img {
       max-width: 100px;
     }
   }
-}
+} */
 // Audio
 
 .result__item--audio {
@@ -473,7 +475,7 @@
       max-width: 100px;
     }
   }
-//  @media (min-width: 600px) {
+//  @media (min-width: 700px) {
     .result__thumbnail {
       width: 16.5%;
       height: auto;
@@ -494,11 +496,15 @@
 //  }
 }
 
+.result__item--iTunes--audio {
+  .result__thumbnail a:before {
+    display: none;
+  }
+}
+
 // itunes and soundcloud smaller thumbnail
 
-.result__item--soundcloud,
-.result__item--iTunes--audio,
-.result__item--iTunes--video {
+.result__item--soundcloud {
   .result__thumbnail {
     width: 18.5%;
   }

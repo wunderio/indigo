@@ -136,16 +136,4 @@ $(document).ready(function(){
 		return false;
 	});
 
-  // Show/Hide Modal
-  $('.modal-close').click(function(){
-    $('#modal-video').removeClass('show-modal');
-    return false;
-  });
-
-  // Show/Hide Modal
-  $('.result__thumbnail a').click(function(){
-    $('#modal-video').addClass('show-modal');
-    return false;
-  });
-
 });
