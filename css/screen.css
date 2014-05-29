@@ -4141,7 +4141,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   border-left: 1px solid transparent;
 }
 .AC-result > h2 {
-  color: #4693ea;
+  color: #000;
+  font-weight: bold;
   font-size: 16px;
   font-size: 1.6rem;
   margin-bottom: 8px;
