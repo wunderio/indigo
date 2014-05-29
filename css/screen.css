@@ -2942,12 +2942,17 @@ h2 {
   color: #4693ea;
 }
 
-.result__item--research--open .result__meta:before {
+.result__item--discovery-and-open-access .result__meta:before {
   background-position: -2px -217px;
   height: 22px;
 }
 
-.result__item--research--closed .result__meta:before {
+.result__item--open-access .result__meta:before {
+  background-position: 0 -549px;
+  height: 22px;
+}
+
+.result__item--discovery-only .result__meta:before {
   background-position: -2px -259px;
   height: 23px;
 }
