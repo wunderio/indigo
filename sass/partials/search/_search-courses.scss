@@ -79,16 +79,26 @@
   }
   .result__title {
     float: left;
-    line-height: 27px;
+    line-height: 1.2;
     margin-right: 20px;
   }
   .result__link {
     float: left;
     margin: 0;
   }
-  @media (min-width: 479px) {
+  @media (min-width: 600px) {
     .result__title {
-      line-height: 41px;
+      max-width: 70%;
+      margin-right: 0;
+    }
+    .result__link {
+      bottom: 12px;
+      float: right;
+    }
+  }
+  @media (min-width: 600px) {
+    .result__title {
+      max-width: 80%;
     }
   }
 }
