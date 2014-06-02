@@ -193,6 +193,11 @@
       background-position: 0 -31px;
     }
   }
+  .tel--external {
+    &:before {
+      background-position: 0 -67px;
+    }
+  }
 }
 .AC-result__degrees {
   h3 {

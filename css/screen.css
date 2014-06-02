@@ -4247,6 +4247,9 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   top: 3px;
   background-position: 0 -31px;
 }
+.AC-result .tel--external:before {
+  background-position: 0 -67px;
+}
 
 .AC-result__degrees h3 {
   font-size: 12px;
