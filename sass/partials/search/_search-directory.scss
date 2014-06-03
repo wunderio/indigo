@@ -61,6 +61,13 @@
       font-size: 14px;
     }
   }
+  .iris {
+    clear: both;
+    font-weight: bold;
+    a {
+      color: $search-blue;
+    }
+  }
   .tel a {
     color: #131313;
     &:hover {

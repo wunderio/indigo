@@ -3928,6 +3928,13 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   color: #4c98e5;
   font-size: 14px;
 }
+.result__item--person .iris {
+  clear: both;
+  font-weight: bold;
+}
+.result__item--person .iris a {
+  color: #4693ea;
+}
 .result__item--person .tel a {
   color: #131313;
 }
