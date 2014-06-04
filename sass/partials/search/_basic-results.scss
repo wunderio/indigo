@@ -616,3 +616,74 @@
     }
   }
 }
+
+
+// additional CSS from Dan
+//
+
+.v-yt .result__thumbnail {
+        position: relative;
+    }
+    .v-yt .result__thumbnail:before {
+        content: "";
+        display: block;
+        margin-top: 75%;
+    }
+    .v-yt .result__thumbnail iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .v-yt .result__thumbnail a {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+	.sc-player-box {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAN0lEQVR42mMQFRW/x2RiYqLI9O3bNwam////MzAxAAESARQCsf6jcmFiOLkIoxAGEGIBmSAHAQBWYyX2FoQvwgAAAABJRU5ErkJggg==) 50% 50% / 1px 30px repeat-x;
+		background-repeat: repeat-x;
+		width: auto;
+		height: 18px;
+		height: 17px;
+		padding: 6px 9px 7px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		font-size: 12px;
+		color: white;
+	}
+	.sc-play-icon {
+		width: 0;
+		height: 0;
+		border-top: 7px solid transparent;
+		border-left: 10px solid white;
+		border-bottom: 7px solid transparent;
+		display: inline-block;
+		margin: 2px 4px 3px 0px;
+		vertical-align: top;
+	}
+	.sc-play-icon.pause {
+		border-left: 4px solid white;
+		border-right: 4px solid white;
+		width: 3px;
+		height: 14px;
+		border-top: 0px;
+		border-bottom: 0px;
+
+	}
+	.sc-player-text {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 0px;
+	}
+	img.sc {
+		float: right;
+		vertical-align: top;
+		height: 18px;
+		width: auto;
+	}
+	.sc-audio-control {
+		cursor: pointer;
+	}
