@@ -133,6 +133,7 @@
 }
 
 .facet {
+  background-color: #F3F3F3;
   clear: both;
   float: left;
   margin-bottom: 20px;
@@ -145,7 +146,7 @@
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   float: left;
-  font-sizce: 14px;
+  font-size: 14px;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0 0 10px 0;
@@ -1171,10 +1172,23 @@ h2 {
 }
 
 .facet-list__link {
+  clear: both;
   color: #4693ea;
+  display: block;
   font-size: 14px;
   font-size: 1.4rem;
   text-decoration: underline;
+}
+
+.view-all {
+  float: right;
+  color: #4693ea;
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .facet--close h4 {

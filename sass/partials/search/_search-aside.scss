@@ -44,10 +44,23 @@
   }
 
 .facet-list__link {
+  clear: both;
   color: $search-blue;
+  display: block;
   font-size: 14px;
   font-size: 1.4rem;
   text-decoration: underline;
+}
+
+.view-all {
+  float: right;
+  color: $search-blue;
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .facet--close {
