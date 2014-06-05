@@ -2477,6 +2477,7 @@ footer hr {
   margin-bottom: 10px;
 }
 .tt-dropdown-menu li {
+  color: #333;
   list-style: none;
   border-bottom: 1px solid #e7e7e7;
   margin-bottom: 8px;
@@ -2493,7 +2494,7 @@ footer hr {
   margin-bottom: 0;
 }
 .tt-dropdown-menu li a {
-  color: #4693ea;
+  color: #4693ea !important;
   display: block;
   font-size: 12px;
   font-size: 1.2rem;
@@ -2501,7 +2502,7 @@ footer hr {
   margin-bottom: 8px;
 }
 .tt-dropdown-menu li p a {
-  color: #333;
+  color: #333 !important;
   text-decoration: none;
 }
 

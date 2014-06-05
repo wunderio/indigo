@@ -325,7 +325,7 @@ h2 {
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 @media (min-width: 768px) {
   .result__item .result__title {
