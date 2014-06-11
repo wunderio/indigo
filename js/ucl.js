@@ -136,4 +136,24 @@ $(document).ready(function(){
 		return false;
 	});
 
+
+
+
+
+
+
+});
+if ($(window).width() < 700) {
+  // collections put whatever collection is selected at top of list on mobile
+  $('.collections__list').find('.list__item--is-selected').prependTo('.collections__list');
+}
+
+// collections put whatever collection is selected at top of list on mobile
+$(window).resize(function() {
+  if ($(window).width() < 700) {
+    // collections put whatever collection is selected at top of list on mobile
+    $('.collections__list').find('.list__item--is-selected').prependTo('.collections__list');
+  }
+  else {
+  }
 });
