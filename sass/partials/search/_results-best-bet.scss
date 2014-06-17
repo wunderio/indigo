@@ -6,6 +6,9 @@
   clear: both;
   margin: 0 0 30px;
   padding: 10px 20px;
+  &:hover {
+    background-color: $search-blue;
+  }
   .result__title {
     margin-top: 0; // override
     margin-bottom: 10px;

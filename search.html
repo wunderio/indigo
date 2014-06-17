@@ -36,54 +36,54 @@
           <form action="#" method="get">
             <!--
             <div class="search-type">
-              <input type="radio" id="ucl-site" name="operation" value="1" checked="checked">
-              <label for="ucl-site" class="site">Site</label>
-              <input type="radio" id="ucl-search" name="operation" value="2">
-              <label for="ucl-search" class="staff">Directory</label>
-            </div>
-          -->
-          <div id="searchform">
-            <input type="search" placeholder="Search UCL websites, people, and more" id="search" role="search" value="">
+            <input type="radio" id="ucl-site" name="operation" value="1" checked="checked">
+            <label for="ucl-site" class="site">Site</label>
+            <input type="radio" id="ucl-search" name="operation" value="2">
+            <label for="ucl-search" class="staff">Directory</label>
           </div>
-
-          <input type="submit" name="sumbit" value="Go" class="btn search" />
-        </form>
-
-
-      </div>
-
-      <ul id="audiences" class="m-clear">
-        <li><a href="index.php">UCL Home</a></li>
-        <li><a href="prospective-students.php">Prospective students</a></li>
-        <li><a href="current-students.php">Current students</a></li>
-        <li><a href="staff.php">Staff</a></li>
-      </ul>
-    </div>
-
-  </nav><!-- end #global-masthead -->
-
-  <div class="wrapper">
-
-    <div class="photograph">
-
-      <header id="ucl-masthead" role="header">
-
-        <div id="branding">
-          <h1>Search</h1>
-          <img src="./images/ucl-logo.svg" alt="UCL logo" id="logo">
+        -->
+        <div id="searchform">
+          <input type="search" placeholder="Search UCL websites, people, and more" id="search" role="search" value="">
         </div>
 
-      </header>
+        <input type="submit" name="sumbit" value="Go" class="btn search" />
+      </form>
 
-      <div class="site-brand site-brand-none">
 
-        <p class="photograph-description">A nascent retina, generated from a 3D embryonic stem cell culture</p>
+    </div>
 
+    <ul id="audiences" class="m-clear">
+      <li><a href="index.php">UCL Home</a></li>
+      <li><a href="prospective-students.php">Prospective students</a></li>
+      <li><a href="current-students.php">Current students</a></li>
+      <li><a href="staff.php">Staff</a></li>
+    </ul>
+  </div>
+
+</nav><!-- end #global-masthead -->
+
+<div class="wrapper">
+
+  <div class="photograph">
+
+    <header id="ucl-masthead" role="header">
+
+      <div id="branding">
+        <h1>Search</h1>
+        <img src="./images/ucl-logo.svg" alt="UCL logo" id="logo">
       </div>
 
-    </div><!-- end .photograph -->
+    </header>
 
-  </div> <!-- end .wrapper -->
+    <div class="site-brand site-brand-none">
+
+      <p class="photograph-description">A nascent retina, generated from a 3D embryonic stem cell culture</p>
+
+    </div>
+
+  </div><!-- end .photograph -->
+
+</div> <!-- end .wrapper -->
 
 </div><!-- end #nav-wrap -->
 
@@ -171,6 +171,14 @@
       </div>
       <!-- results sort by option -->
 
+      <!-- mobile pillboxes -->
+      <div class="pillbox-container pillboxes--mobile" data-set="js-pillboxes">
+        <div class="pillbox--inner">
+
+        </div>
+      </div>
+      <!-- mobile pillboxes -->
+
       <!-- best bet result -->
       <div class="result__item result__item--best-bet">
         <h3 class="result__title">
@@ -202,26 +210,29 @@
       <!-- search navigation -->
       <div class="results-nav">
         <ol class="results-nav__list">
-          <li class=pagination__first>First</li><!--
-       --><li class=pagination__prev>Previous</li><!--
-       --><li><a href=/page/1>1</a></li><!--
-       --><li><a href=/page/2>2</a></li><!--
-       --><li class=current><a href=/page/3>3</a></li><!--
-       --><li><a href=/page/4>4</a></li><!--
-       --><li><a href=/page/5>5</a></li><!--
-       --><li class=pagination__next><a href=/page/next>Next</a></li><!--
-       --><li class=pagination__last><a href=/page/last>Last</a></li>
-        </ol>
-      </div>
-      <!-- search navigation -->
-    </div><!-- end .search-results -->
+          <li class=pagination__first><a href=/page/1>First</a></li><!--
+          --><li class=pagination__prev><a href=/page/1>Previous</a></li><!--
+        --><li><a href=/page/1>1</a></li><!--
+      --><li><a href=/page/2>2</a></li><!--
+    --><li class=current><a href=/page/3>3</a></li><!--
+  --><li><a href=/page/4>4</a></li><!--
+--><li><a href=/page/5>5</a></li><!--
+--><li class=pagination__next><a href=/page/next>Next</a></li><!--
+--><li class=pagination__last><a href=/page/last>Last</a></li>
+</ol>
+</div>
+<!-- search navigation -->
+</div><!-- end .search-results -->
 
-    <aside class="facets">
-      <div class="module--facets module">
-        <h2>Refine your results</h2>
-        <a href="#" class="close">X</a>
-        <!--<a href="" class="close">x</a>-->
-        <!-- pillboxes -->
+<aside class="facets">
+  <div class="module--facets module">
+    <h2>Refine your results</h2>
+    <a href="#" class="close">X</a>
+    <!--<a href="" class="close">x</a>-->
+    <!-- pillboxes -->
+    <div class="pillbox-container pillboxes--desktop" data-set="js-pillboxes">
+      <div class="pillbox--inner">
+        <h4>Your selected refinements</h4>
         <ul class="pillboxes">
 
           <!-- pillbox item -->
@@ -246,137 +257,139 @@
           <!-- pillbox item -->
 
         </ul>
-        <!-- pillboxes -->
-
-        <!-- search facet with checkboxes -->
-        <div class="facet">
-          <h4>A Facet</h4>
-          <ul class="facet-list">
-            <li class="facet-list__item"><input type="checkbox" id="checkbox_id1" /><label for="checkbox_id1">An option</label><span>(45)</span></li>
-            <li class="facet-list__item"><input type="checkbox" id="checkbox_id2" /><label for="checkbox_id2">Another option</label><span>(45)</span></li>
-            <li class="facet-list__item"><input type="checkbox" id="checkbox_id3" /><label for="checkbox_id3">One more option</label><span>(45)</span></li>
-            <li class="facet-list__item"><input type="checkbox" id="checkbox_id4" /><label for="checkbox_id4">The final option</label><span>(45)</span></li>
-          </ul>
-        </div>
-        <!-- search facet with checkboxes -->
-
-        <!-- search facet with radio buttons -->
-        <div class="facet">
-          <h4>A Facet</h4>
-          <ul class="facet-list">
-            <li class="facet-list__item">
-              <input checked="checked" class="radio" name="radio" id="radio1" type="radio">
-              <label for="radio1">Option 1</label>
-            </li>
-            <li class="facet-list__item">
-              <input class="radio" name="radio" id="radio2" type="radio">
-              <label for="radio2">Option 2</label>
-            </li>
-          </ul>
-        </div>
-        <!-- search facet with radio buttons -->
-
-        <!-- search facet with a range -->
-        <div class="facet">
-          <h4>A Facet</h4>
-          <ul class="facet-list">
-            <li class="facet-list__item">
-              <label for="phone">Range</label>
-              <input name="points" min="1" max="5" type="range">
-              <em>Note about this field</em>
-            </li>
-          </ul>
-        </div>
-        <!-- search facet with a range -->
-
-        <!-- search facet with a date picker -->
-        <div class="facet">
-          <h4>A Facet</h4>
-          <ul class="facet-list">
-            <li class="facet-list__item">
-              <label for="datefrom">From Date"</label>
-              <input type="text" id="dateFrom" title="datefrom">
-              <em>Note about this date picker</em>
-            </li>
-            <li class="facet-list__item">
-              <label for="dateto">To Date</label>
-              <input type="text" id="dateTo" title="dateto">
-              <em>Note about this date picker</em>
-            </li>
-          </ul>
-        </div>
-        <!-- search facet with a date picker-->
-
-        <!-- search facet with a select option -->
-        <div class="facet">
-          <h4>A Facet</h4>
-          <ul class="facet-list">
-            <li class="facet-list__item">
-              <label for="select">Select</label>
-              <select id="select">
-              	<optgroup label="Option Group 1">
-                  	<option>Option One</option>
-                    <option>Option Two</option>
-                  	<option>Option Three</option>
-                  </optgroup>
-                  <optgroup label="Option Group 2">
-                  	<option>Option One</option>
-                  	<option>Option Two</option>
-                  	<option>Option Three</option>
-                  </optgroup>
-              </select>
-              <em>Note about this selection</em>
-            </li>
-          </ul>
-        </div>
-        <!-- search facet with a select option -->
-
-        <!-- search facet with a link -->
-        <div class="facet">
-          <h4>A Facet</h4>
-          <ul class="facet-list">
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <li class="facet-list__item">
-              <a href="#" class="facet-list__link">a link in a facet</a>
-            </li>
-            <a href="" class="view-all">View All</a>
-          </ul>
-
-        </div>
-        <!-- search facet with a link -->
-
       </div>
-      <input value="Default" class="btn-gradient" type="button">
-    </aside>
-  </div>
+    </div>
+    <!-- pillboxes -->
 
-  <!-- end main slot where silva content gets rendered-->
+    <!-- search facet with checkboxes -->
+    <div class="facet">
+      <h4>A Facet</h4>
+      <ul class="facet-list">
+        <li class="facet-list__item"><input type="checkbox" id="checkbox_id1" /><label for="checkbox_id1">An option</label><span>(45)</span></li>
+        <li class="facet-list__item"><input type="checkbox" id="checkbox_id2" /><label for="checkbox_id2">Another option</label><span>(45)</span></li>
+        <li class="facet-list__item"><input type="checkbox" id="checkbox_id3" /><label for="checkbox_id3">One more option</label><span>(45)</span></li>
+        <li class="facet-list__item"><input type="checkbox" id="checkbox_id4" /><label for="checkbox_id4">The final option</label><span>(45)</span></li>
+      </ul>
+    </div>
+    <!-- search facet with checkboxes -->
+
+    <!-- search facet with radio buttons -->
+    <div class="facet">
+      <h4>A Facet</h4>
+      <ul class="facet-list">
+        <li class="facet-list__item">
+          <input checked="checked" class="radio" name="radio" id="radio1" type="radio">
+          <label for="radio1">Option 1</label>
+        </li>
+        <li class="facet-list__item">
+          <input class="radio" name="radio" id="radio2" type="radio">
+          <label for="radio2">Option 2</label>
+        </li>
+      </ul>
+    </div>
+    <!-- search facet with radio buttons -->
+
+    <!-- search facet with a range -->
+    <div class="facet">
+      <h4>A Facet</h4>
+      <ul class="facet-list">
+        <li class="facet-list__item">
+          <label for="phone">Range</label>
+          <input name="points" min="1" max="5" type="range">
+          <em>Note about this field</em>
+        </li>
+      </ul>
+    </div>
+    <!-- search facet with a range -->
+
+    <!-- search facet with a date picker -->
+    <div class="facet">
+      <h4>A Facet</h4>
+      <ul class="facet-list">
+        <li class="facet-list__item">
+          <label for="datefrom">From Date"</label>
+          <input type="text" id="dateFrom" title="datefrom">
+          <em>Note about this date picker</em>
+        </li>
+        <li class="facet-list__item">
+          <label for="dateto">To Date</label>
+          <input type="text" id="dateTo" title="dateto">
+          <em>Note about this date picker</em>
+        </li>
+      </ul>
+    </div>
+    <!-- search facet with a date picker-->
+
+    <!-- search facet with a select option -->
+    <div class="facet">
+      <h4>A Facet</h4>
+      <ul class="facet-list">
+        <li class="facet-list__item">
+          <label for="select">Select</label>
+          <select id="select">
+            <optgroup label="Option Group 1">
+              <option>Option One</option>
+              <option>Option Two</option>
+              <option>Option Three</option>
+            </optgroup>
+            <optgroup label="Option Group 2">
+              <option>Option One</option>
+              <option>Option Two</option>
+              <option>Option Three</option>
+            </optgroup>
+          </select>
+          <em>Note about this selection</em>
+        </li>
+      </ul>
+    </div>
+    <!-- search facet with a select option -->
+
+    <!-- search facet with a link -->
+    <div class="facet">
+      <h4>A Facet</h4>
+      <ul class="facet-list">
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <li class="facet-list__item">
+          <a href="#" class="facet-list__link">a link in a facet</a>
+        </li>
+        <a href="" class="view-all">View All</a>
+      </ul>
+
+    </div>
+    <!-- search facet with a link -->
+
+  </div>
+  <input value="Default" class="btn-gradient" type="button">
+</aside>
+</div>
+
+<!-- end main slot where silva content gets rendered-->
 
 </div>
 

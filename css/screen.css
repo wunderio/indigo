@@ -1849,12 +1849,21 @@ article > footer a:hover {
   color: #fff;
   text-decoration: none;
 }
-#global-masthead ul {
+
+#audiences {
   font-size: 16px;
   margin-top: 8px;
+  height: 45px;
+}
+#audiences li {
+  display: inline;
+  margin-right: 1em;
+}
+#audiences img {
+  width: auto;
 }
 @media screen and (max-width: 940px) {
-  #global-masthead ul {
+  #audiences {
     font-size: 12px;
     font-size: 1.2rem;
     margin-top: 12px;
@@ -1867,17 +1876,6 @@ article > footer a:hover {
   border: medium none;
   color: #666;
   padding-left: 0;
-}
-
-#global-masthead {
-  height: 45px;
-}
-#global-masthead li {
-  display: inline;
-  margin-right: 1em;
-}
-#global-masthead img {
-  width: auto;
 }
 
 /* Global Search
@@ -2633,13 +2631,22 @@ footer hr {
   background-position: 0 -67px;
 }
 
-.AC-result__degrees h3 {
+.AC-result--degrees h3 {
   font-size: 12px;
-  margin-top: 0;
+  margin-top: 0 !important;
   margin-bottom: 8px;
 }
-.AC-result__degrees h3 span {
+.AC-result--degrees h3 span {
   margin-left: 4px;
+}
+
+.twitter-typeahead {
+  width: 100%;
+}
+
+#query {
+  outline: 0;
+  border: none;
 }
 
 /*# sourceMappingURL=screen.css.map */

@@ -12,7 +12,7 @@
   color: #131313;
   font-size: 14px;
   font-size: 1.4rem;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 10px;
   float: left;
   clear: both;
@@ -27,11 +27,6 @@
 @media (min-width: 800px) {
   .results-listed {
     margin-left: 40px;
-  }
-}
-@media (min-width: 768px) and (max-width: 959px) {
-  .results-listed {
-    margin-top: 25px;
   }
 }
 .total-matching {
@@ -50,14 +45,14 @@
 #results-sort-by {
   position: absolute;
   right: 0;
-  margin: 10px 0 0;
+  margin: 20px 0 0;
 }
 @media (min-width: 768px) {
   #results-sort-by {
     float: right;
     font-size: 14px;
     font-size: 1.4rem;
-    margin: 10px 40px 20px 0;
+    margin: 20px 40px 30px 0;
     position: relative;
   }
 }
@@ -328,6 +323,9 @@ h2 {
   margin-bottom: 4px;
 }
 @media (min-width: 768px) {
+  .result__item:hover {
+    background-color: #f3f2ee;
+  }
   .result__item .result__title {
     font-size: 20px;
     font-size: 2rem;
@@ -922,6 +920,9 @@ img.sc {
   margin: 0 0 30px;
   padding: 10px 20px;
 }
+.result__item--best-bet:hover {
+  background-color: #4693ea;
+}
 .result__item--best-bet .result__title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -1031,19 +1032,23 @@ img.sc {
   list-style: none;
   line-height: 30px;
   padding: 0 10px;
+  position: relative;
   transition: background-color .16s linear;
 }
 .list__item a {
   line-height: 36px;
   margin: 0;
   padding: 0;
-  color: #131313;
+  color: #000;
   display: block;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   text-decoration: none;
 }
 .list__item a span {
+  color: gray;
+  font-size: 12px;
+  font-weight: normal;
   margin-left: 5px;
 }
 .list__item:hover, .list__item:focus {
@@ -1054,6 +1059,13 @@ img.sc {
     background-color: #d6d2c4;
     border-top: none;
     font-weight: bold;
+  }
+}
+@media (min-width: 768px) {
+  .list__item {
+    border: 1px solid #aca488;
+    border-top-width: 2px;
+    border-bottom: 0;
   }
 }
 
@@ -1084,17 +1096,18 @@ img.sc {
     max-width: 100%;
     overflow: visible;
     padding: 0;
-    border-bottom: 1px solid #d6d2c4;
+    border-bottom: 2px solid #d6d2c4;
+    border-radius: 0;
     float: left;
     width: 100%;
   }
 
   .list__item {
     background-color: #ebe9e2;
-    -webkit-border-top-left-radius: 4px;
-    border-top-left-radius: 4px;
-    -webkit-border-top-right-radius: 4px;
-    border-top-right-radius: 4px;
+    -webkit-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
     display: block;
     float: left;
     margin-left: 10px;
@@ -1108,6 +1121,8 @@ img.sc {
   }
   .list__item a {
     line-height: 30px;
+    top: 1px;
+    position: relative;
   }
 
   .list__item--is-selected {
@@ -1120,13 +1135,13 @@ img.sc {
   .list__item--is-selected a {
     font-weight: bold;
     position: relative;
-    top: 1px;
   }
 }
 @media (min-width: 1024px) {
   .collections__list {
     float: right;
     width: 65.7%;
+    top: 3px;
   }
 
   .list__item {
@@ -1200,9 +1215,22 @@ img.sc {
     width: 80px;
   }
 }
+.pillbox-container {
+  background-color: #fff;
+  float: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.pillbox-container h4 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .pillboxes {
   float: left;
-  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -1246,6 +1274,29 @@ img.sc {
   text-decoration: none;
 }
 
+@media (max-width: 1023px) {
+  .pillboxes--desktop {
+    display: none;
+  }
+
+  .pillboxes--mobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .pillboxes--mobile {
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .pillboxes--desktop {
+    display: block;
+  }
+
+  .pillboxes--mobile {
+    display: none;
+  }
+}
 .facet-list__link {
   clear: both;
   color: #4693ea;
@@ -1314,12 +1365,12 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   margin-left: 5px;
   margin-right: 0;
   border-radius: 4px;
-  padding: 5px 10px;
   text-decoration: none;
 }
 .results-nav__list > li a {
   color: #fff;
   display: block;
+  padding: 5px 12px;
   transition: background .2s linear;
 }
 .results-nav__list > li:hover {
@@ -1337,6 +1388,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .results-nav p {
   display: inline-block;
   line-height: 32px;
+  padding: 5px 10px;
 }
 .results-nav .fb-current-result-page {
   display: inline-block;
@@ -1353,13 +1405,17 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 .off-canvas {
   background: none repeat scroll 0% 0% #4693ea;
-  padding: 6px 10px 6px 20px;
+  padding: 10px 20px 10px 28px;
   position: relative;
   float: left;
   font-family: "Helvetica Neue";
   font-size: 12px;
   font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
   margin-top: 20px;
+  text-transform: uppercase;
+  border-width: 2px 2px 4px !important;
 }
 @media (min-width: 768px) {
   .off-canvas {
@@ -1371,9 +1427,9 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   border-style: solid;
   border-width: 4px 8px 4px 0;
   content: '';
-  left: 5px;
+  left: 10px;
   position: absolute;
-  top: 10px;
+  top: 15px;
   transition: transform .3s linear;
   width: 0;
 }
@@ -1417,7 +1473,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     left: 320px;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 1024px) {
   .off-canvas,
   .close {
     display: none !important;
@@ -1499,7 +1555,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 .result__item--degrees .result__title {
   float: left;
-  line-height: 1.2;
   margin-right: 20px;
 }
 .result__item--degrees .result__link {
@@ -1508,11 +1563,11 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 @media (min-width: 600px) {
   .result__item--degrees .result__title {
+    line-height: 42px;
     max-width: 70%;
     margin-right: 0;
   }
   .result__item--degrees .result__link {
-    bottom: 12px;
     float: right;
   }
 }

@@ -36,6 +36,9 @@
     margin-bottom: 4px;
   }
   @media (min-width: 768px) {
+    &:hover {
+      background-color: lighten(#D6D2C4, 14%);
+    }
     .result__title {
       font-size: 20px;
       font-size: 2rem;

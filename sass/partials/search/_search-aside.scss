@@ -1,47 +1,82 @@
-  .pillboxes {
-    float: left;
+.pillbox-container {
+  background-color: #fff;
+  float: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  h4 {
+    margin: 0;
     margin-bottom: 10px;
-    width: 100%;
   }
-  .pillbox {
-    background-color: lighten(#d6d2c4, 10%);
-    border: 1px solid darken(#d6d2c4, 20%);
-    border-radius: 4px;
-    float: left;
-    list-style: none;
-    margin: 0 10px 10px 0;
-    padding: 0 20px 0 10px;
-    transition: background-color .16s linear;
-    &:hover {
-      background-color: darken(#d6d2c4, 10%);
-      > .pillbox__link span {
-        color: #131313;
-      }
-    }
-  }
+}
 
-  .pillbox__link {
-    color: #131313;
-    display: block;
-    font-size: 14px;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 35px;
-    position: relative;
-    text-decoration: none;
-    text-transform: none;
-    span {
-      color: #aaa;
-      font-weight: bold;
-      position: relative;
-      right: -10px;
-      top: 0;
-    }
-    &:hover {
+.pillboxes {
+  float: left;
+  width: 100%;
+}
+.pillbox {
+  background-color: lighten(#d6d2c4, 10%);
+  border: 1px solid darken(#d6d2c4, 20%);
+  border-radius: 4px;
+  float: left;
+  list-style: none;
+  margin: 0 10px 10px 0;
+  padding: 0 20px 0 10px;
+  transition: background-color .16s linear;
+  &:hover {
+    background-color: darken(#d6d2c4, 10%);
+    > .pillbox__link span {
       color: #131313;
-      text-decoration: none;
     }
   }
+}
+
+.pillbox__link {
+  color: #131313;
+  display: block;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 35px;
+  position: relative;
+  text-decoration: none;
+  text-transform: none;
+  span {
+    color: #aaa;
+    font-weight: bold;
+    position: relative;
+    right: -10px;
+    top: 0;
+  }
+  &:hover {
+    color: #131313;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .pillboxes--desktop {
+    display: none;
+  }
+  .pillboxes--mobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .pillboxes--mobile {
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .pillboxes--desktop {
+    display: block;
+  }
+  .pillboxes--mobile {
+    display: none;
+  }
+}
 
 .facet-list__link {
   clear: both;
@@ -79,23 +114,23 @@
 
 .facets {
   input[type="button"] {
-      background-color: $search-blue;
-      padding: 6px 8px;
-      font-weight: 400;
-      margin-bottom: 20px;
+    background-color: $search-blue;
+    padding: 6px 8px;
+    font-weight: 400;
+    margin-bottom: 20px;
   }
 }
 
 .js {
   .facets {
     input[type="button"] {
-        display: none !important;
+      display: none !important;
     }
   }
 }
 .facets {
   input[type="button"] {
-      display: none !important;
+    display: none !important;
   }
 }
 
