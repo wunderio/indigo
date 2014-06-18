@@ -37,7 +37,7 @@
   }
   @media (min-width: 768px) {
     &:hover {
-      background-color: lighten(#D6D2C4, 14%);
+      background-color: lighten(#D6D2C4, 8%);
     }
     .result__title {
       font-size: 20px;
@@ -186,7 +186,7 @@
   .collections__list {
     width: 100%;
     margin: 0 auto;
-    height: 34px;
+    height: 39px;
     float: none;
   }
   .search-results {

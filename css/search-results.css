@@ -324,7 +324,7 @@ h2 {
 }
 @media (min-width: 768px) {
   .result__item:hover {
-    background-color: #f3f2ee;
+    background-color: #e7e4dc;
   }
   .result__item .result__title {
     font-size: 20px;
@@ -462,7 +462,7 @@ h2 {
 .no-facets .collections__list {
   width: 100%;
   margin: 0 auto;
-  height: 34px;
+  height: 39px;
   float: none;
 }
 .no-facets .search-results {
@@ -1041,13 +1041,13 @@ img.sc {
   padding: 0;
   color: #000;
   display: block;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 14px;
+  font-size: 1.4srem;
   text-decoration: none;
 }
 .list__item a span {
   color: gray;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: normal;
   margin-left: 5px;
 }
@@ -1063,8 +1063,8 @@ img.sc {
 }
 @media (min-width: 768px) {
   .list__item {
-    border: 1px solid #aca488;
-    border-top-width: 2px;
+    border: 2px solid #aca488;
+    border-top-width: 3px;
     border-bottom: 0;
   }
 }
@@ -1096,7 +1096,7 @@ img.sc {
     max-width: 100%;
     overflow: visible;
     padding: 0;
-    border-bottom: 2px solid #d6d2c4;
+    border-bottom: 4px solid #d6d2c4;
     border-radius: 0;
     float: left;
     width: 100%;
@@ -1283,9 +1283,11 @@ img.sc {
     display: block;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
   .pillboxes--mobile {
     padding-left: 40px;
+    border: 1px solid #d6d2c4;
+    border-radius: 4px;
   }
 }
 @media (min-width: 1024px) {
@@ -1404,15 +1406,13 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   }
 }
 .off-canvas {
-  background: none repeat scroll 0% 0% #4693ea;
-  padding: 10px 20px 10px 28px;
+  background: none repeat scroll 0% 0% #4693EA;
+  padding: 10px 14px 10px 24px;
   position: relative;
   float: left;
   font-family: "Helvetica Neue";
-  font-size: 12px;
   font-size: 1.2rem;
   font-weight: bold;
-  letter-spacing: 1px;
   margin-top: 20px;
   text-transform: uppercase;
   border-width: 2px 2px 4px !important;
@@ -1463,16 +1463,21 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   left: 280px;
   transition: left .3s ease-in-out;
 }
+@media (min-width: 768px) {
+  .move {
+    left: 300px;
+  }
+}
+@media (min-width: 850px) {
+  .move {
+    left: 350px;
+  }
+}
 
 .close-me {
   left: 0;
 }
 
-@media (min-width: 1000px) {
-  .move {
-    left: 320px;
-  }
-}
 @media (min-width: 1024px) {
   .off-canvas,
   .close {

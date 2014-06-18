@@ -10,6 +10,7 @@
     margin: 0;
     margin-bottom: 10px;
   }
+
 }
 
 .pillboxes {
@@ -64,9 +65,11 @@
     display: block;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
   .pillboxes--mobile {
     padding-left: 40px;
+    border: 1px solid #d6d2c4;
+    border-radius: 4px;
   }
 }
 @media (min-width: 1024px) {
