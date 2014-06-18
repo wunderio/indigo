@@ -291,6 +291,7 @@ h2 {
   list-style: none;
   margin: 0 0 20px;
   padding: 0 0 4px;
+  width: 100%;
 }
 .result__item .result__title {
   font-size: 18px;
@@ -919,6 +920,7 @@ img.sc {
   clear: both;
   margin: 0 0 30px;
   padding: 10px 20px;
+  width: auto;
 }
 .result__item--best-bet:hover {
   background-color: #4693ea;
@@ -1003,7 +1005,8 @@ img.sc {
     height: 0;
     border-style: solid;
     border-width: 16px 8px 0 8px;
-    border-color: white transparent transparent;
+    border-color: #ffffff transparent transparent;
+    z-index: 5050;
   }
 }
 
@@ -1096,7 +1099,7 @@ img.sc {
     max-width: 100%;
     overflow: visible;
     padding: 0;
-    border-bottom: 4px solid #d6d2c4;
+    border-bottom: 4px solid #aca488;
     border-radius: 0;
     float: left;
     width: 100%;
