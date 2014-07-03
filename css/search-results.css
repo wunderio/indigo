@@ -482,9 +482,9 @@ h2 {
     margin-top: 45px;
   }
 }
-@media (min-width: 1050px) {
-  .no-facets .collections__list {
-    max-width: 60%;
+@media (min-width: 1270px) {
+  .no-facets .collections__list .list__item:first-child {
+    margin-left: 28.6%;
   }
 }
 
@@ -1023,7 +1023,7 @@ img.sc {
 }
 
 .show-list {
-  height: auto;
+  height: auto !important;
   z-index: 1984;
 }
 .show-list .collections__item {
@@ -1117,8 +1117,8 @@ img.sc {
     border-top-right-radius: 8px;
     display: block;
     float: left;
-    margin-left: 10px;
-    padding: 2px 10px;
+    margin-left: 6px;
+    padding: 2px 4px;
   }
   .list__item:first-child {
     margin-left: 0;
