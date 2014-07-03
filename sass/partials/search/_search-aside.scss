@@ -2,7 +2,6 @@
   background-color: #fff;
   float: left;
   margin-bottom: 20px;
-  padding: 10px;
   padding-bottom: 0;
   box-sizing: border-box;
   width: 100%;
@@ -19,7 +18,7 @@
 }
 .pillbox {
   background-color: lighten(#d6d2c4, 10%);
-  border: 1px solid darken(#d6d2c4, 20%);
+  border: 2px solid darken(#d6d2c4, 30%);
   border-radius: 4px;
   float: left;
   list-style: none;
@@ -57,29 +56,23 @@
   }
 }
 
-@media (max-width: 1023px) {
-  .pillboxes--desktop {
-    display: none;
-  }
+
+
   .pillboxes--mobile {
-    display: block;
+    @media (min-width: 768px) {
+      margin-left: 40px;
+    }
+    @media (min-width: 1024px) {
+      margin-left: 40px;
+      width: 91.6%;
+      width: 88%;
+    }
+    @media (min-width: 1118px) {
+      width: 89%;
+    }
   }
-}
-@media (max-width: 1024px) {
-  .pillboxes--mobile {
-    padding-left: 40px;
-    border: 1px solid #d6d2c4;
-    border-radius: 4px;
-  }
-}
-@media (min-width: 1024px) {
-  .pillboxes--desktop {
-    display: block;
-  }
-  .pillboxes--mobile {
-    display: none;
-  }
-}
+
+
 
 .facet-list__link {
   clear: both;
@@ -116,6 +109,7 @@
 }
 
 .facets {
+
   input[type="button"] {
     background-color: $search-blue;
     padding: 6px 8px;
@@ -137,6 +131,13 @@
   }
 }
 
+.facets {
+  @media (min-width: 1024px) {
+    border: 2px solid darken(#d6d2c4, 30%);
+    border-top-width: 3px;
+    border-radius: 8px;
+  }
+}
 
 // makes input 16px to prevent iOS zoom (should probably go to Indigo)
 

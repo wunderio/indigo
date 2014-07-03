@@ -2479,7 +2479,10 @@ footer hr {
   list-style: none;
   border-bottom: 1px solid #e7e7e7;
   margin-bottom: 8px;
-  height: 94px;
+  height: 74px;
+}
+.tt-dropdown-menu li h3 {
+  margin-top: 0;
 }
 .tt-dropdown-menu li li {
   padding-left: 0;

@@ -37,8 +37,11 @@
     list-style: none;
     border-bottom: 1px solid lighten(#aaa, 24%);
     margin-bottom: 8px;
-    height: 94px;
+    height: 74px;
   //  padding-left: 16px;
+  h3 {
+    margin-top: 0;
+  }
     li {
       padding-left: 0;
       height: auto;

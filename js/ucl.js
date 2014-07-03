@@ -105,8 +105,8 @@ $(document).ready(function(){
   // facet show/hide toggle
   $('.off-canvas').click(function() {
     $('.facets').toggleClass('show-facet');
-    $('.search-results__meta').toggleClass('move');
-    $('.search-results').toggleClass('move');
+//    $('.search-results__meta').toggleClass('move');
+  //  $('.search-results').toggleClass('move');
 
     $('.off-canvas').toggleClass('spin');
     return false;
@@ -114,7 +114,7 @@ $(document).ready(function(){
   // facet hide
   $('.close').click(function() {
     $('.facets').removeClass('show-facet');
-    $('.search-results__meta, .search-results').removeClass('move');
+//    $('.search-results__meta, .search-results').removeClass('move');
 
     $('.off-canvas').removeClass('spin');
     return false;
@@ -123,7 +123,7 @@ $(document).ready(function(){
   // facet hide
   $('.close-me').click(function() {
     $('.facets').removeClass('show-facet');
-    $('.search-results__meta, .search-results').removeClass('move');
+//    $('.search-results__meta, .search-results').removeClass('move');
 
     $('.off-canvas').removeClass('spin');
     return false;

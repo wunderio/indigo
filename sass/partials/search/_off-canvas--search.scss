@@ -6,11 +6,12 @@ float: left;
 font-family: "Helvetica Neue";
 font-size: 1.2rem;
 font-weight: bold;
-margin-top: 20px;
+margin-top: 60px;
 text-transform: uppercase;
 border-width: 2px 2px 4px !important;
   @media (min-width: 768px) {
     margin-left: 40px;
+    margin-top: 20px;
   }
   &:before {
     border-color: transparent #ffffff transparent;

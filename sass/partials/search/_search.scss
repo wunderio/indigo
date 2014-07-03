@@ -40,17 +40,38 @@ $stone: #d6d2c4;
 #results-sort-by {
   position: absolute;
   right: 0;
-  margin: 20px 0 0;
+  select {
+    font-size: 14px !important;
+    font-size: 1.4rem !important;
+  }
+  margin: 10px 0 0;
   @media (min-width: 768px) {
     float: right;
-    font-size: 14px;
-    font-size: 1.4rem;
-    margin: 20px 40px 30px 0;
+
+    margin: 20px 40px 0px 0;
     position: relative;
   }
   @media (min-width: 768px) and (max-width: 959px) {
     margin-top: 20px;
   }
+}
+
+#results-number {
+  position: absolute;
+  left: 0px;
+  select {
+    font-size: 14px !important;
+    font-size: 1.4rem !important;
+  }
+  margin: 10px 0 0;
+  @media (min-width: 768px) {
+    clear: both;
+    float: right;
+
+    margin: 0px 40px 0px 0;
+    position: relative;
+  }
+
 }
 
 .facets {
