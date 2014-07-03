@@ -206,9 +206,12 @@
       margin-top: 45px;
     }
   }
-  @media (min-width: 1050px) {
+  @media (min-width: 1270px) {
     .collections__list {
-      max-width: 60%;
+    //  max-width: 60%;
+      .list__item:first-child {
+        margin-left: 28.6%;
+      }
     }
   }
 }
