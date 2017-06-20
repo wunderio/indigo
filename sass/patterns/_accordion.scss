@@ -20,8 +20,34 @@
 
 .accordion__title {
 	a {
+		align-items: center;
 		color: $black;
-		display: block;
+		display: block; // Fallback which still works, but not as nice.
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.accordion__state-indicator {
+	@include rem('font-size', $font-size-h3);
+	display: inline-block;
+	font-weight: 500;
+	margin: 0 1rem;
+	text-align: center;
+	width: 2rem;
+	
+	&:hover {
+		text-decoration: none;
+	}
+	
+	&:after {
+		content: '+';
+	}
+	
+	.accordion__title a.currentAccordionAnchor & {
+		&:after {
+			content: '–';
+		}
 	}
 }
 

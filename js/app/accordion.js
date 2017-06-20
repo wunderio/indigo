@@ -20,12 +20,18 @@ define(['jquery'],function($){
 		$(tmpAccordionObj).each(function(){
 			var allPanels = $(this).find('.accordion__description');
 			allPanels.slideUp();
-			//open accordions that have this set in their class
+
 			$(this).find('.accordion__title a').each(function() {
+				
+				//open accordions that have this set in their class
 				var tmpAccordionClass = $(this).attr("class");
                 if (typeof tmpAccordionClass !== 'undefined' && tmpAccordionClass.indexOf('currentAccordionAnchor') >= 0){
 					$(this).parent().next().slideDown();
                 }
+								
+				//add accordion state indicator
+				var $indicator = $('<span aria-hidden="true" class="accordion__state-indicator"></span>');
+				$(this).append($indicator);
 			});
 
 			$(tmpAccordionObj).find('.accordion__title a').click(function() {
