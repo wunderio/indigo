@@ -38,6 +38,7 @@ require.config({
 		,googleAnalyticsLib: 'googleAnalytics.min'
 		,owl: 'owl.carousel.min'
 		,jwplayer: 'jwplayer'
+		,slickslider: 'slick.min'
 		,handleBars: 'handlebars.min'
 		,typeAheadBundle:  'typeahead.bundle.min'
 	}
@@ -64,6 +65,9 @@ require.config({
 		},
 		jwplayer: {
 			exports: 'jwplayer'
+		},
+		slickslider: {
+			deps: ['jquery']
 		},
 		typeAheadBundle: {
 			deps: ['jquery']
