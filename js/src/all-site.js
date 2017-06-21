@@ -446,6 +446,10 @@ jQuery(document).ready(function() {
 			if (typeof tmpAccordionClass !== 'undefined' && tmpAccordionClass.indexOf('currentAccordionAnchor') >= 0) {
 				$(this).parent().next().slideDown();
 			}
+			
+			//add accordion state indicator
+			var $indicator = $('<span aria-hidden="true" class="accordion__state-indicator"></span>');
+			$(this).append($indicator);
 		});
 
 
