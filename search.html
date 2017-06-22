@@ -88,11 +88,14 @@
 							<label for="ucl-search" class="staff">Directory</label>
 						</div>
 						-->
-                        <div class="search-form">
-                            <input type="search" placeholder="Search UCL websites, people and more" class="search-form__input search-form__input--search" value="">
-                        </div>
+                        <div role="search">
+                            <div class="search-form">
+                                <label for="masthead-search" class="search-form__input--label">Search</label>
+                                <input type="search" id="masthead-search" placeholder="Search UCL websites, people and more" class="search-form__input search-form__input--search" value="">
+                            </div>
 
-                        <input type="submit" name="sumbit" value="Go" class="btn search-form__input search-form__input--submit" />
+                            <input type="submit" name="sumbit" value="Go" class="btn search-form__input search-form__input--submit" />
+                        </div>
                     </form>
 
 
@@ -197,12 +200,14 @@
 
             <div class="site-content__body">
                 <!-- start main slot where silva content gets rendered-->
+                <h1 class="visually-hidden">Search Results</h1>
 
                 <div class="site-content__main">
                     <div id="fb-queryform">
                         <form action="" method="GET" class="form">
-                            <div class="input-group">
+                            <div class="input-group" role="search">
                                 <div class="input-group__item">
+                                    <label for="query" class="visually-hidden">Search Query</label>
                                     <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" name="query" id="query"  accesskey="q" type="text" class="form__control input-group__input ui-autocomplete-input" placeholder="Search">
                                 </div>
                                 <div class="input-group__item">

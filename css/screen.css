@@ -138,7 +138,7 @@
   display: none !important;
   visibility: hidden; }
 
-.slick-arrow span, .visually-hidden {
+.slick-arrow span, .search-form__input--label, .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -147,7 +147,7 @@
   padding: 0;
   position: absolute;
   width: 1px; }
-  .slick-arrow span.focusable:active, .slick-arrow span.focusable:focus, .visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+  .slick-arrow span.focusable:active, .focusable.search-form__input--label:active, .slick-arrow span.focusable:focus, .focusable.search-form__input--label:focus, .visually-hidden.focusable:active, .visually-hidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
