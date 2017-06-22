@@ -438,13 +438,22 @@ jQuery(document).ready(function() {
 	*new Indigo Code sources use the app/accordion to handle multiple instances this is here for backward compatability
 	*/
 	if(typeof globalSiteSpecificVars.useAccordionApp==='undefined'){
+		var allTogglers = $('.accordion__title a');
 		var allPanels = $('.accordion__description');
 		allPanels.slideUp();
+
+		//add aria states
+		allTogglers.attr('aria-expanded', 'false');
+		allPanels.attr('aria-hidden', 'true');
+
 		//open accordions that have this set in their class
 		$('.accordion__title a').each(function() {
 			var tmpAccordionClass = $(this).attr("class");
 			if (typeof tmpAccordionClass !== 'undefined' && tmpAccordionClass.indexOf('currentAccordionAnchor') >= 0) {
-				$(this).parent().next().slideDown();
+				var $currentPanel = $(this).parent().next();
+				$currentPanel.attr('aria-hidden', 'false');
+				$currentPanel.slideDown();
+				$(this).attr('aria-expanded', 'true');
 			}
 			
 			//add accordion state indicator
@@ -452,14 +461,18 @@ jQuery(document).ready(function() {
 			$(this).append($indicator);
 		});
 
-
 		$('.accordion__title a').click(function() {
+			allTogglers.attr('aria-expanded', 'false');
 			allPanels.slideUp();
+			allPanels.attr('aria-hidden', 'true');
 			var tmpAccordionClass = $(this).attr("class");
 			removeCurrentClassFromAll();
 			if (typeof tmpAccordionClass === 'undefined' || tmpAccordionClass.indexOf('currentAccordionAnchor') === -1) {
-				$(this).parent().next().slideDown();
+				var $currentPanel = $(this).parent().next();
+				$currentPanel.attr('aria-hidden', 'false');
+				$currentPanel.slideDown();
 				$(this).addClass("currentAccordionAnchor");
+				$(this).attr('aria-expanded', 'true');
 			}
 			return false;
 		});
