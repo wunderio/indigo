@@ -1,4 +1,4 @@
-# UCL Design Language - release 2
+# UCL Design Language - 3.0.0
 
 The UCL Design Language repository contains:
 
@@ -33,9 +33,8 @@ The following steps will describe how to use the existing design language founda
 9. Please see http://editorconfig.org/ for notes on the editorconfig. We have included this in the project. You will need to configure your IDE to use this file to have the correct settings for each file type.
 
 
-Release 2 updates
+Indigo 3.0.0
 ------------------
-We have updated the patterns and css so the class names and html follows the BEM methodology https://bem.info
+We are updating patterns to utilize modern web technology, use current best practices, and align with future needs. We are also improving accessibility and cleaning up some redundant files.
 
-We have added SCSS linting. To install linting please run the ruby command 
-'gem install scss-lint' - More info https://github.com/ahmednuaman/grunt-scss-lint
+Version 3.x is NOT directly backwards compatible with release 2 markup.
