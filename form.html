@@ -73,11 +73,11 @@
 				<em>Note about this field</em>
 			</fieldset>
 			<fieldset class="form__group">
-				<label for="text">Text Input Error States
+				<label for="text_input_error">Text Input Error States
 					<abbr title="Required">*</abbr>
 				</label>
-				<input class="form__control" type="text" class="text error" id="text">
-				<em class="error">Password is incorrect</em>
+				<input class="form__control" type="text" class="text error" id="text_input_error" aria-describedby="text_input_error_error" required>
+				<em class="error" role="invalid" id="text_input_error_error">This input is required</em>
 			</fieldset>
 			<fieldset class="form__group form__group--inline">
 				<label for="text">Inline Text Input
