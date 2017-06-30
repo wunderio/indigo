@@ -864,11 +864,6 @@ input {
 input[type=submit] {
   cursor: pointer; }
 
-input, select {
-  outline: 0; }
-  input:focus, select:focus {
-    outline: 0; }
-
 input:disabled {
   cursor: not-allowed; }
 
