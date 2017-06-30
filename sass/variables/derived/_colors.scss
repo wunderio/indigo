@@ -17,6 +17,7 @@ $megalightgrey: mix($black, $white, 4%);
 $cta-blue: $link-colour;
 $captioned-image-bg: $ultralightgrey;
 
+// Header area.
 $masthead-bg-color: $darkgrey;
 
 $header-bg-color: $warmgrey;
@@ -31,3 +32,8 @@ $nav-left-line-color: transparent;
 $nav-left-link-color: $link-colour;
 
 $content-bg-color: $white;
+
+
+// Accordion.
+$accordion-link-color: $black;
+$accordion-border-color: $ultralightgrey;

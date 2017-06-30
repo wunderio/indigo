@@ -20,8 +20,8 @@
 		}
 
 		a {
+			@include link-colors($nav-left-link-color);
 			border-bottom: 1px solid $nav-left-line-color;
-			color: $nav-left-link-color;
 			display: block;
 			padding: 0.25em 1em;
 		}

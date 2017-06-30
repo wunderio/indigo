@@ -1,0 +1,46 @@
+@function link-state-color($link-color, $difference: 20%) {
+    @if lightness($link-color) > 50% {
+        @return darken($link-color, $difference);
+    }
+    @else {
+        @return lighten($link-color, $difference);
+    }
+}
+
+@mixin link-colors($color, $hover-color: $link-colour-hover, $active-color: $link-colour-active, $visited-color: $link-colour-visited) {
+    color: $color;
+
+    &:hover,
+    &:focus {
+        @if $hover-color != false {
+            @if $hover-color == 'auto' {
+                color: link-state-color($color, 20%);
+            }
+            @else {
+                color: $hover-color;
+            }
+        }
+    }
+
+    &:active {
+        @if $active-color != false {
+            @if $active-color == 'auto' {
+                color: link-state-color($color, 30%);
+            }
+            @else {
+                color: $active-color;
+            }
+        }
+    }
+
+    &:visited {
+        @if $visited-color != false {
+            @if $visited-color == 'auto' {
+                color: link-state-color($color, 10%);
+            }
+            @else {
+                color: $visited-color;
+            }
+        }
+    }
+}
