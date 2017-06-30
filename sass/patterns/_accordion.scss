@@ -21,6 +21,8 @@
 }
 
 .accordion__title {
+	background-color: $accordion-bg-color;
+	
 	a {
 		@include link-colors($accordion-link-color);
 		align-items: center;
