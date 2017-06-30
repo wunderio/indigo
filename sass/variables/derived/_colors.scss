@@ -1,0 +1,33 @@
+// UCL Derived Colors. These depend on variables/colors.
+//--------------------------------------------------------------
+
+// Generic grayscale.
+//--------------------------------------------------------------
+$offblack: mix($black, $white, 90%);
+$ultradarkgrey: mix($black, $white, 80%);
+$darkgrey: mix($black, $white, 73.5%);
+$warmgrey: mix($black, $white, 60%);
+$grey: mix($black, $white, 50%);
+$lightgrey: mix($black, $white, 30%);
+$ultralightgrey: mix($black, $white, 10%);
+$megalightgrey: mix($black, $white, 4%);
+
+// Colour by element
+//--------------------------------------------------------------
+$cta-blue: $link-colour;
+$captioned-image-bg: $ultralightgrey;
+
+$masthead-bg-color: $darkgrey;
+
+$header-bg-color: $warmgrey;
+$header-text-color: $white;
+
+$nav-top-bg-color: $white;
+$nav-top-line-color: $rule-color;
+$nav-top-link-color: $link-colour;
+$nav-left-bg-color: none;
+$nav-left-sub-bg-color: transparent;
+$nav-left-line-color: transparent;
+$nav-left-link-color: $link-colour;
+
+$content-bg-color: $white;

@@ -1,4 +1,6 @@
-// UCL Colours
+// UCL Colours. 
+// Do NOT put colors derived from other color variables here!
+// Those go to variables/derived/colors.
 //--------------------------------------------------------------
 
 
@@ -33,6 +35,7 @@ $midblue: rgba(0, 40, 85, 1);
 $brightblue: rgba(0, 151, 169, 1);
 $lightblue: rgba(141, 185, 202, 1);
 $stone: rgba(214, 210, 196, 1);
+$beige: #d9d9d1;
 $darkbrown: rgba(78, 54, 41, 1);
 
 
@@ -62,23 +65,14 @@ $stone-b: rgba(224, 221, 209, 1);
 $darkbrown-b: rgba(95, 68, 54, 1);
 
 
-// Generic grayscale
+// Generic grayscale (moved, see: colors-derived).
 //--------------------------------------------------------------
 
 $black: #000;
 $white: #fff;
 
-$offblack: mix($black, $white, 90%);
-$ultradarkgrey: mix($black, $white, 80%);
-$warmgrey: mix($black, $white, 60%);
-$grey: mix($black, $white, 50%);
-$lightgrey: mix($black, $white, 30%);
-$ultralightgrey: mix($black, $white, 10%);
-$megalightgrey: mix($black, $white, 4%);
-
 // Colour by element
 //--------------------------------------------------------------
-$content-bg-color: $white;
 $nav-horizontal-color: #333;
 $rule-color: #ccc;
 $cat-blue: #027d9e;
@@ -110,7 +104,6 @@ $disabled-act-btn-grad2: #ccc;
 
 $global-search-blue: #4693ea;
 
-$cta-blue: $link-colour;
 $cta-navy: #002854;
 
 
@@ -126,7 +119,6 @@ $hover-grey: #f0f0f0;
 
 //Captioned image defaults
 //-----------------------------------------------------------------
-$captioned-image-bg: $ultralightgrey;
 $default-overlay-opacity: .9;
 $blurb-caption-top: 20%; 
 $blurb-caption-bottom: 10%;
