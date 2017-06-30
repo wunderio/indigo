@@ -7,11 +7,13 @@
 .accordion {}
 
 .accordion__title, .accordion__description {
-	padding: 10px;
-	border-top: 1px solid #ccc;
+	@include rem('padding', 1);
+	border-top: 1px solid $accordion-border-color;
 	margin-top: 0;
 	&:last-of-type {
-		border-bottom: 1px solid #ccc;
+		@if $accordion-last-border == true {
+			border-bottom: 1px solid #ccc;
+		}
 	}
 	a {
 		font-weight: bold;
@@ -20,8 +22,8 @@
 
 .accordion__title {
 	a {
+		@include link-colors($accordion-link-color);
 		align-items: center;
-		color: $black;
 		display: block; // Fallback which still works, but not as nice.
 		display: flex;
 		justify-content: space-between;

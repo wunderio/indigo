@@ -5,7 +5,7 @@
 -------------------------------------------------------------- */
 
 .masthead {
-	background-color: #444;
+	background-color: $masthead-bg-color;
 	color: $white;
 	height: 45px;
 	@include rem(font-size, $font-size-xs);
