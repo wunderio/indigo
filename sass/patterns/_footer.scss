@@ -7,21 +7,18 @@
 .footer {}
 
 .footer__inner {
-	background-color: #40403e;
+	background-color: $footer-bg-color;
 	padding: 40px $site-content-padding;
 	margin-left: -$site-content-padding;
 	margin-right: -$site-content-padding;
-	color: #fff;
+	color: $footer-text-color;
 	clear: left;
 	h2{
 		font-size: 1.6rem;
 		text-transform: none;
 	}
 	a {
-		color: #eee;
-		@include on-interaction {
-			color: $white;
-		}
+		@include link-colors($footer-link-color);
 	}
 }
 

@@ -5,13 +5,13 @@
 -------------------------------------------------------------- */
 
 .box {
-	border-top: 5px solid #000;
-	background: #fafafa;
+	border-top: 5px solid $box-stripe-color;
+	background: $box-bg-color;
 	overflow: hidden;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	box-sizing: border-box;
-	box-shadow: 0 1px 0 0 rgba($black, 0.1);
+	box-shadow: 0 1px 0 0 rgba($box-shadow-color, 0.1);
 	position: relative;
 	@include gs-pad(dc, padinfull);
 	@include guttering;
