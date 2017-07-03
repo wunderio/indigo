@@ -48,16 +48,18 @@
 	overflow: hidden;
 	@include alignment;
 	ul {
+		margin-bottom: 0;
+
 		li {
-			display: block;
-			float: left;
-			padding-right: 1em;
-			margin-right: 1em;
 			border-right: 1px solid $nav-top-line-color;
+			display: inline-block;
+			padding: 0 1em;
+			vertical-align: middle;
+
 			a {
-				color: $nav-top-link-color;
-				text-decoration: none;
+				@include link-colors($nav-top-link-color);
 				cursor: pointer;
+				padding: 1em 0;
 			}
 			&:last-child {
 				border-right: 0;

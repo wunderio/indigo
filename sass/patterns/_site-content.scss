@@ -41,6 +41,11 @@
 		@include gs-span(m, all);
 		padding-top: $baseline;
 	}
+
+	.site-content__flex & {
+		display: flex;
+		width: 100%;
+	}
 }
 
 
@@ -52,6 +57,18 @@
 
 	@include gs-media(m, max) {
 		@include gs-span(m, all);
+	}
+
+	.site-content__flex & {
+		margin-left: gs-gutter(dl, $unit: true);
+
+		@include gs-media(t, max) {
+			margin-left: gs-gutter(t, $unit: true);
+		}
+
+		@include gs-media(m, max) {
+			margin-left: gs-gutter(m, $unit: true);
+		}
 	}
 }
 

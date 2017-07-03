@@ -24,6 +24,14 @@
 	}
 }
 
+.sidebar__flex {
+	background-color: $sidebar-bg-color;
+	position: static;
+	margin-left: -($site-content-padding);
+	margin-top: 0;
+	padding-left: $site-content-padding;
+}
+
 
 /* Block columns
 -------------------------------------------------------------- */
@@ -153,9 +161,16 @@
 		}
 	}
 	.sidebar {
-		margin-top: 5em;
+		padding-top: 5em;
+		
 		@include gs-media(m, max) {
 			margin-top: 0;
+		}
+
+		&.sidebar__flex {
+			margin-bottom: -2em;
+			margin-top: -2em;
+			padding-top: 7em;
 		}
 	}
 }
