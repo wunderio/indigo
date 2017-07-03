@@ -35,7 +35,7 @@ $midblue: rgba(0, 40, 85, 1);
 $brightblue: rgba(0, 151, 169, 1);
 $lightblue: rgba(141, 185, 202, 1);
 $stone: rgba(214, 210, 196, 1);
-$beige: #d9d9d1;
+$beige: rgba(217, 217, 209, 1);
 $darkbrown: rgba(78, 54, 41, 1);
 
 
@@ -68,8 +68,15 @@ $darkbrown-b: rgba(95, 68, 54, 1);
 // Generic grayscale (moved, see: colors-derived).
 //--------------------------------------------------------------
 
+// Grayscale stops that may even be reversed. (black is white etc.)
 $black: #000;
 $white: #fff;
+
+// These should always be truly black and white.
+$true-black: #000;
+$true-white: #fff;
+
+$gray-ucl-masthead: rgba(68, 68, 68, 1);
 
 // Colour by element
 //--------------------------------------------------------------

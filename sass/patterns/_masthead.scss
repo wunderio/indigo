@@ -6,7 +6,7 @@
 
 .masthead {
 	background-color: $masthead-bg-color;
-	color: $white;
+	color: $masthead-link-color;
 	height: 45px;
 	@include rem(font-size, $font-size-xs);
 	@include gs-media(m, max) {
@@ -86,7 +86,7 @@
 
 .masthead__link {
 	font-weight: 400;
-	color: $white;
+	color: $masthead-link-color;
 	text-decoration: none;
 	@include on-interaction {
 		color: $white;
@@ -94,7 +94,7 @@
 }
 
 .masthead__link.give-link {
-	color: #000;
+	color: $true-black;
 }
 
 

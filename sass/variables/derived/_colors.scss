@@ -17,8 +17,12 @@ $megalightgrey: mix($black, $white, 4%);
 $cta-blue: $link-colour;
 $captioned-image-bg: $ultralightgrey;
 
+$body-bg-color: $beige;
+$text-color: $black;
+
 // Landmarks.
-$masthead-bg-color: $darkgrey;
+$masthead-bg-color: $gray-ucl-masthead;
+$masthead-link-color: $true-white;
 
 $header-bg-color: $warmgrey;
 $header-text-color: $white;
@@ -32,6 +36,8 @@ $nav-left-line-color: transparent;
 $nav-left-link-color: $link-colour;
 
 $content-bg-color: $white;
+
+$sidebar-bg-color: transparent;
 
 $footer-bg-color: $ultradarkgrey;
 $footer-text-color: $white;
