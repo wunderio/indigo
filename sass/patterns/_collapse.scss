@@ -8,7 +8,7 @@
 
 .collapse__header {
 	clear:both;
-	@include respond-max($screen-md - 1px) {
+	@include respond-max($screen-md) {
 		cursor: pointer;
 		border-bottom: 1px solid #ccc;
 		padding-bottom: 8px;
@@ -16,7 +16,7 @@
 }
 
 .collapse__content {
-	@include respond-max($screen-md - 1px) {
+	@include respond-max($screen-md) {
 		display: none;
 		border-top: 0;
 	}

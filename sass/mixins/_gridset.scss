@@ -194,18 +194,18 @@
 @mixin gs-media($prefix, $type: false){
 
   @if $prefix == dl or $prefix == dc {
-    @media only screen and (min-width: 990px) { @content; }
+    @media only screen and (min-width: $screen-lg) { @content; }
   }
 
   @if $prefix == t {
-    @if ($type == min) { @media only screen and (min-width: 768px) { @content; } }
-    @else if ($type == max) { @media only screen and (max-width: 989px) { @content; } }
-    @else if ($type == min-max) { @media only screen and (min-width: 768px) and (max-width: 989px) { @content; } }
-    @else { @media only screen and (min-width: 768px) { @content; } }
+    @if ($type == min) { @media only screen and (min-width: $screen-md) { @content; } }
+    @else if ($type == max) { @media only screen and (max-width: $screen-md-max) { @content; } }
+    @else if ($type == min-max) { @media only screen and (min-width: $screen-md) and (max-width: $screen-md-max) { @content; } }
+    @else { @media only screen and (min-width: $screen-md) { @content; } }
   }
 
   @if $prefix == m {
-    @media only screen and (max-width: 767px) { @content; }
+    @media only screen and (max-width: $screen-sm-max) { @content; }
   }
 
 }
