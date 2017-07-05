@@ -1,4 +1,12 @@
-// Variable imports
+// Default variables import file. Imports all base variable 
+// files. 
+//
+// Note that this file does not import derived variables!
+// They are also required by base and patterns, but need to be
+// imported separately so base variables may be overridden
+// before using their values for derived variables.
+//
+// See variables/derived/derived.
 //--------------------------------------------------------------
 
 @import 'settings';
