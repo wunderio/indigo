@@ -20,20 +20,39 @@
 		}
 
 		a {
-			@include link-colors($nav-left-link-color);
+			@include button-colors($background-color: $nav-left-link-bg-color, $background-hover-color: $nav-left-link-bg-hover-color, $background-active-color: $nav-left-link-bg-active-color, $text-color: $nav-left-link-color);
 			border-bottom: 1px solid $nav-left-line-color;
 			display: block;
-			padding: 0.25em 1em;
+			padding: 0.5em 1em;
 		}
 
 		ul {
 			background: $nav-left-sub-bg-color;
 			margin: 0;
-			padding: 0.5em 5%;
-			@include rem(font-size, $font-size-sm);
+			padding: 0;
+
+			a {
+				@include button-colors(transparent, $text-color: $nav-left-sublink-color);
+				border-left: 5px solid transparent;
+				padding-left: 2em;
+
+				&:hover,
+				&:focus {
+					border-left-color: link-state-color($nav-left-link-bg-color, 20%);
+				}
+
+				&.active {
+					border-left-color: $nav-left-link-bg-active-color;
+					font-weight: bold;
+				}
+			}
 
 			ul {
-				padding: 0 5%;
+				border-bottom: 1px solid $nav-left-line-color;
+
+				a {
+					padding-left: 3em;
+				}
 			}
 		}
 	}

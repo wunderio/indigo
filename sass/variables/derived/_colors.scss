@@ -32,8 +32,12 @@ $nav-top-line-color: $rule-color;
 $nav-top-link-color: $link-colour;
 $nav-left-bg-color: none;
 $nav-left-sub-bg-color: transparent;
-$nav-left-line-color: transparent;
-$nav-left-link-color: $link-colour;
+$nav-left-line-color: $beige;
+$nav-left-link-color: 'auto';
+$nav-left-link-bg-color: $sand;
+$nav-left-link-bg-hover-color: 'auto';
+$nav-left-link-bg-active-color: $primary-colour;
+$nav-left-sublink-color: $black;
 
 $content-bg-color: $white;
 

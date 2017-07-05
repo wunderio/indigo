@@ -7,6 +7,15 @@
     }
 }
 
+@function color-for-background($background-color) {
+    @if lightness($background-color) > 60% {
+        @return $black;
+    }
+    @else {
+        @return $white;
+    }
+}
+
 @mixin link-colors($color, $hover-color: $link-colour-hover, $active-color: $link-colour-active, $visited-color: $link-colour-visited) {
     color: $color;
 
@@ -41,6 +50,52 @@
             @else {
                 color: $visited-color;
             }
+        }
+    }
+}
+
+@mixin button-colors($background-color, $background-hover-color: 'auto', $background-active-color: 'auto', $text-color: 'auto') {
+    background-color: $background-color;
+
+    @if $background-hover-color == 'auto' {
+        $background-hover-color: link-state-color($background-color, 20%);
+    }
+    @if $background-active-color == 'auto' {
+        $background-active-color: link-state-color($background-color, 50%);
+    }
+
+    @if $background-color != transparent {
+        text-decoration: none;
+    }
+
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        @if $text-color == 'auto' {
+            color: color-for-background($background-color);
+        }
+        @else {
+            color: $text-color;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $background-hover-color;
+        
+        @if $text-color == 'auto' {
+            color: color-for-background($background-hover-color);
+        }
+    }
+
+    &.active,
+    &.active-trail {
+        background-color: $background-active-color;
+       
+        @if $text-color == 'auto' {
+            color: color-for-background($background-active-color);
         }
     }
 }
