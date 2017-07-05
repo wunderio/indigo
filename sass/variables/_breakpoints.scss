@@ -1,10 +1,22 @@
 // Breakpoints
 //--------------------------------------------------------------
 
-$screen-xs: 480px;
-$screen-sm: 620px;
-$screen-md: 768px;
-$screen-lg: 990px;
-$screen-xl: 1050px;
-$screen-xxl: 1180px;
-$screen-xxxl: 1400px;
+@function breakpoint-to-em($pixels) {
+    @return $pixels / $font-size-base / 10
+}
+
+$screen-xs-raw: breakpoint-to-em(480);
+$screen-sm-raw: breakpoint-to-em(620);
+$screen-md-raw: breakpoint-to-em(768);
+$screen-lg-raw: breakpoint-to-em(990);
+$screen-xl-raw: breakpoint-to-em(1050);
+$screen-xxl-raw: breakpoint-to-em(1180);
+$screen-xxxl-raw: breakpoint-to-em(1400);
+
+$screen-xs: $screen-xs-raw + em;
+$screen-sm: $screen-sm-raw + em;
+$screen-md: $screen-md-raw + em;
+$screen-lg: $screen-lg-raw + em;
+$screen-xl: $screen-xl-raw + em;
+$screen-xxl: $screen-xxl-raw + em;
+$screen-xxxl: $screen-xxxl-raw + em;
