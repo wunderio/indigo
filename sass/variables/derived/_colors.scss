@@ -50,10 +50,10 @@ $accordion-bg-color: transparent;
 $accordion-border-color: $ultralightgrey;
 
 // Box.
-$box-bg-color: $ultralightgrey;
+$box-bg-color: mix($fx-colour, $white, 10%);
 $box-shadow-color: $black;
 $box-stripe-color: $fx-colour;
 
 // Blockquote.
-$blockquote-bg-color: transparent;
+$blockquote-bg-color: $secondary-colour;
 $blockquote-text-color: rgba($black, 0.7);
