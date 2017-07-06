@@ -1,0 +1,17 @@
+@function link-state-color($link-color, $difference: 20%) {
+    @if lightness($link-color) > 50% {
+        @return darken($link-color, $difference);
+    }
+    @else {
+        @return lighten($link-color, $difference);
+    }
+}
+
+@function color-for-background($background-color) {
+    @if lightness($background-color) > 50% {
+        @return $black;
+    }
+    @else {
+        @return $white;
+    }
+}

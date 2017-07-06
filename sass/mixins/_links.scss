@@ -1,21 +1,3 @@
-@function link-state-color($link-color, $difference: 20%) {
-    @if lightness($link-color) > 50% {
-        @return darken($link-color, $difference);
-    }
-    @else {
-        @return lighten($link-color, $difference);
-    }
-}
-
-@function color-for-background($background-color) {
-    @if lightness($background-color) > 60% {
-        @return $black;
-    }
-    @else {
-        @return $white;
-    }
-}
-
 @mixin link-colors($color, $hover-color: $link-colour-hover, $active-color: $link-colour-active, $visited-color: $link-colour-visited) {
     color: $color;
 
