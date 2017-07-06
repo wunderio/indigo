@@ -28,13 +28,14 @@
 
 		ul {
 			background: $nav-left-sub-bg-color;
+			border-bottom: 1px solid $nav-left-line-color;
 			margin: 0;
 			padding: 0;
 
 			a {
 				@include button-colors(transparent, $text-color: $nav-left-sublink-color);
 				border-left: 5px solid transparent;
-				padding-left: 2em;
+				padding: 0.35em 1em 0.35em 2em;
 
 				&:hover,
 				&:focus {
@@ -48,8 +49,6 @@
 			}
 
 			ul {
-				border-bottom: 1px solid $nav-left-line-color;
-
 				a {
 					padding-left: 3em;
 				}
@@ -62,23 +61,25 @@
 	display: none;
 	width: 100%;
 	background-color: $nav-top-bg-color;
-	padding-bottom: 1em;
-	padding-top: 1em;
+	padding: 0;
 	overflow: hidden;
 	@include alignment;
 	ul {
+		display: flex;
+		flex-wrap: wrap;
 		margin-bottom: 0;
+		margin-left: -0.5em; // Match with nav--left.
 
 		li {
-			border-right: 1px solid $nav-top-line-color;
 			display: inline-block;
-			padding: 0 1em;
 			vertical-align: middle;
 
 			a {
-				@include link-colors($nav-top-link-color);
+				@include button-colors($background-color: $nav-top-link-bg-color, $background-hover-color: $nav-top-link-bg-hover-color, $background-active-color: $nav-top-link-bg-active-color, $text-color: $nav-top-link-color);
+				border-right: 1px solid $nav-top-line-color;
 				cursor: pointer;
-				padding: 1em 0;
+				display: block;
+				padding: 1em 1.5em;
 			}
 			&:last-child {
 				border-right: 0;

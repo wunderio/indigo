@@ -12,15 +12,14 @@ $lightgrey: mix($black, $white, 30%);
 $ultralightgrey: mix($black, $white, 10%);
 $megalightgrey: mix($black, $white, 4%);
 
-// Colour by element
-//--------------------------------------------------------------
-$cta-blue: $link-colour;
-$captioned-image-bg: $ultralightgrey;
-
 $body-bg-color: $beige;
 $text-color: $black;
 
+
 // Landmarks.
+//--------------------------------------------------------------
+$cta-blue: $link-colour;
+$captioned-image-bg: $ultralightgrey;
 $masthead-bg-color: $gray-ucl-masthead;
 $masthead-link-color: $true-white;
 
@@ -28,8 +27,12 @@ $header-bg-color: $warmgrey;
 $header-text-color: $white;
 
 $nav-top-bg-color: $white;
-$nav-top-line-color: $rule-color;
-$nav-top-link-color: $link-colour;
+$nav-top-line-color: transparent;
+$nav-top-link-color: 'auto';
+$nav-top-link-bg-color: $sand;
+$nav-top-link-bg-hover-color: 'auto';
+$nav-top-link-bg-active-color: false;
+
 $nav-left-bg-color: none;
 $nav-left-sub-bg-color: transparent;
 $nav-left-line-color: $beige;
@@ -43,10 +46,15 @@ $content-bg-color: $white;
 
 $sidebar-bg-color: transparent;
 
-$footer-bg-color: $ultradarkgrey;
+$footer-bg-color: $darkgrey;
 $footer-text-color: $white;
 $footer-link-color: $megalightgrey;
 
+
+// Colour by pattern/element.
+//--------------------------------------------------------------
+$cta-blue: $link-colour;
+$captioned-image-bg: $ultralightgrey;
 
 // Accordion.
 $accordion-link-color: $black;

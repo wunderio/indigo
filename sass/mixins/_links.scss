@@ -90,12 +90,14 @@
         }
     }
 
-    &.active,
-    &.active-trail {
-        background-color: $background-active-color;
-       
-        @if $text-color == 'auto' {
-            color: color-for-background($background-active-color);
+    @if $background-active-color != false {
+        &.active,
+        &.active-trail {
+            background-color: $background-active-color;
+        
+            @if $text-color == 'auto' {
+                color: color-for-background($background-active-color);
+            }
         }
     }
 }
